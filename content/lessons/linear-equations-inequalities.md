@@ -95,7 +95,7 @@ $5a + 8b = 101$. Mod 5: $8b \equiv 3b \equiv 101 \equiv 1 \pmod 5$. Since $3 \ti
 $b = 2 \Rightarrow a = (101 - 16)/5 = 17$. $b = 7 \Rightarrow a = (101 - 56)/5 = 9$. $b = 12 \Rightarrow a = (101 - 96)/5 = 1$. $b = 17 \Rightarrow a < 0$.
 Three ways. Check: $85 + 16 = 45 + 56 = 5 + 96 = 101$ ✓.
 
-*Why this method:* once one solution is found, the others step by $+8$ in $b$'s partner… precisely, $a$ decreases by 8 while $b$ increases by 5. Find one, then step.
+*Why this method:* once one solution is found, the rest follow by stepping: $a$ decreases by 8 while $b$ increases by 5 (the coefficients swap roles). Find one solution, then step until a variable goes negative.
 
 ### Example 6: ages
 *A father is three times as old as his son. In 12 years he will be twice as old. Find the father's age now.*

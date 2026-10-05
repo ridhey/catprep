@@ -1,0 +1,405 @@
+[
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-pj-001",
+    "concepts": [
+      "para-jumbles"
+    ],
+    "type": "tita",
+    "difficulty": "easy",
+    "timeSec": 150,
+    "answer": "2341",
+    "stem": "The sentences given below, when properly sequenced, form a coherent paragraph. Each sentence is labelled with a number. Decide on the proper sequence and key in the sequence of numbers as your answer (for example, 3142).\n\n1. Only when treatment began to catch up, in the decades around 1900, did the gap come to seem intolerable, and the profession's history was rewritten as a long wait for the cure.\n\n2. Nineteenth-century medicine was extraordinarily good at diagnosis and extraordinarily bad at treatment.\n\n3. Physicians could tell, often to the day, how a disease would progress; what they could not do was alter its course.\n\n4. This gap between knowing and doing was not a scandal to them but the ordinary condition of their art.",
+    "solution": "**Concept: para-jumble by mandatory pairs, then opener.**\n\n**Opener.** Sentence 2 names the subject with full nouns (\"Nineteenth-century medicine\"), makes a general claim and refers back to nothing. Sentence 3 (\"Physicians\") and 4 (\"This gap\", \"them\") need something before them; sentence 1 (\"the gap\", \"Only when…\") is a conclusion. So 2 opens.\n\n**Link 2 → 3 (general to specific).** Sentence 3 gives the concrete form of \"good at diagnosis, bad at treatment\": could predict the course, could not alter it.\n\n**Link 3 → 4 (demonstrative reference).** \"This gap between knowing and doing\" picks up exactly the knowing (how a disease would progress) and the doing (alter its course) of sentence 3; \"them\" refers to \"physicians\".\n\n**Link 4 → 1 (contrast + definite reference + chronology).** Sentence 1 says the gap \"came to seem intolerable\" only around 1900, contrasting with sentence 4's \"not a scandal to them\"; \"the gap\" needs 4's \"this gap\"; and the time moves forward from the nineteenth century.\n\n**Order: 2-3-4-1.** Read-through: claim, illustration, how practitioners regarded it, how that regard changed. No other order survives: 1 cannot precede 4 (its \"the gap\" would be undefined and its \"only when\" contrast would have nothing to contrast), and 4 cannot precede 3 (\"them\" would have no antecedent).\n\n**Answer: 2341**",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT TITA para-jumble pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-pj-002",
+    "concepts": [
+      "para-jumbles"
+    ],
+    "type": "tita",
+    "difficulty": "medium",
+    "timeSec": 180,
+    "answer": "34152",
+    "stem": "The sentences given below, when properly sequenced, form a coherent paragraph. Each sentence is labelled with a number. Decide on the proper sequence and key in the sequence of numbers as your answer (for example, 3142).\n\n1. The holding library assumes that the value of a book lies in its survival; the lending library assumes that it lies in its use.\n\n2. The public library of the nineteenth century, which let a stranger walk out with a book on a promise, was the second assumption made into a building.\n\n3. For most of their history libraries did not lend at all, and the fact is usually explained by scarcity: books were too valuable to let out of the building.\n\n4. The explanation is incomplete, because a library that lends is a different institution from one that merely holds, and the difference is one of theory rather than of means.\n\n5. The chained volumes of the medieval college were not a failure of trust but the first assumption carried to its conclusion.",
+    "solution": "**Concept: para-jumble; definite reference and ordinal sequence (\"first… second\").**\n\n**Opener.** Sentence 3 introduces the subject (libraries not lending) and an explanation (\"explained by scarcity\"); it refers back to nothing. Sentence 4 begins \"The explanation\", which needs 3. So 3 → 4.\n\n**Link 4 → 1.** Sentence 4 distinguishes \"a library that lends\" from \"one that merely holds\" and says the difference is \"of theory\". Sentence 1 states the two theories (\"The holding library assumes…; the lending library assumes…\"), using the definite \"the holding library\" that 4 has just introduced.\n\n**Link 1 → 5.** Sentence 5 refers to \"the first assumption\", which must be the first of the two stated in sentence 1 (value lies in survival); chained volumes are survival carried to its conclusion.\n\n**Link 5 → 2.** Sentence 2 refers to \"the second assumption\" (use), and chronology runs medieval → nineteenth century. \"First\" must precede \"second\".\n\n**Order: 3-4-1-5-2.** Read-through: the fact and the usual explanation; why it is incomplete; the two theories; the first in practice; the second in practice. Alternatives fail: 1 cannot precede 4 (4 introduces the lend/hold distinction that 1 names with \"the\"); 2 cannot precede 5 (ordinal and chronology).\n\n**Answer: 34152**",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT five-sentence TITA para-jumble pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-pj-003",
+    "concepts": [
+      "para-jumbles"
+    ],
+    "type": "tita",
+    "difficulty": "medium",
+    "timeSec": 150,
+    "answer": "4123",
+    "stem": "The sentences given below, when properly sequenced, form a coherent paragraph. Each sentence is labelled with a number. Decide on the proper sequence and key in the sequence of numbers as your answer (for example, 3142).\n\n1. It must admit fault without inviting litigation, express remorse without appearing to perform it, and promise change without specifying any change that could later be checked.\n\n2. Even the explanation is a trap: explain, and you are suspected of excusing; decline to explain, and the apology is called empty.\n\n3. Faced with these contradictory demands, most institutions produce the form of words that satisfies none of them and offends no one, which is then criticised as insincere.\n\n4. The public apology is a genre with rules so strict that almost no one satisfies them.",
+    "solution": "**Concept: para-jumble; pronoun reference, additive connector, summarising demonstrative.**\n\n**Opener.** Sentence 4 introduces \"the public apology\" as a genre with rules: full noun, general claim, no backward reference.\n\n**Link 4 → 1 (pronoun).** \"It must admit fault…\" needs a singular antecedent, and \"the public apology\" is the only one. If sentence 2 intervened, \"it\" would attach to \"the apology\" in 2's last clause and the list of rules would read as a description of an empty apology, which is incoherent. So 1 follows 4 directly.\n\n**Link 1 → 2 (additive \"even\").** \"Even the explanation is a trap\" extends the list of impossible rules in sentence 1 with one more; \"even\" marks it as an addition to a set already given.\n\n**Link 2 → 3 (summarising reference).** \"These contradictory demands\" gathers the demands of sentences 1 and 2 (each is a pair of opposites: admit/avoid, remorse/not perform, explain/not explain). Sentence 3 then closes with the consequence and a final twist (\"criticised as insincere\").\n\n**Order: 4-1-2-3.** Alternative 4-1-3-2 fails: 3 is a conclusion (\"faced with… most institutions produce…\") and ending on 2, a further rule, leaves the paragraph without its close; and \"these contradictory demands\" placed before 2 would omit the demand that 2 adds.\n\n**Answer: 4123**",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT TITA para-jumble pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-pj-004",
+    "concepts": [
+      "para-jumbles"
+    ],
+    "type": "tita",
+    "difficulty": "hard",
+    "timeSec": 180,
+    "answer": "35142",
+    "stem": "The sentences given below, when properly sequenced, form a coherent paragraph. Each sentence is labelled with a number. Decide on the proper sequence and key in the sequence of numbers as your answer (for example, 3142).\n\n1. This makes boredom closer to a judgement than to a sensation, a verdict on the world's offerings rather than a report on their quantity.\n\n2. It is also why boredom is so often the first symptom of a change in a person's values, visible to others before it is intelligible to herself.\n\n3. Boredom is usually described as a lack: of stimulation, of interest, of something to do.\n\n4. The verdict can be wrong, as verdicts can, and the cure for boredom is accordingly not more stimulation but a change in what one is prepared to count as worth attention.\n\n5. But the bored person is rarely short of things to do; what she lacks is a reason to do any of them.",
+    "solution": "**Concept: para-jumble; contrast connector, demonstrative, definite reference, additive \"also\".**\n\n**Opener.** Sentence 3 states the usual description of boredom (\"usually described as a lack\"): a setup with full nouns and no backward reference.\n\n**Link 3 → 5 (contrast).** \"But the bored person is rarely short of things to do\" contradicts the \"lack… of something to do\" in 3; the \"but\" has its target.\n\n**Link 5 → 1 (demonstrative).** \"This makes boredom closer to a judgement\" refers to the point just made in 5 (what is lacking is a reason, not things); a reason is a judgement.\n\n**Link 1 → 4 (definite reference).** \"The verdict\" picks up \"a verdict\" from sentence 1. Sentence 4 then draws the first consequence: the cure.\n\n**Link 4 → 2 (additive).** \"It is *also* why…\" requires that one consequence has already been drawn from the judgement idea; sentence 4 supplies it (the cure). Sentence 2 adds a second consequence and closes with a reflective twist. Placing 2 before 4 leaves \"also\" with nothing to add to, and leaves \"the verdict\" in 4 awkwardly far from its antecedent.\n\n**Order: 3-5-1-4-2.** Read-through: usual view; correction; reclassification as judgement; first consequence; second consequence.\n\n**Answer: 35142**",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT five-sentence TITA para-jumble pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-pj-005",
+    "concepts": [
+      "para-jumbles"
+    ],
+    "type": "tita",
+    "difficulty": "easy",
+    "timeSec": 120,
+    "answer": "3241",
+    "stem": "The sentences given below, when properly sequenced, form a coherent paragraph. Each sentence is labelled with a number. Decide on the proper sequence and key in the sequence of numbers as your answer (for example, 3142).\n\n1. Yet even a distorted message carries information, which is why the first thing a planner does when prices are abolished is to invent a shadow version of them.\n\n2. It is more usefully thought of as a message, compressed to a single number, about how much everyone else wants the thing.\n\n3. A price is usually thought of as a cost, something the buyer pays and the seller receives.\n\n4. The message is anonymous and partial, and it can be distorted by anyone with the power to set prices rather than take them.",
+    "solution": "**Concept: para-jumble; pronoun, definite reference, contrast connector.**\n\n**Opener.** Sentence 3 introduces \"a price\" (indefinite) and the usual view; no backward reference.\n\n**Link 3 → 2 (pronoun + comparative).** \"It is more usefully thought of\" needs \"a price\" as antecedent and \"more usefully\" contrasts with \"usually thought of\" in 3.\n\n**Link 2 → 4 (definite reference).** \"The message\" picks up \"a message\" from 2 and qualifies it (anonymous, partial, distortable).\n\n**Link 4 → 1 (contrast on the same word).** \"Yet even a distorted message carries information\" concedes 4's \"it can be distorted\" and turns it; 1 then closes with the consequence about planners.\n\n**Order: 3-2-4-1.** Each sentence hands a noun to the next: a price → it → a message → the message → distorted → a distorted message. No other order preserves the chain.\n\n**Answer: 3241**",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT TITA para-jumble pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-pj-006",
+    "concepts": [
+      "para-jumbles"
+    ],
+    "type": "tita",
+    "difficulty": "hard",
+    "timeSec": 180,
+    "answer": "45132",
+    "stem": "The sentences given below, when properly sequenced, form a coherent paragraph. Each sentence is labelled with a number. Decide on the proper sequence and key in the sequence of numbers as your answer (for example, 3142).\n\n1. What is missing is motion: the reader of an essay is kept not by suspense but by the sense that a mind is actually thinking, and that sense is impossible to fake for more than a paragraph.\n\n2. This is why the form attracts both the best writers and the laziest: the best because it leaves them nowhere to hide, the laziest because it never asks them to go anywhere.\n\n3. A novelist with nothing to say can keep the book moving on incident; an essayist with nothing to say has nothing to move it with.\n\n4. The essay has no plot, and so it cannot fail in the way a novel fails, by arriving somewhere the reader did not believe it could go.\n\n5. It fails instead by never setting out, and the reader notices this on the first page, long before she could say what is missing.",
+    "solution": "**Concept: para-jumble; pronoun, repeated phrase, elaboration, concluding demonstrative.**\n\n**Opener.** Sentence 4 introduces \"the essay\" and its contrast with the novel; full nouns, general claim, nothing referred back to.\n\n**Link 4 → 5 (pronoun + \"instead\").** \"It fails instead\" needs \"the essay\" as antecedent and \"instead\" needs the preceding \"cannot fail in the way a novel fails\".\n\n**Link 5 → 1 (repeated phrase).** Sentence 5 ends \"before she could say what is missing\"; sentence 1 begins \"What is missing is motion\". The repetition is a deliberate hand-off; no other sentence can follow 5 without leaving the question unanswered.\n\n**Link 1 → 3 (elaboration on \"motion\").** Sentence 3 explains the motion point with the novelist/essayist comparison (\"keep the book moving\", \"nothing to move it with\"); it depends on \"motion\" having been named.\n\n**Link 3 → 2 (concluding demonstrative).** \"This is why the form attracts both the best and the laziest\" draws the consequence of exposure (\"nowhere to hide\" answers \"has nothing to move it with\"); it is the closing generalisation.\n\n**Order: 4-5-1-3-2.** Alternatives fail: 3 cannot precede 1 (its \"moving\" picks up 1's \"motion\", and 5's \"what is missing\" would go unanswered); 2 cannot come earlier because \"this is why\" needs the full account of exposure.\n\n**Answer: 45132**",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT five-sentence TITA para-jumble pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-oso-001",
+    "concepts": [
+      "odd-sentence-out",
+      "para-jumbles"
+    ],
+    "type": "tita",
+    "difficulty": "easy",
+    "timeSec": 100,
+    "answer": "4",
+    "stem": "Five sentences are given below, labelled 1 to 5. Four of them can be put together to form a meaningful and coherent paragraph. Identify the odd one out and key in the number of that sentence as your answer.\n\n1. A rest in a musical score is not an absence of instruction but an instruction to be silent for a measured time.\n\n2. The silence it produces is therefore composed, as much a part of the work as any note.\n\n3. Listeners who cough during a rest have not interrupted nothing; they have interrupted a passage.\n\n4. Concert halls were first built with raked seating in the eighteenth century to improve sightlines.\n\n5. The performer's task during a rest is correspondingly active: to hold the silence so that it is heard as the composer's and not as the room's.",
+    "solution": "**Concept: odd sentence out; find the thread, build from a mandatory pair, run the removal test.**\n\nTopic: music. Thread: a rest is a composed silence, with consequences for listeners and performers.\n\nPairs: 1 → 2 (\"The silence *it* produces is *therefore* composed\" needs 1's rest). 2 → 3 (if silence is part of the work, coughing interrupts a passage). 2/3 → 5 (\"correspondingly active\" extends the consequence to performers; \"the silence\" is definite).\n\nSentence 4 is about the architecture of concert halls and sightlines. It shares the topic (concerts) but refers to nothing in 1, 2, 3 or 5 and nothing refers to it. Removal test: 1-2-3-5 is a complete paragraph. Insertion test: 4 placed anywhere introduces seating and the eighteenth century, which no sentence picks up.\n\n**Answer: 4**",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT TITA odd-sentence-out pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-oso-002",
+    "concepts": [
+      "odd-sentence-out"
+    ],
+    "type": "tita",
+    "difficulty": "medium",
+    "timeSec": 120,
+    "answer": "3",
+    "stem": "Five sentences are given below, labelled 1 to 5. Four of them can be put together to form a meaningful and coherent paragraph. Identify the odd one out and key in the number of that sentence as your answer.\n\n1. A dictionary records usage; it does not legislate it.\n\n2. Yet the record, once printed, is consulted as though it were a law, and the lexicographer who merely reported a word finds herself cited as the authority who permitted it.\n\n3. The most widely used English dictionaries now add several hundred new words every year.\n\n4. This is the lexicographer's permanent embarrassment: to describe is, in the public's eyes, to prescribe.\n\n5. The embarrassment cannot be avoided by disclaimers, because nobody reads the preface.",
+    "solution": "**Concept: odd sentence out; reference chain vs orphan fact.**\n\nThread: dictionaries describe, but the public treats description as prescription, and the lexicographer cannot escape this.\n\nReference chain: 1 → 2 (\"Yet the record\" picks up \"records\"; contrast with \"does not legislate\"). 2 → 4 (\"This is the lexicographer's permanent embarrassment\" summarises 2). 4 → 5 (\"The embarrassment\" is definite, from 4).\n\nSentence 3 is a statistic about how many words are added each year. It is on the topic of dictionaries, but it concerns growth, not the describe/prescribe tension; nothing in 1, 2, 4 or 5 needs it and it needs nothing from them. Removal test: 1-2-4-5 is complete. Insertion test: after 1 it breaks the \"yet\" contrast; after 2 it breaks \"this is…\"; at the end it dangles.\n\n**Answer: 3**",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT TITA odd-sentence-out pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-oso-003",
+    "concepts": [
+      "odd-sentence-out"
+    ],
+    "type": "tita",
+    "difficulty": "medium",
+    "timeSec": 120,
+    "answer": "5",
+    "stem": "Five sentences are given below, labelled 1 to 5. Four of them can be put together to form a meaningful and coherent paragraph. Identify the odd one out and key in the number of that sentence as your answer.\n\n1. Photographs are said to preserve memories, but what they more often do is replace them.\n\n2. The event one remembers, after years of looking at the picture, is the picture.\n\n3. The angle, the light and the faces caught mid-expression become the memory, and whatever the photograph failed to record quietly ceases to have happened.\n\n4. This is why people who photograph everything often remember remarkably little: the camera has agreed to remember on their behalf, and they have let it.\n\n5. The first photographic process, the daguerreotype, required the sitter to hold still for several minutes.",
+    "solution": "**Concept: odd sentence out; same topic, different thread.**\n\nThread: photographs replace memory rather than preserving it.\n\nChain: 1 states the claim. 2 elaborates (\"The event one remembers… is the picture\"). 3 specifies what becomes the memory and what is lost. 4 draws the consequence (\"This is why…\") for people who photograph everything.\n\nSentence 5 is a historical fact about the daguerreotype and exposure times. It shares the topic (photography) but not the thread (memory); no sentence refers to early processes, and 5 refers to nothing in the others. Removal test: 1-2-3-4 is a complete paragraph. Insertion test: anywhere it is placed, \"the sitter\" and \"several minutes\" are picked up by nothing.\n\n**Answer: 5**",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT TITA odd-sentence-out pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-oso-004",
+    "concepts": [
+      "odd-sentence-out",
+      "para-jumbles"
+    ],
+    "type": "tita",
+    "difficulty": "hard",
+    "timeSec": 120,
+    "answer": "4",
+    "stem": "Five sentences are given below, labelled 1 to 5. Four of them can be put together to form a meaningful and coherent paragraph. Identify the odd one out and key in the number of that sentence as your answer.\n\n1. Experts are often bad at explaining what they know, and the reason is not arrogance but the structure of expertise itself.\n\n2. To become expert in anything is to convert deliberate steps into reflexes, and reflexes are precisely what one cannot describe.\n\n3. The chess master who is asked why she made a move will give a reason, but the reason is reconstructed after the fact; the move came first.\n\n4. Expertise is best acquired through years of supervised practice rather than through reading.\n\n5. Asking an expert to explain is thus asking her to recover a sequence she has spent years learning to skip.",
+    "solution": "**Concept: odd sentence out; same key word (\"expertise\"), different claim.**\n\nThread: experts cannot explain what they know because expertise converts steps into reflexes.\n\nChain: 1 states the claim and promises a reason (\"the structure of expertise itself\"). 2 gives the reason (steps become reflexes). 3 illustrates (the chess master's reconstructed reason). 5 concludes (\"thus… recover a sequence she has spent years learning to skip\", which picks up \"steps\" and \"reflexes\").\n\nSentence 4 uses the word \"expertise\" but makes a claim about how expertise is *acquired* (practice vs reading), which is a different question from why experts cannot *explain*. It is the most tempting distractor because 2 also mentions becoming expert; but 2 is about what becoming expert does to one's steps, not about the best method of training. Removal test: 1-2-3-5 is complete. Insertion test: 4 after 2 would shift the paragraph to pedagogy and leave 3 and 5 unmotivated.\n\n**Answer: 4**",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT TITA odd-sentence-out pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-ps-001",
+    "concepts": [
+      "para-summary",
+      "rc-main-idea"
+    ],
+    "type": "mcq",
+    "difficulty": "easy",
+    "timeSec": 100,
+    "answer": 2,
+    "stem": "The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.\n\n> The word \"convenient\" is doing more work in modern life than any other adjective, and almost none of it is examined. A convenient option is one that removes friction, and friction is the name we give to effort when we have decided it is not worth making. But the decision is rarely made; it is made for us, by whoever designed the option, and what is removed along with the effort is often the occasion on which a choice might have been noticed. Convenience is not the opposite of coercion. It is coercion that has learned to be pleasant.",
+    "options": [
+      "Convenience should be resisted, because it is a form of coercion that takes away our choices.",
+      "Modern life is dominated by the pursuit of convenience, which has made people lazy and unwilling to make an effort.",
+      "Convenience removes effort, and with it the occasions on which a choice might be noticed, so it functions as a pleasant form of coercion rather than its opposite.",
+      "Friction is simply the name we give to effort that we have decided is not worth making."
+    ],
+    "solution": "**Concept: para-summary (claim + reason, nothing added, dropped or distorted).**\n\nOne-line summary: convenience removes effort and the occasion for choice, the decision being made by designers, so it is a pleasant form of coercion.\n\n**Why (c) is right:** it keeps the mechanism (removes effort and the occasion for choice) and the conclusion (coercion that is pleasant, not the opposite of coercion).\n\n**Why the others are wrong:**\n- (a) **Adds.** The paragraph makes no recommendation to resist; \"should\" is not in the text.\n- (b) **Distorts.** \"Lazy\" and \"unwilling\" are not in the paragraph; the point is that the decision not to make an effort is made *for* us, not that people are unwilling.\n- (d) **Drops.** It restates one definition and omits the claim about coercion entirely.\n\nCheck: the last two sentences of the paragraph are its claim; only (c) contains them.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT para-summary pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-ps-002",
+    "concepts": [
+      "para-summary",
+      "rc-main-idea"
+    ],
+    "type": "mcq",
+    "difficulty": "medium",
+    "timeSec": 110,
+    "answer": 3,
+    "stem": "The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.\n\n> People are said to be bad at probability, and the evidence is the long list of puzzles on which most of us give the wrong answer. But the puzzles are chosen for their trickiness, and the wrong answers are usually right about something: they track frequencies in the environment that the puzzle has quietly misdescribed. A person who overestimates the risk of a plane crash is not failing at arithmetic; she is responding to the one risk that is reported every time it occurs. The failure, if it is one, lies in the information rather than the reasoner.",
+    "options": [
+      "People are bad at probability because they rely on media reports rather than on statistics.",
+      "Overestimating the risk of a plane crash is one of the most common probabilistic errors.",
+      "Probability puzzles should be redesigned so that they reflect real-world frequencies.",
+      "The puzzles that show people to be bad at probability are tricky by design, and the errors they elicit usually reflect sensible responses to a misleading information environment rather than faulty reasoning."
+    ],
+    "solution": "**Concept: para-summary (preserve the author's direction and qualifiers).**\n\nOne-line summary: the \"bad at probability\" verdict rests on tricky puzzles; the errors track real frequencies in a misdescribed environment; the fault is in the information, not the reasoner.\n\n**Why (d) is right:** it keeps the setup (puzzles tricky by design), the mechanism (responses track frequencies in a misleading environment) and the conclusion (not faulty reasoning), with the paragraph's hedge \"usually\".\n\n**Why the others are wrong:**\n- (a) **Opposite / distorts.** It blames people (\"bad at probability because they rely on…\") when the paragraph says the failure lies in the information, not the reasoner.\n- (b) **Drops.** It keeps the example and loses the claim.\n- (c) **Adds.** No recommendation about redesigning puzzles appears in the paragraph.\n\nCheck: the final sentence is the verdict; only (d) states it.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT para-summary pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-ps-003",
+    "concepts": [
+      "para-summary"
+    ],
+    "type": "mcq",
+    "difficulty": "medium",
+    "timeSec": 100,
+    "answer": 0,
+    "stem": "The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.\n\n> We praise a book for being \"unputdownable\", as though the highest compliment were that it could be consumed in one sitting and need never be opened again. The books that matter are usually the opposite: they are put down often, because they resist, and they are picked up again, because the resistance turned out to be worth it. Rereading is a tribute not to a book's charm but to its depth, and depth is exactly what a page-turner is designed not to have.",
+    "options": [
+      "The books that matter are those that resist easy consumption and reward rereading; the praise \"unputdownable\" honours the opposite quality from depth.",
+      "Page-turners are inferior to serious literature and should not be praised at all.",
+      "Rereading a book is the best tribute to its charm.",
+      "Readers put difficult books down because the books resist them."
+    ],
+    "solution": "**Concept: para-summary (reject additions, drops and reversals).**\n\nOne-line summary: \"unputdownable\" praises consumability; books that matter resist and are reread; rereading honours depth, which page-turners lack by design.\n\n**Why (a) is right:** it carries the contrast (resist vs consumed at once), the role of rereading, and the verdict on \"unputdownable\".\n\n**Why the others are wrong:**\n- (b) **Adds and overstates.** \"Inferior\" and \"should not be praised at all\" go beyond the paragraph, which criticises a particular compliment, not the existence of page-turners.\n- (c) **Opposite.** The paragraph says rereading is a tribute \"not to a book's charm but to its depth\".\n- (d) **Drops.** A half of one sentence, without the claim about rereading or depth.\n\nCheck: the paragraph's \"not X but Y\" (not charm but depth) must survive in the summary; only (a) keeps it.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT para-summary pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-ps-004",
+    "concepts": [
+      "para-summary"
+    ],
+    "type": "mcq",
+    "difficulty": "hard",
+    "timeSec": 120,
+    "answer": 1,
+    "stem": "The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.\n\n> Organisations are praised for having a \"long memory\" and blamed for being unable to change, and these are usually the same property seen from different sides. An institution remembers by embedding past decisions in procedures that no longer need to be justified, which is efficient exactly until the reasons for them have lapsed. Then the memory becomes a habit, and the habit a rule, and the rule is defended by people who were never told what it was for. Forgetting, in organisations, is not a failure of memory but a failure to date it.",
+    "options": [
+      "Organisations with long memories are more efficient than those without, because their procedures do not need to be justified.",
+      "Institutional memory and institutional rigidity are one property: procedures preserve past decisions efficiently until their reasons lapse, after which they persist as unexplained rules, so what organisations lack is not memory but a record of when it was made.",
+      "Organisations should periodically review their rules and remove those whose reasons have lapsed.",
+      "Rules in organisations are typically defended by people who do not know their purpose."
+    ],
+    "solution": "**Concept: para-summary (keep the whole chain of reasoning; watch for the half-true option).**\n\nOne-line summary: memory and rigidity are the same property; embedding decisions in procedures is efficient until the reasons lapse; then the procedures become undated rules; the failure is one of dating memory, not of memory.\n\n**Why (b) is right:** it preserves every link, including the paragraph's paradoxical last sentence (\"failure to date it\" rendered as \"a record of when it was made\").\n\n**Why the others are wrong:**\n- (a) **Distorts (half-true).** The paragraph says embedding is efficient \"exactly until the reasons… have lapsed\"; (a) drops the limit and turns a conditional into a general superiority claim.\n- (c) **Adds.** A recommendation the paragraph never makes.\n- (d) **Drops.** One detail from the middle, without the thesis.\n\nCheck: the first sentence (\"the same property seen from different sides\") and the last (\"failure to date it\") must both appear; only (b) has both.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT para-summary pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-ps-005",
+    "concepts": [
+      "para-summary",
+      "rc-main-idea"
+    ],
+    "type": "mcq",
+    "difficulty": "medium",
+    "timeSec": 110,
+    "answer": 2,
+    "stem": "The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.\n\n> The demand that art be original is younger than most of the art we call great. For most of history the artist's task was to do again, and better, what had been done: the same subjects, the same forms, the same stories, each generation measured against the last by a shared standard. Originality became a virtue only when the shared standard collapsed, and it was, at first, a consolation: if there was no longer a right way to paint the Annunciation, one could at least paint it in a way no one had. What began as a consolation has become a requirement, and a requirement that, unlike the old one, cannot be taught.",
+    "options": [
+      "Great art was never original, because artists always copied the work of earlier generations.",
+      "Artists should return to shared standards instead of pursuing originality for its own sake.",
+      "The requirement of originality arose only after a shared artistic standard collapsed, began as a consolation for that loss, and has since hardened into an obligatory demand that, unlike the old standard, cannot be taught.",
+      "For most of history artists repeated the same subjects, forms and stories."
+    ],
+    "solution": "**Concept: para-summary (track the paragraph's chronology and its final contrast).**\n\nOne-line summary: originality is a late virtue; it arose when the shared standard collapsed; it began as consolation and became a requirement; unlike the old standard it cannot be taught.\n\n**Why (c) is right:** it has all four moves and the closing contrast (\"unlike the old one, cannot be taught\").\n\n**Why the others are wrong:**\n- (a) **Extreme / distorts.** \"Never\" and \"copied\" are not in the paragraph; \"do again, and better\" is not copying, and the paragraph makes no claim that great art lacked originality.\n- (b) **Adds.** A recommendation; the paragraph is historical and makes no prescription.\n- (d) **Drops.** The setup sentence only.\n\nCheck: a summary that ends before \"cannot be taught\" has missed the paragraph's point; only (c) reaches it.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT para-summary pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-pc-001",
+    "concepts": [
+      "para-completion",
+      "para-jumbles"
+    ],
+    "type": "mcq",
+    "difficulty": "medium",
+    "timeSec": 100,
+    "answer": 1,
+    "stem": "There is a sentence missing in the paragraph below (marked ______). Choose the option that best completes the paragraph.\n\n> A rule that is never broken is either perfectly obeyed or perfectly unnecessary, and the two are hard to tell apart from outside. The ban on walking on the grass may be keeping a hundred people on the path, or it may be addressed to a hundred people who had no intention of leaving it. The only way to find out is to remove the sign, which is precisely what the institution that put it up will never agree to do. ______",
+    "options": [
+      "Signs of this kind are therefore most common in institutions that take pride in their lawns.",
+      "Rules thus accumulate, each one safe from the only test that could retire it.",
+      "Grass, however, recovers quickly from being walked on.",
+      "Most people obey such rules out of habit rather than fear."
+    ],
+    "solution": "**Concept: para-completion (predict the function of the gap; test logic, tone, reference).**\n\nThe paragraph: an unbroken rule cannot be shown necessary; the only test (remove it) is one the institution will not run. Predicted ending: the consequence of that refusal.\n\n**Why (b) is right:** \"Rules thus accumulate\" draws the consequence; \"the only test that could retire it\" refers back exactly to \"the only way to find out is to remove the sign\". Logic, tone (dry, general) and reference all fit.\n\n**Why the others are wrong:**\n- (a) **Overshoots and shifts topic.** \"Therefore… institutions that take pride in their lawns\" does not follow from anything; the lawn was an example, not the subject.\n- (c) **New topic / reversal.** A fact about grass with \"however\" contrasting nothing in the argument.\n- (d) **Adds.** A claim about motives for obedience that the paragraph has not set up; it also ignores the point that obedience and unnecessity are indistinguishable.\n\nCheck: the paragraph has been building to \"will never agree to do\"; the right ending says what follows from that.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT para-completion pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-pc-002",
+    "concepts": [
+      "para-completion"
+    ],
+    "type": "mcq",
+    "difficulty": "medium",
+    "timeSec": 100,
+    "answer": 0,
+    "stem": "There is a sentence missing in the paragraph below (marked ______). Choose the option that best completes the paragraph.\n\n> Translators are often told that their work should be \"invisible\", so that the reader forgets she is reading a translation. ______ A reader who forgets that she is reading a translation has not been given the original; she has been given a counterfeit of the experience of reading it, and the forgery works only because the seams have been hidden.",
+    "options": [
+      "The advice sounds modest, but what it asks for is a kind of deception.",
+      "Invisibility is indeed the mark of the finest translations.",
+      "Many translators are also novelists in their own right.",
+      "This is why translators are so poorly paid."
+    ],
+    "solution": "**Concept: para-completion with a middle gap (the sentence after is the strongest constraint).**\n\nThe sentence after the gap speaks of \"a counterfeit\", \"forgery\" and hidden \"seams\": it treats invisibility as deception. The missing sentence must turn from the reported advice (sentence 1) to that charge.\n\n**Why (a) is right:** \"sounds modest, but… a kind of deception\" makes the turn and introduces the idea (\"deception\") that the next sentence elaborates as counterfeit and forgery.\n\n**Why the others are wrong:**\n- (b) **Reversal.** It endorses invisibility, which the following sentence condemns; there is no \"but\" afterwards to recover.\n- (c) **New topic.** Nothing before or after concerns novelists.\n- (d) **Dangling reference / new topic.** \"This is why\" has no cause before it that explains pay, and pay is picked up by nothing after.\n\nCheck: read 1-(a)-3 together: advice, its hidden demand, what that demand produces. Seamless.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT para-completion pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-pc-003",
+    "concepts": [
+      "para-completion",
+      "rc-tone-attitude"
+    ],
+    "type": "mcq",
+    "difficulty": "hard",
+    "timeSec": 110,
+    "answer": 1,
+    "stem": "There is a sentence missing in the paragraph below (marked ______). Choose the option that best completes the paragraph.\n\n> The committee's report runs to four hundred pages and recommends, after two years of hearings, that a further committee be appointed to consider its recommendations. Its members have been praised for their diligence, and the praise is deserved: they heard everyone, read everything and disagreed with no one. ______",
+    "options": [
+      "It is hard to imagine a more complete account of the subject.",
+      "Diligence, it turns out, is what a committee produces when it has been asked for a decision.",
+      "The next committee should be given a shorter deadline.",
+      "Committees are, in general, a poor way of making decisions."
+    ],
+    "solution": "**Concept: para-completion decided by tone.**\n\nTone: dry irony. \"Recommends… that a further committee be appointed\", \"disagreed with no one\" are praise with a sting. The ending must keep the irony and land the point: the committee produced diligence instead of a decision.\n\n**Why (b) is right:** it states the ironic conclusion in the same register, picking up \"diligence\" from the previous sentence and \"decision\" from the opening sentence's non-decision.\n\n**Why the others are wrong:**\n- (a) **Tone mismatch.** Straight praise; it reads the previous sentence without its irony.\n- (c) **Adds a recommendation** and drops the register; the paragraph is a judgement, not advice.\n- (d) **Overshoot.** A general claim about all committees; the paragraph is about this report's substitution of diligence for decision, and the generalisation flattens the wit.\n\nCheck: the closing sentence of an ironic paragraph should be its sharpest line, not its most sweeping one.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT para-completion pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "verbal-ability",
+    "id": "varc-pc-004",
+    "concepts": [
+      "para-completion"
+    ],
+    "type": "mcq",
+    "difficulty": "medium",
+    "timeSec": 100,
+    "answer": 2,
+    "stem": "There is a sentence missing in the paragraph below (marked ______). Choose the option that best completes the paragraph.\n\n> Economists distinguish between risk, where the probabilities are known, and uncertainty, where they are not, and the distinction is sound as far as it goes. The trouble is that almost nothing of importance falls on the risk side of the line. The probabilities we know are the probabilities of games: dice, cards, roulette. The probabilities we need are the probabilities of wars, inventions and marriages, and for these there is no urn from which the outcomes are drawn. ______",
+    "options": [
+      "Games of chance have been studied mathematically since the seventeenth century.",
+      "It follows that risk and uncertainty are really the same thing.",
+      "A theory built for the first kind of probability is therefore being asked to carry the second, and it should not surprise us when it breaks.",
+      "Marriages, however, are easier to predict than wars."
+    ],
+    "solution": "**Concept: para-completion (logic and reference: \"the first kind… the second\").**\n\nThe paragraph sets up two kinds of probability (games, which we know; important events, which we need) and says the second has no urn. Predicted ending: the consequence of applying a theory of the first kind to the second.\n\n**Why (c) is right:** \"the first kind\" and \"the second\" refer back to the two kinds just distinguished; \"therefore\" draws the consequence; \"it should not surprise us when it breaks\" closes the thought.\n\n**Why the others are wrong:**\n- (a) **New topic.** A historical fact that no sentence calls for.\n- (b) **Contradicts the paragraph.** The distinction \"is sound as far as it goes\"; the complaint is about where the line falls, not that there is no line.\n- (d) **New claim with a stray \"however\".** The paragraph grouped wars and marriages together as uncertain; contrasting them answers no question raised.\n\nCheck: an ending with a definite reference must find its antecedent; \"the first kind… the second\" finds the two kinds set out in the previous three sentences.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT para-completion pattern"
+    }
+  }
+]
