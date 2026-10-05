@@ -1,0 +1,461 @@
+[
+  {
+    "id": "qa-mod-001",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "permutations-combinations"
+    ],
+    "type": "mcq",
+    "stem": "The number of distinct arrangements of the letters of the word ASSASSIN is",
+    "options": [
+      "840",
+      "1680",
+      "420",
+      "2520"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** arrangements with repeated letters: $\\frac{n!}{p!\\,q!\\cdots}$.\n\nASSASSIN has 8 letters: A twice, S four times, I once, N once.\n\n$\\dfrac{8!}{2!\\,4!} = \\dfrac{40320}{2 \\times 24} = \\dfrac{40320}{48} = 840$.\n\n**Check:** $8!/4! = 1680$ (only S repeated), halved for the two A's $= 840$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT word-arrangement pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-mod-002",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "permutations-combinations"
+    ],
+    "type": "tita",
+    "stem": "A committee of 3 is to be chosen from 6 men and 4 women so that it includes at least one woman. In how many ways can this be done?",
+    "answer": "100",
+    "solution": "**Concept:** \"at least one\" = total minus none.\n\nTotal committees $= \\binom{10}{3} = 120$. All-men committees $= \\binom{6}{3} = 20$.\n\nWith at least one woman: $120 - 20 = 100$.\n\n**Check by cases:** $\\binom41\\binom62 + \\binom42\\binom61 + \\binom43 = 60 + 36 + 4 = 100$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT committee pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-mod-003",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "permutations-combinations"
+    ],
+    "type": "tita",
+    "stem": "How many 3-digit numbers are there for which the product of the digits is more than 2 but less than 7?",
+    "answer": "21",
+    "solution": "**Concept:** list digit multisets for each allowed product, then count arrangements (no digit can be 0, since the product is non-zero).\n\nProduct must be $3, 4, 5$ or $6$.\n\nProduct 3: $\\{1, 1, 3\\}$: $3$ arrangements.\n\nProduct 4: $\\{1, 1, 4\\}$: 3; $\\{1, 2, 2\\}$: 3. Total 6.\n\nProduct 5: $\\{1, 1, 5\\}$: 3.\n\nProduct 6: $\\{1, 1, 6\\}$: 3; $\\{1, 2, 3\\}$: $3! = 6$. Total 9.\n\nGrand total $= 3 + 6 + 3 + 9 = 21$.\n\n**Check:** no multiset is missed: for product 4, $\\{1,4,1\\}$ and $\\{2,2,1\\}$ are the only factorisations into three digits; for 6, $\\{1,1,6\\}$ and $\\{1,2,3\\}$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT",
+      "year": 2020
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-mod-004",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "permutations-combinations"
+    ],
+    "type": "tita",
+    "stem": "The number of all natural numbers up to 1000 with non-repeating digits is",
+    "answer": "738",
+    "solution": "**Concept:** count by number of digits using the multiplication principle.\n\n1-digit: $9$ (1 to 9).\n\n2-digit: first digit 9 choices (not 0), second digit 9 choices (anything but the first): $81$.\n\n3-digit: $9 \\times 9 \\times 8 = 648$.\n\n1000 has repeated zeros, so it is excluded.\n\nTotal $= 9 + 81 + 648 = 738$.\n\n**Check:** 2-digit numbers with a repeat are $11, 22, \\dots, 99$: $90 - 9 = 81$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT",
+      "year": 2023,
+      "slot": 1
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "qa-mod-005",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "permutations-combinations"
+    ],
+    "type": "mcq",
+    "stem": "The number of non-negative integer solutions of $x + y + z = 15$ with each of $x, y, z$ at most 7 is",
+    "options": [
+      "28",
+      "36",
+      "56",
+      "136"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** stars and bars with upper bounds via inclusion–exclusion.\n\nUnrestricted: $\\binom{15 + 2}{2} = \\binom{17}{2} = 136$.\n\nViolations with $x \\ge 8$: put $x' = x - 8$, then $x' + y + z = 7$: $\\binom{9}{2} = 36$. Same for $y$ and for $z$: $108$ in all. Two variables $\\ge 8$ would need a sum of at least $16 > 15$: impossible.\n\nAnswer $= 136 - 108 = 28$.\n\n**Check by complement substitution:** let $x' = 7 - x$ etc.; then $x' + y' + z' = 21 - 15 = 6$ with each $x' \\ge 0$ (and automatically $\\le 7$): $\\binom{8}{2} = 28$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT bounded stars-and-bars pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-mod-006",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "permutations-combinations"
+    ],
+    "type": "tita",
+    "stem": "In how many ways can 10 identical chocolates be distributed among 3 children so that each child gets at least 1 and no child gets more than 5?",
+    "answer": "18",
+    "solution": "**Concept:** shift to non-negative variables, then inclusion–exclusion on the cap.\n\nLet $y_i = x_i - 1 \\ge 0$ with $y_1 + y_2 + y_3 = 7$ and each $y_i \\le 4$.\n\nUnrestricted: $\\binom{9}{2} = 36$. With $y_1 \\ge 5$: $y_1' + y_2 + y_3 = 2$: $\\binom{4}{2} = 6$; times 3 variables $= 18$. Two variables $\\ge 5$ impossible (sum would be $\\ge 10 > 7$).\n\nAnswer $= 36 - 18 = 18$.\n\n**Check by listing** the partitions of 10 into three parts from 1 to 5: $(5,4,1)$: 6 orders; $(5,3,2)$: 6; $(4,4,2)$: 3; $(4,3,3)$: 3. Total $18$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT bounded distribution pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-mod-007",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "permutations-combinations"
+    ],
+    "type": "mcq",
+    "stem": "On a $6 \\times 6$ chessboard, how many rectangles (formed by the grid lines) are **not** squares?",
+    "options": [
+      "350",
+      "441",
+      "91",
+      "300"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** a rectangle is a choice of two horizontal and two vertical grid lines; count squares separately.\n\nThere are 7 horizontal and 7 vertical lines. Rectangles $= \\binom{7}{2}^2 = 21^2 = 441$.\n\nSquares: $k \\times k$ squares number $(7 - k)^2$, so $36 + 25 + 16 + 9 + 4 + 1 = 91$.\n\nNon-square rectangles $= 441 - 91 = 350$.\n\n**Check on a $2 \\times 2$ board:** rectangles $\\binom32^2 = 9$, squares $4 + 1 = 5$, non-squares $4$ (the four $1 \\times 2$ and $2 \\times 1$ pieces) ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT grid-counting pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-mod-008",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "probability"
+    ],
+    "type": "mcq",
+    "stem": "Two fair dice are rolled. The probability that the sum of the numbers shown is 9 is",
+    "options": [
+      "1/6",
+      "1/9",
+      "1/12",
+      "5/36"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** ordered outcomes, $36$ in total.\n\nSum 9: $(3,6), (4,5), (5,4), (6,3)$: 4 outcomes.\n\n$P = \\dfrac{4}{36} = \\dfrac19$.\n\n**Check:** sums 2 to 12 have counts $1,2,3,4,5,6,5,4,3,2,1$; sum 9 is the 8th entry, $4$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT dice pattern"
+    },
+    "timeSec": 45
+  },
+  {
+    "id": "qa-mod-009",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "probability"
+    ],
+    "type": "tita",
+    "stem": "A bag contains 5 red and 3 blue balls. Two balls are drawn at random without replacement. If the probability that both are red is $\\frac{p}{q}$ in lowest terms, find $p + q$.",
+    "answer": "19",
+    "solution": "**Concept:** favourable selections over total selections.\n\n$P = \\dfrac{\\binom52}{\\binom82} = \\dfrac{10}{28} = \\dfrac{5}{14}$.\n\n$p + q = 5 + 14 = 19$.\n\n**Check sequentially:** $\\frac58 \\times \\frac47 = \\frac{20}{56} = \\frac{5}{14}$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT without-replacement pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-mod-010",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "probability"
+    ],
+    "type": "mcq",
+    "stem": "A fair coin is tossed 6 times. The probability of getting at least 2 heads is",
+    "options": [
+      "57/64",
+      "15/16",
+      "7/8",
+      "11/16"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** complement of \"0 or 1 heads\".\n\nTotal outcomes $2^6 = 64$. $0$ heads: $1$ way; $1$ head: $\\binom61 = 6$ ways.\n\n$P(\\text{at least 2}) = 1 - \\dfrac{7}{64} = \\dfrac{57}{64}$.\n\n**Check:** $\\binom62 + \\binom63 + \\dots + \\binom66 = 15 + 20 + 15 + 6 + 1 = 57$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT binomial pattern"
+    },
+    "timeSec": 75
+  },
+  {
+    "id": "qa-mod-011",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "probability"
+    ],
+    "type": "mcq",
+    "stem": "Three students A, B and C attempt a problem independently with probabilities of solving it $\\frac12$, $\\frac13$ and $\\frac14$ respectively. The probability that the problem is solved by at least one of them is",
+    "options": [
+      "1/4",
+      "3/4",
+      "1/24",
+      "23/24"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** independent events; complement of \"nobody solves\".\n\n$P(\\text{none}) = \\dfrac12 \\times \\dfrac23 \\times \\dfrac34 = \\dfrac{6}{24} = \\dfrac14$.\n\n$P(\\text{at least one}) = 1 - \\dfrac14 = \\dfrac34$.\n\n**Check:** $\\frac{1}{24}$ is the probability all three solve it (a distractor); $\\frac{23}{24}$ would be the complement of that, not of \"none\" ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT independent-events pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-mod-012",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "probability",
+      "set-theory"
+    ],
+    "type": "tita",
+    "stem": "A number is chosen at random from the integers 1 to 20. If the probability that it is divisible by 2 or by 3 is $\\frac{p}{q}$ in lowest terms, find $p + q$.",
+    "answer": "33",
+    "solution": "**Concept:** addition rule with overlap (inclusion–exclusion).\n\nDivisible by 2: $10$ numbers. By 3: $6$ numbers ($3, 6, \\dots, 18$). By 6: $3$ numbers ($6, 12, 18$).\n\nBy 2 or 3: $10 + 6 - 3 = 13$. $P = \\dfrac{13}{20}$, already in lowest terms.\n\n$p + q = 33$.\n\n**Check by listing:** $2,3,4,6,8,9,10,12,14,15,16,18,20$ — thirteen numbers ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT divisibility-probability pattern"
+    },
+    "timeSec": 75
+  },
+  {
+    "id": "qa-mod-013",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "probability",
+      "progressions"
+    ],
+    "type": "mcq",
+    "stem": "A and B alternately roll a fair die, A going first. The first person to roll a number greater than 4 wins. The probability that A wins is",
+    "options": [
+      "3/5",
+      "1/2",
+      "2/3",
+      "5/9"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** alternating turns give a geometric series.\n\n$P(\\text{success on a roll}) = \\dfrac26 = \\dfrac13$, failure $\\dfrac23$.\n\nA wins on roll 1, or both fail and then A wins on roll 3, etc.:\n\n$P(A) = \\dfrac13 + \\left(\\dfrac23\\right)^2\\dfrac13 + \\left(\\dfrac23\\right)^4\\dfrac13 + \\dots = \\dfrac{1/3}{1 - 4/9} = \\dfrac{1/3}{5/9} = \\dfrac35$.\n\n**Check:** $P(B) = \\frac23 \\times P(A) = \\frac25$ (B needs A to fail first, then is in A's position); $\\frac35 + \\frac25 = 1$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT alternating-turns pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-mod-014",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "probability"
+    ],
+    "type": "tita",
+    "stem": "Two cards are drawn at random from a standard pack of 52 cards. If the probability that both are kings or both are red cards is $\\frac{p}{q}$ in lowest terms, find $p + q$.",
+    "answer": "276",
+    "solution": "**Concept:** addition rule; the events overlap (both red kings).\n\nTotal $\\binom{52}{2} = 1326$.\n\nBoth kings: $\\binom42 = 6$. Both red: $\\binom{26}{2} = 325$. Both red kings (overlap): $\\binom22 = 1$.\n\nFavourable $= 6 + 325 - 1 = 330$. $P = \\dfrac{330}{1326} = \\dfrac{55}{221}$ (divide by 6; $221 = 13 \\times 17$ shares no factor with 55).\n\n$p + q = 276$.\n\n**Check:** $\\frac{55}{221} \\approx 0.249$; both red alone is $\\frac{325}{1326} \\approx 0.245$, and adding the 5 king pairs that are not both red nudges it up slightly ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT cards-with-overlap pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-mod-015",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "set-theory"
+    ],
+    "type": "mcq",
+    "stem": "In a class of 60 students, 35 play cricket, 30 play football and 10 play neither. How many students play both?",
+    "options": [
+      "10",
+      "15",
+      "20",
+      "5"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** two-set formula $|A \\cup B| = |A| + |B| - |A \\cap B|$.\n\n$|A \\cup B| = 60 - 10 = 50$. So $50 = 35 + 30 - b \\Rightarrow b = 15$.\n\n**Check regions:** cricket only $20$, football only $15$, both $15$, neither $10$: total $60$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT two-set Venn pattern"
+    },
+    "timeSec": 45
+  },
+  {
+    "id": "qa-mod-016",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "set-theory"
+    ],
+    "type": "tita",
+    "stem": "In a survey of 120 people, 70 like tea, 65 like coffee and 15 like neither. How many people like exactly one of the two drinks?",
+    "answer": "75",
+    "solution": "**Concept:** exactly one $= |A| + |B| - 2|A \\cap B|$.\n\n$|T \\cup C| = 120 - 15 = 105$. Both $= 70 + 65 - 105 = 30$.\n\nExactly one $= 105 - 30 = 75$ (equivalently $70 + 65 - 60$).\n\n**Check regions:** tea only $40$, coffee only $35$, both $30$, neither $15$: $120$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT exactly-one pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-mod-017",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "set-theory"
+    ],
+    "type": "tita",
+    "stem": "Each of 74 students in a class studies at least one of the three subjects H, E and P. Ten students study all three subjects, while twenty study H and E, but not P. Every student who studies P also studies H or E or both. If the number of students studying H equals the number studying E, then the number of students studying H is",
+    "answer": "52",
+    "solution": "**Concept:** label the Venn regions and use the symmetry $|H| = |E|$.\n\nSince every P-student also studies H or E, the \"P only\" region is $0$.\n\nLet H-only $= h$, E-only $= e$, H and P only $= x$, E and P only $= y$. Given: all three $= 10$, H and E only $= 20$.\n\nTotal: $h + e + x + y + 20 + 10 = 74 \\Rightarrow h + e + x + y = 44$.\n\n$|H| = h + x + 20 + 10$ and $|E| = e + y + 20 + 10$. Equal, so $h + x = e + y = 22$.\n\n$|H| = 22 + 30 = 52$.\n\n**Check:** $|H| + |E| = 104$ counts the 30 students in both H and E twice, so $|H \\cup E| = 104 - 30 = 74$, i.e. everyone, consistent with the P-only region being 0 ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT",
+      "year": 2018
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-mod-018",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "set-theory"
+    ],
+    "type": "tita",
+    "stem": "In a class of 100 students, 73 like coffee, 80 like tea and 52 like lemonade. It may be possible that some students do not like any of these three drinks. Then the difference between the maximum and minimum possible number of students who like all three drinks is",
+    "answer": "47",
+    "solution": "**Concept:** bounds on a triple intersection when a \"none\" group is allowed.\n\n**Maximum:** all three is at most the smallest set, $52$; this is achievable (every lemonade-liker also likes coffee and tea: $52 \\le 73$ and $52 \\le 80$).\n\n**Minimum:** the people who do **not** like coffee, tea, lemonade number $27, 20, 48$ respectively, at most $95$ distinct people. So at least $100 - 95 = 5$ like all three; this is achievable by making the three \"dislike\" groups disjoint.\n\nDifference $= 52 - 5 = 47$.\n\n**Check the formula:** $73 + 80 + 52 - 2 \\times 100 = 5$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT",
+      "year": 2022
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-mod-019",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "set-theory"
+    ],
+    "type": "mcq",
+    "stem": "Of 200 students, 90 study Maths, 80 study Physics and 70 study Chemistry. 35 study Maths and Physics, 30 study Physics and Chemistry, 25 study Maths and Chemistry, and 12 study all three. How many students study exactly two of the three subjects?",
+    "options": [
+      "54",
+      "66",
+      "78",
+      "90"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** each pairwise intersection includes the triple region; exactly two $= \\sum(\\text{pairwise}) - 3(\\text{all three})$.\n\n$(35 + 30 + 25) - 3 \\times 12 = 90 - 36 = 54$.\n\n**Check by regions:** M&P only $23$, P&C only $18$, M&C only $13$: $23 + 18 + 13 = 54$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT exactly-two pattern"
+    },
+    "timeSec": 75
+  },
+  {
+    "id": "qa-mod-020",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "set-theory"
+    ],
+    "type": "tita",
+    "stem": "Each of 60 people likes at least one of three fruits: 38 like apples, 30 like bananas and 24 like cherries. If 14 people like exactly two of the fruits, how many like all three?",
+    "answer": "9",
+    "solution": "**Concept:** the identity $n_1 + 2n_2 + 3n_3 = |A| + |B| + |C|$ with $n_1 + n_2 + n_3 = N$.\n\n$n_1 + n_2 + n_3 = 60$ and $n_1 + 2n_2 + 3n_3 = 38 + 30 + 24 = 92$.\n\nSubtract: $n_2 + 2n_3 = 32$. With $n_2 = 14$: $2n_3 = 18 \\Rightarrow n_3 = 9$.\n\n**Check:** $n_1 = 60 - 14 - 9 = 37$; $37 + 28 + 27 = 92$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT exactly-two-to-all-three pattern"
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "qa-mod-021",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "set-theory"
+    ],
+    "type": "mcq",
+    "stem": "In a group of 100 people, each speaks at least one of Hindi, English and Tamil. 60 speak Hindi, 55 speak English and 45 speak Tamil. The maximum possible number of people who speak all three languages is",
+    "options": [
+      "30",
+      "45",
+      "40",
+      "20"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** with everyone in at least one set, $n_2 + 2n_3 = \\sum|A| - N$ caps the triple overlap.\n\n$n_1 + n_2 + n_3 = 100$ and $n_1 + 2n_2 + 3n_3 = 160$, so $n_2 + 2n_3 = 60$.\n\nSince $n_2 \\ge 0$, $n_3 \\le 30$. This beats the naive bound of $45$ (the smallest set), because if 45 spoke all three, only $15 + 10 = 25$ more people could be covered by Hindi and English, leaving at least 30 people speaking nothing.\n\n$n_3 = 30$ is achievable: Hindi only $30$, English only $25$, Tamil only $15$, all three $30$; totals $60, 55, 45$ and $100$ people ✓.\n\nMaximum $= 30$.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT 2022 max-overlap pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-mod-022",
+    "section": "QA",
+    "topic": "modern-math",
+    "concepts": [
+      "set-theory"
+    ],
+    "type": "tita",
+    "stem": "In a class of 80 students, 70 passed in Maths, 65 passed in Physics and 60 passed in Chemistry. What is the minimum possible number of students who passed in all three subjects?",
+    "answer": "35",
+    "solution": "**Concept:** minimum triple overlap via complements: $|A \\cap B \\cap C| \\ge |A| + |B| + |C| - 2N$.\n\nStudents who failed Maths: $10$; Physics: $15$; Chemistry: $20$. At most $10 + 15 + 20 = 45$ distinct students failed something.\n\nSo at least $80 - 45 = 35$ passed all three, achieved when the three failing groups are disjoint.\n\n**Check formula:** $70 + 65 + 60 - 160 = 35$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT minimum-overlap pattern"
+    },
+    "timeSec": 90
+  }
+]
