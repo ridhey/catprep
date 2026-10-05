@@ -16,7 +16,7 @@ export default function Layout() {
       <header className="sticky top-0 z-20 bg-white/90 backdrop-blur border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 h-14 flex items-center gap-6">
           <NavLink to="/" className="font-bold text-slate-900 tracking-tight text-lg">
-            🎯 CATprep
+            <span className="text-sky-600">CAT</span>alyst
           </NavLink>
           <nav className="flex gap-1 text-sm overflow-x-auto">
             {nav.map((n) => (

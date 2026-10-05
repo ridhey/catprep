@@ -1,4 +1,4 @@
-# CATprep
+# CATalyst
 
 A concept-by-concept practice platform for the CAT (Common Admission Test), in the spirit of GregMat for the GRE:
 every topic in the syllabus is taught from zero, and previous-year-style questions are drilled by the exact concept they test.

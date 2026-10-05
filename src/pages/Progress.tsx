@@ -32,7 +32,7 @@ export default function Progress() {
       const blob = new Blob([json], { type: 'application/json' });
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
-      a.download = `catprep-progress-${new Date().toISOString().slice(0, 10)}.json`;
+      a.download = `catalyst-progress-${new Date().toISOString().slice(0, 10)}.json`;
       a.click();
     } catch { /* some embedded viewers block downloads; the textarea below still works */ }
   };

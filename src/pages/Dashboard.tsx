@@ -30,7 +30,7 @@ export default function Dashboard() {
     <div className="space-y-8">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-slate-900">{state.settings.name ? `Hi ${state.settings.name}.` : 'CAT, concept by concept.'}</h1>
+          <h1 className="text-3xl font-bold text-slate-900">{state.settings.name ? `Hi ${state.settings.name}.` : 'CATalyst: CAT, concept by concept.'}</h1>
           <p className="text-slate-600 mt-1 max-w-2xl">
             Every CAT topic taught from zero, then drilled with previous-year-style questions tagged to the exact concept they test. Learn → drill → mock → fix weak spots.
           </p>
