@@ -109,7 +109,7 @@ Why this method: the first layer of a missing-data set is cheap; the last layer 
 
 You have narrowed an MCQ to two options and the clock shows 39:10.
 
-*Expected value of guessing:* $\tfrac12(+3) + \tfrac12(-1) = +1$. Positive, so guess. With three options live: $\tfrac13(3) + \tfrac23(-1) = +\tfrac13$, marginally positive but with higher variance; at 99th percentile, where a single wrong answer can cost a percentile, skip unless you have a lean. With four options live: $-\tfrac14 \cdot$ never.
+*Expected value of guessing:* $\tfrac12(+3) + \tfrac12(-1) = +1$. Positive, so guess. With three options live: $\tfrac13(3) + \tfrac23(-1) = +\tfrac13$, marginally positive but with higher variance; at 99th percentile, where a single wrong answer can cost a percentile, skip unless you have a lean. With four options live: $\tfrac14(3) + \tfrac34(-1) = 0$ — no gain, so never.
 
 Why this method: expected value is the only honest way to decide; "I have a feeling" is not a strategy.
 
