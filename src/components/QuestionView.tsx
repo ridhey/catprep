@@ -53,7 +53,6 @@ export default function QuestionView({ q, value, onChange, reveal, disabled }: P
               onChange={(e) => onChange(e.target.value === '' ? null : e.target.value)}
               onKeyDown={(e) => { if (e.key === 'Enter') (e.target as HTMLInputElement).blur(); }}
             />
-            {reveal && !correct && <span className="text-sm text-slate-600">Correct answer: <b>{answerLabel(q)}</b></span>}
           </div>
         </div>
       )}
