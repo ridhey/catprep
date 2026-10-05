@@ -9,6 +9,7 @@ import type { Attempt, Question, SessionResult } from '../types';
 import Markdown from '../components/Markdown';
 import QuestionView, { Verdict } from '../components/QuestionView';
 import { DifficultyChip, SourceChip, Empty } from '../components/ui';
+import ConfirmButton from '../components/ConfirmButton';
 
 export default function Session() {
   const [s, setS] = useState<ActiveSession | null>(() => loadSession());
@@ -146,10 +147,8 @@ export default function Session() {
           <div className={cx('font-mono text-lg tabular-nums px-3 py-1 rounded-lg', remaining !== null && remaining < 300 ? 'bg-rose-100 text-rose-700' : 'bg-slate-100 text-slate-800')}>
             {remaining !== null ? fmtTime(remaining) : fmtTime(s.elapsedSec)}
           </div>
-          <button className="btn btn-secondary" onClick={() => { if (confirm('Abandon this session? Checked answers are already saved.')) { clearSession(); navigate('/practice'); } }}>Quit</button>
-          <button className="btn btn-primary" onClick={() => { if (confirm(s.mode === 'mock' ? `Submit the test? ${answeredCount}/${qs.length} answered.` : 'Finish and see the summary?')) finish(); }}>
-            {s.mode === 'mock' ? 'Submit' : 'Finish'}
-          </button>
+          <ConfirmButton className="btn btn-secondary" label="Quit" confirmLabel="Quit, discard" onConfirm={() => { clearSession(); navigate('/practice'); }} />
+          <ConfirmButton className="btn btn-primary" label={s.mode === 'mock' ? 'Submit' : 'Finish'} confirmLabel={s.mode === 'mock' ? `Submit ${answeredCount}/${qs.length}` : 'Finish now'} onConfirm={finish} />
         </div>
       </div>
 

@@ -4,6 +4,7 @@ import { conceptById, path, questionById, sectionMeta, sections } from '../conte
 import { store, useStore } from '../store';
 import { conceptProgress } from '../lib/plan';
 import { PageHeader, ProgressBar } from '../components/ui';
+import ConfirmButton from '../components/ConfirmButton';
 import { cx, fmtTime } from '../lib/util';
 import type { SectionId } from '../types';
 
@@ -23,13 +24,19 @@ export default function Progress() {
   const perDay = days.map((d) => state.attempts.filter((a) => a.at >= d && a.at < d + 86400000).length);
   const maxDay = Math.max(1, ...perDay);
 
+  const [exported, setExported] = useState('');
   const exportFile = () => {
-    const blob = new Blob([store.exportJSON()], { type: 'application/json' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = `catprep-progress-${new Date().toISOString().slice(0, 10)}.json`;
-    a.click();
+    const json = store.exportJSON();
+    setExported(json);
+    try {
+      const blob = new Blob([json], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `catprep-progress-${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+    } catch { /* some embedded viewers block downloads; the textarea below still works */ }
   };
+  const [pasted, setPasted] = useState('');
   const importFile = async (f: File) => {
     try { store.importJSON(await f.text()); setMsg('Progress imported.'); } catch (e) { setMsg(`Import failed: ${(e as Error).message}`); }
   };
@@ -40,9 +47,21 @@ export default function Progress() {
         <button className="btn btn-secondary" onClick={exportFile}>Export</button>
         <button className="btn btn-secondary" onClick={() => fileRef.current?.click()}>Import</button>
         <input ref={fileRef} type="file" accept="application/json" className="hidden" onChange={(e) => e.target.files?.[0] && importFile(e.target.files[0])} />
-        <button className="btn btn-ghost text-rose-600" onClick={() => { if (confirm('Delete all progress in this browser? Export first if you want a backup.')) store.reset(); }}>Reset</button>
+        <ConfirmButton className="btn btn-ghost text-rose-600" label="Reset" confirmLabel="Delete all progress" onConfirm={() => store.reset()} />
       </>} />
       {msg && <div className="mb-4 text-sm text-slate-700">{msg}</div>}
+      {exported && (
+        <div className="card p-4 mb-6 text-sm">
+          <div className="flex items-center justify-between mb-2"><span className="font-medium">Your progress as JSON (if the download did not start, copy this and keep it somewhere safe)</span><button className="btn btn-ghost" onClick={() => setExported('')}>Close</button></div>
+          <textarea className="input w-full h-32 font-mono text-xs" readOnly value={exported} onFocus={(e) => e.target.select()} />
+          <button className="btn btn-secondary mt-2" onClick={() => { navigator.clipboard?.writeText(exported).then(() => setMsg('Copied to clipboard.')).catch(() => setMsg('Select the text and copy it manually.')); }}>Copy</button>
+        </div>
+      )}
+      <details className="mb-6 text-sm">
+        <summary className="cursor-pointer text-slate-600">Import by pasting JSON instead of choosing a file</summary>
+        <textarea className="input w-full h-24 font-mono text-xs mt-2" value={pasted} onChange={(e) => setPasted(e.target.value)} placeholder="Paste exported progress JSON here" />
+        <button className="btn btn-secondary mt-2" disabled={!pasted.trim()} onClick={() => { try { store.importJSON(pasted); setMsg('Progress imported.'); setPasted(''); } catch (e) { setMsg(`Import failed: ${(e as Error).message}`); } }}>Import pasted JSON</button>
+      </details>
 
       <div className="card p-5 mb-6">
         <div className="text-xs uppercase tracking-wide text-slate-500 mb-3">Questions per day, last 14 days</div>
