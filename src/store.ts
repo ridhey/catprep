@@ -77,7 +77,7 @@ export const store = {
   },
   importJSON(json: string) {
     const parsed = JSON.parse(json);
-    if (parsed?.version !== 1 || !Array.isArray(parsed.attempts)) throw new Error('Not a CATprep progress file');
+    if (parsed?.version !== 1 || !Array.isArray(parsed.attempts)) throw new Error('Not a CATalyst progress file');
     commit({ ...empty(), ...parsed });
   },
   exportJSON: () => JSON.stringify(state, null, 2),
