@@ -1,0 +1,150 @@
+{
+  "sections": [
+    {
+      "id": "QA",
+      "title": "Quantitative Aptitude",
+      "short": "Quant",
+      "blurb": "22 questions, 40 minutes. Arithmetic alone is roughly a third of the paper, so the path starts there and builds up through numbers, algebra, geometry and modern math.",
+      "topics": [
+        {
+          "id": "arithmetic",
+          "title": "Arithmetic",
+          "blurb": "The highest-weightage area in CAT (typically 7–9 of 22 questions). Everything here is built on one skill: translating a word problem into a ratio.",
+          "concepts": [
+            { "id": "percentages", "title": "Percentages", "blurb": "Percent as a fraction, successive changes, the multiplying-factor method, percentage points vs percent.", "minutes": 40 },
+            { "id": "ratio-proportion", "title": "Ratio & Proportion", "blurb": "Scaling ratios, combining ratios, variation (direct, inverse, joint) and partnership problems.", "minutes": 40, "prereqs": ["percentages"] },
+            { "id": "averages", "title": "Averages", "blurb": "Average as a balance point, the deviation method, weighted averages, and what happens when items join or leave a group.", "minutes": 35, "prereqs": ["ratio-proportion"] },
+            { "id": "alligation-mixtures", "title": "Alligation & Mixtures", "blurb": "The weighted-average rule turned into a one-line tool; replacement problems and mixing two mixtures.", "minutes": 45, "prereqs": ["averages"] },
+            { "id": "profit-loss-discount", "title": "Profit, Loss & Discount", "blurb": "Cost, mark-up, discount and profit as a chain of multiplying factors; faulty weights and successive discounts.", "minutes": 40, "prereqs": ["percentages"] },
+            { "id": "interest", "title": "Simple & Compound Interest", "blurb": "SI as linear growth, CI as repeated percentage growth, the SI–CI difference shortcut, and instalments.", "minutes": 35, "prereqs": ["percentages"] },
+            { "id": "time-speed-distance", "title": "Time, Speed & Distance", "blurb": "Proportionality is the whole chapter: relative speed, trains, boats and streams, circular tracks and races.", "minutes": 60, "prereqs": ["ratio-proportion"] },
+            { "id": "time-work", "title": "Time & Work", "blurb": "Work as units via LCM, efficiency, pipes and cisterns, and people leaving or joining mid-way.", "minutes": 45, "prereqs": ["ratio-proportion"] }
+          ]
+        },
+        {
+          "id": "number-systems",
+          "title": "Number Systems",
+          "blurb": "Two or three questions a year, but the ideas (divisibility, remainders, factor counting) quietly power many algebra and counting questions.",
+          "concepts": [
+            { "id": "divisibility-remainders", "title": "Divisibility & Remainders", "blurb": "Divisibility rules, remainder arithmetic, negative remainders, and cyclicity of remainders.", "minutes": 50 },
+            { "id": "factors-multiples", "title": "Factors, HCF & LCM", "blurb": "Prime factorisation as the master key: counting factors, sum of factors, HCF/LCM and their relation.", "minutes": 45, "prereqs": ["divisibility-remainders"] },
+            { "id": "units-digit-cyclicity", "title": "Last Digits & Cyclicity", "blurb": "Units digit of powers, last two digits, and the pattern-spotting mindset behind them.", "minutes": 25, "prereqs": ["divisibility-remainders"] },
+            { "id": "factorials-trailing-zeros", "title": "Factorials & Trailing Zeros", "blurb": "Highest power of a prime in n!, trailing zeros, and factorial-based digit questions.", "minutes": 25, "prereqs": ["factors-multiples"] },
+            { "id": "integer-solutions", "title": "Integer Solutions of Equations", "blurb": "Counting integer solutions of linear equations with bounds; a favourite CAT TITA format.", "minutes": 40, "prereqs": ["divisibility-remainders"] }
+          ]
+        },
+        {
+          "id": "algebra",
+          "title": "Algebra",
+          "blurb": "Five to seven questions a year. CAT algebra is not about long manipulation but about spotting the structure (symmetry, substitution, bounds).",
+          "concepts": [
+            { "id": "linear-equations-inequalities", "title": "Linear Equations & Inequalities", "blurb": "Setting up and solving systems, inequality rules, and integer constraints that turn inequalities into counting.", "minutes": 40 },
+            { "id": "quadratics", "title": "Quadratic Equations", "blurb": "Roots, discriminant, sum and product of roots, forming equations from roots, and nature of roots.", "minutes": 45, "prereqs": ["linear-equations-inequalities"] },
+            { "id": "polynomials-identities", "title": "Algebraic Identities & Substitution", "blurb": "The identities CAT actually uses, symmetric expressions, and the 'let t = …' substitution reflex.", "minutes": 35, "prereqs": ["quadratics"] },
+            { "id": "modulus-functions", "title": "Modulus, Functions & Graphs", "blurb": "Absolute value as distance, piecewise reasoning, function composition, and reading graphs.", "minutes": 45, "prereqs": ["linear-equations-inequalities"] },
+            { "id": "logarithms", "title": "Logarithms", "blurb": "The three log rules, change of base, and log equations that are really exponent equations.", "minutes": 35, "prereqs": ["polynomials-identities"] },
+            { "id": "progressions", "title": "Progressions (AP, GP, HP)", "blurb": "nth term and sum formulas, the middle-term trick, and infinite GP.", "minutes": 45, "prereqs": ["linear-equations-inequalities"] },
+            { "id": "maxima-minima", "title": "Maxima & Minima (AM–GM and friends)", "blurb": "AM ≥ GM, completing the square, and bounding expressions without calculus.", "minutes": 35, "prereqs": ["quadratics", "progressions"] }
+          ]
+        },
+        {
+          "id": "geometry",
+          "title": "Geometry & Mensuration",
+          "blurb": "Four to six questions a year. Triangles and circles carry most of the weight; mensuration is formula recall plus ratio sense.",
+          "concepts": [
+            { "id": "lines-angles-triangles", "title": "Lines, Angles & Triangle Basics", "blurb": "Angle facts, triangle inequality, special triangles (30-60-90, 45-45-90), and area formulas.", "minutes": 40 },
+            { "id": "similarity-congruence", "title": "Similar Triangles", "blurb": "Similarity criteria, ratio of areas, basic proportionality theorem, and the right-triangle altitude relations.", "minutes": 45, "prereqs": ["lines-angles-triangles"] },
+            { "id": "circles", "title": "Circles", "blurb": "Chords, tangents, inscribed angles, cyclic quadrilaterals, and the chord–tangent power of a point.", "minutes": 50, "prereqs": ["lines-angles-triangles"] },
+            { "id": "quadrilaterals-polygons", "title": "Quadrilaterals & Polygons", "blurb": "Parallelograms, trapezia, regular polygons, interior angles and area relations.", "minutes": 35, "prereqs": ["lines-angles-triangles"] },
+            { "id": "coordinate-geometry", "title": "Coordinate Geometry", "blurb": "Distance, section formula, lines (slope, intercepts), area of triangle, and circles in the plane.", "minutes": 40, "prereqs": ["linear-equations-inequalities"] },
+            { "id": "mensuration", "title": "Mensuration (2D & 3D)", "blurb": "Areas and volumes of standard solids, cones and frustums, and ratio shortcuts for scaled shapes.", "minutes": 40, "prereqs": ["circles", "quadrilaterals-polygons"] }
+          ]
+        },
+        {
+          "id": "modern-math",
+          "title": "Modern Math",
+          "blurb": "Two to four questions a year, usually of medium difficulty: counting, probability and Venn diagrams.",
+          "concepts": [
+            { "id": "permutations-combinations", "title": "Permutations & Combinations", "blurb": "Counting principle, arrangements vs selections, grouping with constraints, and distribution (stars and bars).", "minutes": 60, "prereqs": ["factorials-trailing-zeros"] },
+            { "id": "probability", "title": "Probability", "blurb": "Probability as favourable/total, complementary counting, and independent vs dependent events.", "minutes": 35, "prereqs": ["permutations-combinations"] },
+            { "id": "set-theory", "title": "Set Theory & Venn Diagrams", "blurb": "Two- and three-set formulas, max/min of overlaps, and the 'at least / exactly' bookkeeping.", "minutes": 40, "prereqs": ["linear-equations-inequalities"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VARC",
+      "title": "Verbal Ability & Reading Comprehension",
+      "short": "VARC",
+      "blurb": "24 questions, 40 minutes. Four RC passages (16 questions) plus 8 verbal ability questions. Accuracy, not speed, separates 95 from 99 percentile here.",
+      "topics": [
+        {
+          "id": "reading-comprehension",
+          "title": "Reading Comprehension",
+          "blurb": "Two-thirds of the section. Learn to read for structure first, then attack each question type with a specific method.",
+          "concepts": [
+            { "id": "rc-active-reading", "title": "Reading a CAT Passage", "blurb": "How to read for structure: paragraph roles, author's position, and building a 30-second mental map.", "minutes": 45 },
+            { "id": "rc-main-idea", "title": "Main Idea & Primary Purpose", "blurb": "Distinguishing the central claim from supporting detail; scope traps (too broad, too narrow).", "minutes": 35, "prereqs": ["rc-active-reading"] },
+            { "id": "rc-inference", "title": "Inference Questions", "blurb": "What the passage must imply vs what merely sounds plausible; the 'one step only' rule.", "minutes": 45, "prereqs": ["rc-main-idea"] },
+            { "id": "rc-tone-attitude", "title": "Tone, Attitude & Author's Stance", "blurb": "Reading tone from word choice, hedging language, and the difference between describing and endorsing.", "minutes": 30, "prereqs": ["rc-main-idea"] },
+            { "id": "rc-detail-vocab", "title": "Specific Detail & Vocabulary in Context", "blurb": "Locating and paraphrasing; word-meaning questions where the dictionary meaning is the trap.", "minutes": 25, "prereqs": ["rc-active-reading"] },
+            { "id": "rc-application-critical", "title": "Application, Strengthen & Weaken", "blurb": "Extending the author's logic to new situations; which option would the author agree with.", "minutes": 40, "prereqs": ["rc-inference"] },
+            { "id": "rc-elimination", "title": "Elimination & Option Analysis", "blurb": "The four ways a wrong option is wrong: extreme, out of scope, distortion, opposite.", "minutes": 30, "prereqs": ["rc-inference", "rc-tone-attitude"] }
+          ]
+        },
+        {
+          "id": "verbal-ability",
+          "title": "Verbal Ability",
+          "blurb": "Eight questions, mostly TITA (no negative marking) — para-jumbles, odd sentence out, and the MCQ para-summary.",
+          "concepts": [
+            { "id": "para-jumbles", "title": "Para-jumbles", "blurb": "Finding the opening sentence, mandatory pairs via pronouns/connectors, and chronology.", "minutes": 45, "prereqs": ["rc-active-reading"] },
+            { "id": "odd-sentence-out", "title": "Odd Sentence Out", "blurb": "Spotting the sentence that breaks the paragraph's thread; theme vs detail mismatch.", "minutes": 30, "prereqs": ["para-jumbles"] },
+            { "id": "para-summary", "title": "Para-summary", "blurb": "Compressing a paragraph to its claim; rejecting summaries that add, drop or distort.", "minutes": 35, "prereqs": ["rc-main-idea"] },
+            { "id": "para-completion", "title": "Para-completion", "blurb": "Choosing the sentence that fits a gap by logic, tone and reference.", "minutes": 25, "prereqs": ["para-jumbles"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DILR",
+      "title": "Data Interpretation & Logical Reasoning",
+      "short": "DILR",
+      "blurb": "20 questions in 4 sets, 40 minutes. The section that decides calls: pick 2–3 doable sets, nail them fully, and leave the rest.",
+      "topics": [
+        {
+          "id": "dilr-foundations",
+          "title": "Foundations & Set Selection",
+          "blurb": "Before any set type: how to scan all four sets in 5 minutes, choose, and manage time.",
+          "concepts": [
+            { "id": "dilr-approach", "title": "Set Selection & Time Strategy", "blurb": "Judging a set by its data density and question types; the 'attempt 2 fully' plan.", "minutes": 30 },
+            { "id": "dilr-speed-math", "title": "Speed Calculation for DI", "blurb": "Approximation, percentage change by eye, ratio comparison, and when exactness matters.", "minutes": 40, "prereqs": ["percentages"] }
+          ]
+        },
+        {
+          "id": "data-interpretation",
+          "title": "Data Interpretation",
+          "blurb": "Tables, charts and reasoning-heavy DI. Modern CAT DI is less about calculation and more about deducing missing data.",
+          "concepts": [
+            { "id": "di-tables-charts", "title": "Tables, Bar & Line Charts", "blurb": "Reading data fast, computing growth and share, and spotting what the question really asks.", "minutes": 40, "prereqs": ["dilr-speed-math"] },
+            { "id": "di-missing-data", "title": "Reasoning-based DI (Missing Data)", "blurb": "Using totals, ranks and constraints to fill a partially given table.", "minutes": 50, "prereqs": ["di-tables-charts"] },
+            { "id": "di-venn-sets", "title": "Venn Diagram based DI", "blurb": "Three-set Venns with max/min, and set data presented as tables.", "minutes": 40, "prereqs": ["set-theory"] },
+            { "id": "di-games-tournaments", "title": "Games & Tournaments", "blurb": "Round-robin and knockout structures, points tables, and deducing results from standings.", "minutes": 50, "prereqs": ["di-missing-data"] }
+          ]
+        },
+        {
+          "id": "logical-reasoning",
+          "title": "Logical Reasoning",
+          "blurb": "Arrangements, distributions and puzzles. The skill is representing constraints visually and reasoning from the most restrictive one first.",
+          "concepts": [
+            { "id": "lr-linear-circular", "title": "Linear & Circular Arrangements", "blurb": "Seating and ordering with constraints; using the most restrictive clue first.", "minutes": 45, "prereqs": ["dilr-approach"] },
+            { "id": "lr-grouping-distribution", "title": "Grouping & Distribution", "blurb": "Assigning people to teams, items to boxes, with counts and exclusions.", "minutes": 45, "prereqs": ["lr-linear-circular"] },
+            { "id": "lr-scheduling", "title": "Scheduling & Sequencing", "blurb": "Timetables, days-and-slots grids, and ordering events with before/after clues.", "minutes": 40, "prereqs": ["lr-linear-circular"] },
+            { "id": "lr-selection", "title": "Selection with Constraints", "blurb": "Choosing a subset under if-then rules; case trees and contradiction.", "minutes": 35, "prereqs": ["lr-grouping-distribution"] },
+            { "id": "lr-routes-networks", "title": "Routes & Networks", "blurb": "Paths, flows and shortest routes in a diagram; counting paths with restrictions.", "minutes": 35, "prereqs": ["lr-grouping-distribution"] },
+            { "id": "lr-quant-puzzles", "title": "Quant-based Puzzles", "blurb": "LR sets where the constraints are numerical: sums, ranks, averages in a grid.", "minutes": 45, "prereqs": ["lr-grouping-distribution", "di-missing-data"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

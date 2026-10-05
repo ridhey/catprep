@@ -1,0 +1,1004 @@
+[
+  {
+    "id": "qa-alg-001",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "linear-equations-inequalities"
+    ],
+    "type": "tita",
+    "stem": "A shop sells pens at Rs 7 each and pencils at Rs 3 each. Ravi buys 20 items in all and pays Rs 92. How many pens did he buy?",
+    "answer": "8",
+    "solution": "**Concept:** one linear equation in one unknown.\n\nLet the number of pens be $p$; then pencils $= 20 - p$.\n\n$7p + 3(20 - p) = 92 \\Rightarrow 7p + 60 - 3p = 92 \\Rightarrow 4p = 32 \\Rightarrow p = 8$.\n\n**Check:** $8$ pens cost Rs 56, $12$ pencils cost Rs 36; $56 + 36 = 92$. ✓",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT arithmetic word-problem pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-alg-002",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "linear-equations-inequalities"
+    ],
+    "type": "mcq",
+    "stem": "The number of integers $x$ satisfying $3x - 7 < 2x + 5 \\le 4x + 1$ is",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** chain inequality, solve each part and intersect.\n\nLeft part: $3x - 7 < 2x + 5 \\Rightarrow x < 12$.\n\nRight part: $2x + 5 \\le 4x + 1 \\Rightarrow 4 \\le 2x \\Rightarrow x \\ge 2$.\n\nSo $2 \\le x \\le 11$, which contains $11 - 2 + 1 = 10$ integers.\n\n**Check the ends:** $x = 2$: $-1 < 9 \\le 9$ ✓. $x = 12$: $29 < 29$ fails ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT inequality counting pattern"
+    },
+    "timeSec": 75
+  },
+  {
+    "id": "qa-alg-003",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "linear-equations-inequalities"
+    ],
+    "type": "mcq",
+    "stem": "The sum of the present ages of A, B and C is 75 years. Five years ago, A was twice as old as B was then. Five years from now, C's age will equal the sum of the present ages of A and B. What is C's present age (in years)?",
+    "options": [
+      "25",
+      "30",
+      "35",
+      "40"
+    ],
+    "answer": 2,
+    "solution": "**Concept:** translating age statements into linear equations.\n\nLet present ages be $a, b, c$ with $a + b + c = 75$.\n\n\"Five years ago A was twice B\": $a - 5 = 2(b - 5) \\Rightarrow a = 2b - 5$.\n\n\"Five years hence C equals $a + b$ now\": $c + 5 = a + b \\Rightarrow c = a + b - 5$.\n\nSubstitute into the total: $(a + b) + (a + b - 5) = 75 \\Rightarrow a + b = 40 \\Rightarrow c = 35$.\n\n(For completeness: $2b - 5 + b = 40 \\Rightarrow b = 15,\\ a = 25$.)\n\n**Check:** five years ago A was 20, B was 10 ✓. In five years C is 40 $= 25 + 15$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT ages word-problem pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-alg-004",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "linear-equations-inequalities",
+      "integer-solutions"
+    ],
+    "type": "tita",
+    "stem": "A café sells ice creams at Rs 12 each and cold coffees at Rs 25 each. A group spent exactly Rs 611 on these items and bought at least one of each. What is the maximum number of items the group could have bought?",
+    "answer": "39",
+    "solution": "**Concept:** positive-integer solutions of a linear equation via the mod trick.\n\nLet $a$ ice creams and $b$ coffees: $12a + 25b = 611$.\n\nMod 12: $25b \\equiv b \\pmod{12}$ and $611 = 12 \\times 51 - 1 \\equiv 11$, so $b \\equiv 11 \\pmod{12}$.\n\n$b = 11$: $12a = 611 - 275 = 336 \\Rightarrow a = 28$. Items $= 39$.\n\n$b = 23$: $12a = 611 - 575 = 36 \\Rightarrow a = 3$. Items $= 26$.\n\n$b = 35$: $25 \\times 35 = 875 > 611$, impossible.\n\nMaximum number of items $= 39$.\n\n**Check:** $12 \\times 28 + 25 \\times 11 = 336 + 275 = 611$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT 2021 integer-solutions word-problem pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-alg-005",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "linear-equations-inequalities"
+    ],
+    "type": "mcq",
+    "stem": "For which value(s) of $k$ does the system $kx + 3y = 6$ and $4x + (k+1)y = 8$ have **no** solution?",
+    "options": [
+      "3",
+      "-4",
+      "3 or -4",
+      "No such k exists"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** consistency of a $2 \\times 2$ linear system (parallel vs coincident lines).\n\nNo unique solution when $\\dfrac{k}{4} = \\dfrac{3}{k+1}$, i.e. $k(k+1) = 12 \\Rightarrow k^2 + k - 12 = 0 \\Rightarrow k = 3$ or $k = -4$.\n\nNow separate \"no solution\" from \"infinitely many\":\n\n$k = 3$: $3x + 3y = 6$ and $4x + 4y = 8$ are both $x + y = 2$: the same line, infinitely many solutions.\n\n$k = -4$: $-4x + 3y = 6$ and $4x - 3y = 8$. Adding gives $0 = 14$: inconsistent, no solution.\n\nSo only $k = -4$.\n\n**Check:** the ratio test $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\ne \\frac{c_1}{c_2}$ at $k = -4$: $-1 = -1 \\ne \\frac{6}{8}$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT parameter-in-system pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-alg-006",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "linear-equations-inequalities",
+      "integer-solutions"
+    ],
+    "type": "tita",
+    "stem": "A purse contains 50 coins of denominations Re 1, Rs 2 and Rs 5, at least one of each, with a total value of Rs 140. The number of Rs 2 coins is more than the number of Rs 5 coins. In how many different ways can the purse be composed?",
+    "answer": "4",
+    "solution": "**Concept:** two linear equations, three integer unknowns, then a bound.\n\nLet $x, y, z$ be the numbers of Re 1, Rs 2, Rs 5 coins.\n\n$x + y + z = 50$ and $x + 2y + 5z = 140$. Subtract: $y + 4z = 90 \\Rightarrow y = 90 - 4z$.\n\nThen $x = 50 - y - z = 50 - 90 + 4z - z = 3z - 40$.\n\nConstraints: $x \\ge 1 \\Rightarrow z \\ge 14$ (since $3 \\times 13 = 39 < 41$). $y > z \\Rightarrow 90 - 4z > z \\Rightarrow z < 18$.\n\nSo $z \\in \\{14, 15, 16, 17\\}$: **4 ways**.\n\n**Check** $z = 14$: $y = 34$, $x = 2$; value $2 + 68 + 70 = 140$ ✓. $z = 17$: $y = 22$, $x = 11$; $11 + 44 + 85 = 140$ ✓ and $22 > 17$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT coins/integer-constraint pattern"
+    },
+    "timeSec": 180
+  },
+  {
+    "id": "qa-alg-007",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "quadratics"
+    ],
+    "type": "tita",
+    "stem": "If $\\alpha$ and $\\beta$ are the roots of $x^2 - 5x + 3 = 0$, find the value of $\\alpha^2 + \\beta^2$.",
+    "answer": "19",
+    "solution": "**Concept:** sum and product of roots.\n\n$\\alpha + \\beta = 5$, $\\alpha\\beta = 3$.\n\n$\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta = 25 - 6 = 19$.\n\n**Check:** roots are $\\frac{5 \\pm \\sqrt{13}}{2}$; squares sum to $\\frac{2(25 + 13)}{4} = 19$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT symmetric-roots pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-alg-008",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "quadratics"
+    ],
+    "type": "mcq",
+    "stem": "The least positive integer $k$ for which the equation $x^2 + kx + 16 = 0$ has real roots is",
+    "options": [
+      "4",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": 2,
+    "solution": "**Concept:** discriminant.\n\nReal roots need $D = k^2 - 64 \\ge 0 \\Rightarrow k \\ge 8$ (for positive $k$).\n\nLeast positive integer: $k = 8$.\n\n**Check:** $k = 8$ gives $(x + 4)^2 = 0$, a (repeated) real root ✓; $k = 7$ gives $D = -15 < 0$ ✗.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT nature-of-roots pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-alg-009",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "quadratics"
+    ],
+    "type": "mcq",
+    "stem": "The quadratic equation $x^2 + bx + c = 0$ has two roots $4a$ and $3a$, where $a$ is an integer. Which of the following is a possible value of $b^2 + c$?",
+    "options": [
+      "3721",
+      "361",
+      "427",
+      "549"
+    ],
+    "answer": 3,
+    "solution": "**Concept:** sum and product of roots in terms of a parameter.\n\nSum: $7a = -b \\Rightarrow b = -7a$. Product: $12a^2 = c$.\n\n$b^2 + c = 49a^2 + 12a^2 = 61a^2$, so the answer must be $61$ times a perfect square.\n\n$3721 = 61 \\times 61$ (61 is not a square). $361 = 19^2$, not divisible by 61. $427 = 61 \\times 7$ (7 not a square). $549 = 61 \\times 9 = 61 \\times 3^2$ ✓.\n\n**Check:** $a = 3$: roots $12, 9$; $b = -21, c = 108$; $441 + 108 = 549$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT",
+      "year": 2019,
+      "slot": 2
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-alg-010",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "quadratics"
+    ],
+    "type": "mcq",
+    "stem": "Both roots of $x^2 - 2(k-1)x + (2k+1) = 0$ are positive. The least integer value of $k$ is",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2,
+    "solution": "**Concept:** conditions for both roots positive: $D \\ge 0$, sum $> 0$, product $> 0$.\n\n$D = 4(k-1)^2 - 4(2k+1) \\ge 0 \\Rightarrow k^2 - 2k + 1 - 2k - 1 \\ge 0 \\Rightarrow k(k - 4) \\ge 0 \\Rightarrow k \\le 0$ or $k \\ge 4$.\n\nSum $= 2(k-1) > 0 \\Rightarrow k > 1$. Product $= 2k + 1 > 0 \\Rightarrow k > -\\tfrac12$.\n\nAll three: $k \\ge 4$. Least integer $k = 4$.\n\n**Check:** $k = 4$: $x^2 - 6x + 9 = (x-3)^2$, root $3 > 0$ ✓. $k = 3$: $x^2 - 4x + 7$, $D < 0$ ✗.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT sign-of-roots pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-alg-011",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "quadratics"
+    ],
+    "type": "tita",
+    "stem": "For how many integer values of $m$ does the equation $x^2 - mx + 36 = 0$ have both roots as integers?",
+    "answer": "10",
+    "solution": "**Concept:** integer roots of a monic quadratic are factor pairs of the constant term.\n\nRoots $r, s$ with $rs = 36$ and $r + s = m$. Both roots have the same sign.\n\nPositive pairs: $(1,36), (2,18), (3,12), (4,9), (6,6)$ with sums $37, 20, 15, 13, 12$.\n\nNegative pairs give sums $-37, -20, -15, -13, -12$.\n\nTotal $10$ values of $m$.\n\n**Check:** all ten sums are distinct, and e.g. $m = 13$: $x^2 - 13x + 36 = (x-4)(x-9)$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT integer-roots counting pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-alg-012",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "quadratics",
+      "polynomials-identities"
+    ],
+    "type": "mcq",
+    "stem": "The number of distinct real roots of the equation $(x^2 + 3x + 2)(x^2 + 3x - 4) = 40$ is",
+    "options": [
+      "0",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** substitution for a repeated block.\n\nLet $t = x^2 + 3x$. Then $(t + 2)(t - 4) = 40 \\Rightarrow t^2 - 2t - 48 = 0 \\Rightarrow (t - 8)(t + 6) = 0$.\n\n$t = 8$: $x^2 + 3x - 8 = 0$, $D = 9 + 32 = 41 > 0$: two real roots.\n\n$t = -6$: $x^2 + 3x + 6 = 0$, $D = 9 - 24 < 0$: no real roots.\n\nTotal: **2** distinct real roots.\n\n**Check:** $x^2 + 3x$ has minimum $-\\tfrac94$ at $x = -1.5$, so $t = -6$ is unreachable ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT 2020 quartic-by-substitution pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-alg-013",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "quadratics",
+      "polynomials-identities"
+    ],
+    "type": "tita",
+    "stem": "If $\\alpha$ and $\\beta$ are the roots of $x^2 - x - 1 = 0$, find the value of $\\alpha^5 + \\beta^5$.",
+    "answer": "11",
+    "solution": "**Concept:** power sums of roots via the recurrence from the equation.\n\nLet $s_n = \\alpha^n + \\beta^n$. Since each root satisfies $x^2 = x + 1$, multiplying by $x^{n-2}$ gives $x^n = x^{n-1} + x^{n-2}$, so $s_n = s_{n-1} + s_{n-2}$.\n\n$s_0 = 2$, $s_1 = \\alpha + \\beta = 1$.\n\n$s_2 = 3,\\ s_3 = 4,\\ s_4 = 7,\\ s_5 = 11$.\n\n**Check:** $\\alpha \\approx 1.618$, $\\alpha^5 \\approx 11.09$; $\\beta \\approx -0.618$, $\\beta^5 \\approx -0.09$; sum $\\approx 11.0$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT power-sum-of-roots pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-alg-014",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "polynomials-identities"
+    ],
+    "type": "tita",
+    "stem": "If $x + \\dfrac{1}{x} = 4$, find the value of $x^3 + \\dfrac{1}{x^3}$.",
+    "answer": "52",
+    "solution": "**Concept:** the $x + \\frac1x$ ladder.\n\n$x^3 + \\dfrac{1}{x^3} = \\left(x + \\dfrac1x\\right)^3 - 3\\left(x + \\dfrac1x\\right) = 64 - 12 = 52$.\n\n**Check:** $x^2 + \\frac{1}{x^2} = 16 - 2 = 14$, and $(x + \\frac1x)(x^2 + \\frac1{x^2}) = x^3 + \\frac1{x^3} + x + \\frac1x$, so $4 \\times 14 = 56 = 52 + 4$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT identity pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-alg-015",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "polynomials-identities"
+    ],
+    "type": "mcq",
+    "stem": "If $a + b = 7$ and $ab = 10$, then $a^3 + b^3$ equals",
+    "options": [
+      "133",
+      "143",
+      "153",
+      "163"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** $a^3 + b^3 = (a+b)^3 - 3ab(a+b)$.\n\n$a^3 + b^3 = 343 - 3 \\times 10 \\times 7 = 343 - 210 = 133$.\n\n**Check:** $a, b$ are $2$ and $5$: $8 + 125 = 133$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT identity pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-alg-016",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "polynomials-identities",
+      "quadratics"
+    ],
+    "type": "mcq",
+    "stem": "If $x + 1 = x^2$ and $x > 0$, then $2x^4$ is",
+    "options": [
+      "$6 + 4\\sqrt5$",
+      "$3 + 5\\sqrt5$",
+      "$5 + 3\\sqrt5$",
+      "$7 + 3\\sqrt5$"
+    ],
+    "answer": 3,
+    "solution": "**Concept:** reduce powers using the given relation, then substitute the root.\n\n$x^2 = x + 1$, so $x^4 = (x + 1)^2 = x^2 + 2x + 1 = (x + 1) + 2x + 1 = 3x + 2$.\n\n$2x^4 = 6x + 4$. The positive root of $x^2 - x - 1 = 0$ is $x = \\dfrac{1 + \\sqrt5}{2}$.\n\n$6x + 4 = 3 + 3\\sqrt5 + 4 = 7 + 3\\sqrt5$.\n\n**Check:** $x \\approx 1.618$, $x^4 \\approx 6.854$, $2x^4 \\approx 13.71$; $7 + 3(2.236) = 13.71$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT",
+      "year": 2017,
+      "slot": 1
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-alg-017",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "polynomials-identities"
+    ],
+    "type": "tita",
+    "stem": "Let $a$ and $b$ be natural numbers such that $a^2 + ab + a = 14$ and $ab + b^2 + b = 28$. Then $2a + b$ equals",
+    "answer": "8",
+    "solution": "**Concept:** factor each equation so a common block appears, then add.\n\n$a(a + b + 1) = 14$ and $b(a + b + 1) = 28$.\n\nAdd: $(a + b)(a + b + 1) = 42 = 6 \\times 7$, so $a + b = 6$ and $a + b + 1 = 7$.\n\nThen $a = 14/7 = 2$, $b = 28/7 = 4$. $2a + b = 8$.\n\n**Check:** $4 + 8 + 2 = 14$ ✓; $8 + 16 + 4 = 28$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT",
+      "year": 2022
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-alg-018",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "polynomials-identities"
+    ],
+    "type": "mcq",
+    "stem": "If $a + b + c = 6$, $a^2 + b^2 + c^2 = 14$ and $a^3 + b^3 + c^3 = 36$, then $abc$ equals",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "answer": 2,
+    "solution": "**Concept:** symmetric sums $e_1, e_2, e_3$ and the identity $a^3 + b^3 + c^3 - 3abc = (a+b+c)(a^2+b^2+c^2 - ab - bc - ca)$.\n\n$ab + bc + ca = \\dfrac{(a+b+c)^2 - (a^2+b^2+c^2)}{2} = \\dfrac{36 - 14}{2} = 11$.\n\n$36 - 3abc = 6(14 - 11) = 18 \\Rightarrow 3abc = 18 \\Rightarrow abc = 6$.\n\n**Check:** $a, b, c = 1, 2, 3$: sum 6, squares $1 + 4 + 9 = 14$, cubes $1 + 8 + 27 = 36$, product 6 ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT symmetric-sum pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-alg-019",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "polynomials-identities"
+    ],
+    "type": "tita",
+    "stem": "If $x^2 - 3x + 1 = 0$, find the value of $x^6 + \\dfrac{1}{x^6}$.",
+    "answer": "322",
+    "solution": "**Concept:** convert the equation to $x + \\frac1x$ and climb the ladder.\n\n$x \\ne 0$, so divide by $x$: $x - 3 + \\dfrac1x = 0 \\Rightarrow x + \\dfrac1x = 3$.\n\n$x^2 + \\dfrac1{x^2} = 9 - 2 = 7$. $x^3 + \\dfrac1{x^3} = 27 - 9 = 18$.\n\n$x^6 + \\dfrac1{x^6} = \\left(x^3 + \\dfrac1{x^3}\\right)^2 - 2 = 324 - 2 = 322$.\n\n**Check** by the other route: $x^6 + \\frac1{x^6} = (x^2 + \\frac1{x^2})^3 - 3(x^2 + \\frac1{x^2}) = 343 - 21 = 322$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT identity-ladder pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-alg-020",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "modulus-functions"
+    ],
+    "type": "tita",
+    "stem": "How many integers $x$ satisfy $|2x - 5| \\le 7$?",
+    "answer": "8",
+    "solution": "**Concept:** $|u| \\le k \\iff -k \\le u \\le k$.\n\n$-7 \\le 2x - 5 \\le 7 \\Rightarrow -2 \\le 2x \\le 12 \\Rightarrow -1 \\le x \\le 6$.\n\nIntegers from $-1$ to $6$: $6 - (-1) + 1 = 8$.\n\n**Check:** $x = -1$: $|-7| = 7 \\le 7$ ✓; $x = 7$: $|9| > 7$ ✗.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT modulus counting pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-alg-021",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "modulus-functions"
+    ],
+    "type": "mcq",
+    "stem": "The minimum value of $|x - 2| + |x - 7|$ is",
+    "options": [
+      "0",
+      "2",
+      "5",
+      "9"
+    ],
+    "answer": 2,
+    "solution": "**Concept:** sum of distances from two points is least on the segment between them.\n\n$|x - 2| + |x - 7|$ is the total distance from $x$ to $2$ and to $7$. For any $x$ between $2$ and $7$ this is exactly $7 - 2 = 5$; outside, it is larger.\n\nMinimum $= 5$.\n\n**Check:** $x = 4$: $2 + 3 = 5$ ✓; $x = 0$: $2 + 7 = 9$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT modulus minimum pattern"
+    },
+    "timeSec": 45
+  },
+  {
+    "id": "qa-alg-022",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "modulus-functions"
+    ],
+    "type": "tita",
+    "stem": "The number of integers $n$ that satisfy the inequalities $|n - 60| < |n - 100| < |n - 20|$ is",
+    "answer": "19",
+    "solution": "**Concept:** $|n - a| < |n - b|$ means $n$ is closer to $a$ than to $b$, i.e. on $a$'s side of the midpoint.\n\n$|n - 60| < |n - 100|$: closer to 60 than to 100, so $n < 80$ (midpoint 80).\n\n$|n - 100| < |n - 20|$: closer to 100 than to 20, so $n > 60$ (midpoint 60).\n\n$60 < n < 80$: integers $61, 62, \\dots, 79$, which is $19$ integers.\n\n**Check:** $n = 70$: $10 < 30 < 50$ ✓; $n = 80$: $20 < 20$ fails ✓; $n = 60$: $40 < 40$ fails ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT",
+      "year": 2021
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-alg-023",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "modulus-functions"
+    ],
+    "type": "mcq",
+    "stem": "$f(x) = ax + b$ with $a > 0$, and $f(f(x)) = 9x + 8$ for all real $x$. Then $f(3)$ equals",
+    "options": [
+      "9",
+      "11",
+      "14",
+      "17"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** composition of a linear function and comparing coefficients.\n\n$f(f(x)) = a(ax + b) + b = a^2x + ab + b$.\n\nCompare with $9x + 8$: $a^2 = 9 \\Rightarrow a = 3$ (since $a > 0$); $3b + b = 8 \\Rightarrow b = 2$.\n\n$f(x) = 3x + 2$, so $f(3) = 11$.\n\n**Check:** $f(f(x)) = 3(3x + 2) + 2 = 9x + 8$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT functional composition pattern"
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "qa-alg-024",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "modulus-functions",
+      "quadratics"
+    ],
+    "type": "tita",
+    "stem": "Find the sum of all real solutions of $|x^2 - 4| = 3x$.",
+    "answer": "5",
+    "solution": "**Concept:** split by the sign of the expression inside the modulus; the right side forces $x \\ge 0$.\n\nSince $|x^2 - 4| \\ge 0$, we need $3x \\ge 0$, i.e. $x \\ge 0$.\n\nCase $x^2 \\ge 4$ (so $x \\ge 2$): $x^2 - 4 = 3x \\Rightarrow x^2 - 3x - 4 = 0 \\Rightarrow (x - 4)(x + 1) = 0 \\Rightarrow x = 4$ ✓ (in range).\n\nCase $0 \\le x < 2$: $4 - x^2 = 3x \\Rightarrow x^2 + 3x - 4 = 0 \\Rightarrow (x + 4)(x - 1) = 0 \\Rightarrow x = 1$ ✓ (in range).\n\nSolutions $1$ and $4$; sum $= 5$.\n\n**Check:** $x = 1$: $|1 - 4| = 3 = 3(1)$ ✓. $x = 4$: $|16 - 4| = 12 = 3(4)$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT modulus-quadratic pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-alg-025",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "modulus-functions"
+    ],
+    "type": "tita",
+    "stem": "How many integers $x$ satisfy $|x - 3| + |x + 2| + |x - 7| \\le 13$?",
+    "answer": "9",
+    "solution": "**Concept:** piecewise linear sum of distances; critical points $-2, 3, 7$.\n\nLet $g(x) = |x - 3| + |x + 2| + |x - 7|$. Its minimum is at the median point $x = 3$: $g(3) = 0 + 5 + 4 = 9$.\n\n$x \\ge 7$: $g = (x - 3) + (x + 2) + (x - 7) = 3x - 8 \\le 13 \\Rightarrow x \\le 7$. So $x = 7$ only.\n\n$3 \\le x \\le 7$: $g = (x - 3) + (x + 2) + (7 - x) = x + 6 \\le 13 \\Rightarrow x \\le 7$: all of $3, 4, 5, 6, 7$.\n\n$-2 \\le x \\le 3$: $g = (3 - x) + (x + 2) + (7 - x) = 12 - x \\le 13 \\Rightarrow x \\ge -1$: so $-1, 0, 1, 2, 3$.\n\n$x \\le -2$: $g = (3 - x) + (-x - 2) + (7 - x) = 8 - 3x \\le 13 \\Rightarrow x \\ge -\\tfrac53$: nothing in this piece.\n\nIntegers from $-1$ to $7$: $9$.\n\n**Check:** $g(-1) = 4 + 1 + 8 = 13$ ✓; $g(-2) = 5 + 0 + 9 = 14 > 13$ ✓; $g(8) = 5 + 10 + 1 = 16 > 13$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT three-modulus counting pattern"
+    },
+    "timeSec": 180
+  },
+  {
+    "id": "qa-alg-026",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "modulus-functions"
+    ],
+    "type": "mcq",
+    "stem": "A function $f$ satisfies $f(x) + 2f(1 - x) = 3x^2$ for all real $x$. The value of $f(2)$ is",
+    "options": [
+      "-2",
+      "2",
+      "4",
+      "6"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** functional equation; substitute $x$ and $1 - x$ to get two linear equations.\n\nPut $x = 2$: $f(2) + 2f(-1) = 12$.\n\nPut $x = -1$: $f(-1) + 2f(2) = 3$.\n\nFrom the second, $f(-1) = 3 - 2f(2)$. Substitute into the first: $f(2) + 6 - 4f(2) = 12 \\Rightarrow -3f(2) = 6 \\Rightarrow f(2) = -2$.\n\n**Check:** $f(-1) = 3 + 4 = 7$; $f(2) + 2f(-1) = -2 + 14 = 12$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT functional-equation pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-alg-027",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "logarithms"
+    ],
+    "type": "tita",
+    "stem": "Given $\\log_{10} 2 = 0.301$, how many digits does $2^{50}$ have?",
+    "answer": "16",
+    "solution": "**Concept:** number of digits $= \\lfloor \\log_{10} N \\rfloor + 1$.\n\n$\\log_{10} 2^{50} = 50 \\times 0.301 = 15.05$.\n\nDigits $= 15 + 1 = 16$.\n\n**Check:** $2^{10} = 1024 \\approx 10^3$, so $2^{50} \\approx 1.13 \\times 10^{15}$, a 16-digit number ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT digit-count pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-alg-028",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "logarithms"
+    ],
+    "type": "mcq",
+    "stem": "If $\\log_x 64 = \\dfrac32$, then $x$ equals",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "answer": 2,
+    "solution": "**Concept:** a log statement is an exponent statement.\n\n$x^{3/2} = 64 \\Rightarrow x = 64^{2/3} = (4^3)^{2/3} = 4^2 = 16$.\n\n**Check:** $16^{3/2} = (\\sqrt{16})^3 = 4^3 = 64$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT log-definition pattern"
+    },
+    "timeSec": 45
+  },
+  {
+    "id": "qa-alg-029",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "logarithms"
+    ],
+    "type": "tita",
+    "stem": "If $(5.55)^x = (0.555)^y = 10^3$, then the value of $\\dfrac1x - \\dfrac1y$ is (enter as a fraction or decimal)",
+    "answer": [
+      "1/3",
+      "0.33",
+      "0.333",
+      "0.3333"
+    ],
+    "solution": "**Concept:** take logs; $0.555 = 5.55/10$ shifts the log by exactly 1.\n\n$x \\log 5.55 = 3 \\Rightarrow \\dfrac1x = \\dfrac{\\log 5.55}{3}$. Similarly $\\dfrac1y = \\dfrac{\\log 0.555}{3}$.\n\n$\\dfrac1x - \\dfrac1y = \\dfrac{\\log 5.55 - \\log 0.555}{3} = \\dfrac{\\log 10}{3} = \\dfrac13$.\n\n**Check:** the base ratio is exactly 10, so the difference in logs is exactly 1 regardless of the value 5.55 ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT",
+      "year": 2019
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "qa-alg-030",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "logarithms"
+    ],
+    "type": "tita",
+    "stem": "If $\\log_4 5 = (\\log_4 y)(\\log_6 \\sqrt5)$, then $y$ equals",
+    "answer": "36",
+    "solution": "**Concept:** change of base and $\\log_b \\sqrt5 = \\frac12 \\log_b 5$.\n\n$\\log_6 \\sqrt5 = \\tfrac12 \\log_6 5$. So $\\log_4 5 = \\tfrac12 \\log_4 y \\cdot \\log_6 5$, giving\n\n$\\log_4 y = \\dfrac{2\\log_4 5}{\\log_6 5} = 2 \\cdot \\dfrac{\\ln 5/\\ln 4}{\\ln 5/\\ln 6} = 2 \\cdot \\dfrac{\\ln 6}{\\ln 4} = 2\\log_4 6 = \\log_4 36$.\n\nHence $y = 36$.\n\n**Check numerically:** $\\log_4 5 \\approx 1.161$; $\\log_4 36 \\approx 2.585$, $\\log_6 \\sqrt5 \\approx 0.449$; product $\\approx 1.161$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT",
+      "year": 2020
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-alg-031",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "logarithms"
+    ],
+    "type": "mcq",
+    "stem": "If $\\log_{12} 27 = a$, then $\\log_6 16$ in terms of $a$ is",
+    "options": [
+      "$\\dfrac{4(3-a)}{3+a}$",
+      "$\\dfrac{4(3+a)}{3-a}$",
+      "$\\dfrac{3-a}{3+a}$",
+      "$\\dfrac{2(3-a)}{3+a}$"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** change of base and expressing everything via $t = \\log_2 3$.\n\nLet $t = \\dfrac{\\log 3}{\\log 2}$. Then $a = \\log_{12} 27 = \\dfrac{3\\log 3}{2\\log 2 + \\log 3} = \\dfrac{3t}{2 + t}$.\n\nSolve for $t$: $3t = 2a + at \\Rightarrow t = \\dfrac{2a}{3 - a}$.\n\n$\\log_6 16 = \\dfrac{4 \\log 2}{\\log 2 + \\log 3} = \\dfrac{4}{1 + t} = \\dfrac{4}{1 + \\frac{2a}{3-a}} = \\dfrac{4(3 - a)}{3 + a}$.\n\n**Check numerically:** $a = \\log_{12} 27 \\approx 1.326$; $\\frac{4(1.674)}{4.326} \\approx 1.548$; and $\\log_6 16 = \\frac{2.773}{1.792} \\approx 1.548$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on classic CAT log change-of-base pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-alg-032",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "logarithms"
+    ],
+    "type": "tita",
+    "stem": "If $2^x = 3^y = 6^{-z}$ for non-zero real numbers $x, y, z$, find the value of $\\dfrac1x + \\dfrac1y + \\dfrac1z$.",
+    "answer": "0",
+    "solution": "**Concept:** common-value substitution.\n\nLet $2^x = 3^y = 6^{-z} = k$. Then $2 = k^{1/x}$, $3 = k^{1/y}$, $6 = k^{-1/z}$.\n\nSince $2 \\times 3 = 6$: $k^{1/x + 1/y} = k^{-1/z} \\Rightarrow \\dfrac1x + \\dfrac1y = -\\dfrac1z$.\n\nSo $\\dfrac1x + \\dfrac1y + \\dfrac1z = 0$.\n\n**Check with numbers:** $k = 64$: $x = 6$, $y = \\log_3 64 \\approx 3.786$, $z = -\\log_6 64 \\approx -2.321$; $0.1667 + 0.2641 - 0.4308 \\approx 0$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT 2019 equal-powers pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-alg-033",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "logarithms"
+    ],
+    "type": "mcq",
+    "stem": "The product of all real solutions of $x^{\\log_3 x} = 81x^3$ is",
+    "options": [
+      "3",
+      "9",
+      "27",
+      "81"
+    ],
+    "answer": 2,
+    "solution": "**Concept:** take $\\log_3$ of both sides; the equation becomes a quadratic in $t = \\log_3 x$.\n\n$\\log_3\\left(x^{\\log_3 x}\\right) = (\\log_3 x)^2$ and $\\log_3(81x^3) = 4 + 3\\log_3 x$.\n\nWith $t = \\log_3 x$: $t^2 - 3t - 4 = 0 \\Rightarrow (t - 4)(t + 1) = 0 \\Rightarrow t = 4$ or $-1$.\n\n$x = 3^4 = 81$ or $x = 3^{-1} = \\tfrac13$. Product $= 27$.\n\n**Check:** $x = \\frac13$: LHS $= (\\frac13)^{-1} = 3$; RHS $= 81 \\times \\frac1{27} = 3$ ✓. $x = 81$: LHS $= 81^4$, RHS $= 81 \\cdot 81^3$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT exponent-log equation pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-alg-034",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "progressions"
+    ],
+    "type": "tita",
+    "stem": "The 3rd term of an arithmetic progression is 11 and the 8th term is 31. Find the 20th term.",
+    "answer": "79",
+    "solution": "**Concept:** difference of two terms gives the common difference.\n\n$t_8 - t_3 = 5d = 20 \\Rightarrow d = 4$. $a = t_3 - 2d = 11 - 8 = 3$.\n\n$t_{20} = 3 + 19 \\times 4 = 79$.\n\n**Check:** $t_{20} = t_8 + 12d = 31 + 48 = 79$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT AP basics pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-alg-035",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "progressions"
+    ],
+    "type": "mcq",
+    "stem": "The sum of all two-digit natural numbers divisible by 7 is",
+    "options": [
+      "714",
+      "728",
+      "735",
+      "742"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** multiples form an AP; sum $= n \\times$ average of first and last.\n\nTwo-digit multiples of 7: $14, 21, \\dots, 98$. Number of terms $= \\dfrac{98 - 14}{7} + 1 = 13$.\n\nSum $= 13 \\times \\dfrac{14 + 98}{2} = 13 \\times 56 = 728$.\n\n**Check:** $7(2 + 3 + \\dots + 14) = 7 \\times (105 - 1) = 7 \\times 104 = 728$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT AP sum pattern"
+    },
+    "timeSec": 75
+  },
+  {
+    "id": "qa-alg-036",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "progressions"
+    ],
+    "type": "mcq",
+    "stem": "The sum of the first $n$ terms of a sequence is $S_n = 3n^2 + 5n$. Which term of the sequence equals 164?",
+    "options": [
+      "25",
+      "26",
+      "27",
+      "28"
+    ],
+    "answer": 2,
+    "solution": "**Concept:** $t_n = S_n - S_{n-1}$.\n\n$t_n = (3n^2 + 5n) - \\big(3(n-1)^2 + 5(n-1)\\big) = 3(2n - 1) + 5 = 6n + 2$.\n\n$6n + 2 = 164 \\Rightarrow n = 27$.\n\n**Check:** $S_{27} - S_{26} = (2187 + 135) - (2028 + 130) = 2322 - 2158 = 164$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT sum-formula-to-term pattern"
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "qa-alg-037",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "progressions"
+    ],
+    "type": "tita",
+    "stem": "An infinite geometric progression with positive terms has sum 20, and the sum of the squares of its terms is 100. Find the first term.",
+    "answer": "8",
+    "solution": "**Concept:** the squares of a GP form a GP with ratio $r^2$; divide the two sum equations.\n\n$\\dfrac{a}{1 - r} = 20$ and $\\dfrac{a^2}{1 - r^2} = 100$.\n\nDivide the second by the first: $\\dfrac{a}{1 + r} = 5$.\n\nSo $a = 5(1 + r) = 20(1 - r) \\Rightarrow 5 + 5r = 20 - 20r \\Rightarrow r = \\tfrac35$, $a = 8$.\n\n**Check:** $\\frac{8}{0.4} = 20$ ✓; $\\frac{64}{1 - 0.36} = \\frac{64}{0.64} = 100$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT 2017 infinite GP pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-alg-038",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "progressions"
+    ],
+    "type": "tita",
+    "stem": "Three positive numbers in geometric progression have sum 21 and product 216. Find the sum of their squares.",
+    "answer": "189",
+    "solution": "**Concept:** take the terms as $\\frac{a}{r}, a, ar$ so that the product is $a^3$.\n\n$a^3 = 216 \\Rightarrow a = 6$. Sum: $\\dfrac6r + 6 + 6r = 21 \\Rightarrow \\dfrac6r + 6r = 15 \\Rightarrow 6r^2 - 15r + 6 = 0 \\Rightarrow 2r^2 - 5r + 2 = 0 \\Rightarrow r = 2$ or $\\tfrac12$.\n\nEither way the numbers are $3, 6, 12$. Sum of squares $= 9 + 36 + 144 = 189$.\n\n**Check:** $3 + 6 + 12 = 21$ ✓, $3 \\times 6 \\times 12 = 216$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT three-term GP pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-alg-039",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "progressions"
+    ],
+    "type": "tita",
+    "stem": "Find the value of $1 \\cdot 3 + 2 \\cdot 4 + 3 \\cdot 5 + \\dots + 20 \\cdot 22$.",
+    "answer": "3290",
+    "solution": "**Concept:** general term $k(k+2) = k^2 + 2k$; use $\\sum k^2$ and $\\sum k$.\n\n$\\sum_{k=1}^{20} k^2 = \\dfrac{20 \\cdot 21 \\cdot 41}{6} = 2870$. $\\sum_{k=1}^{20} k = 210$.\n\nSum $= 2870 + 2 \\times 210 = 3290$.\n\n**Check on a small case:** $k = 1, 2$: $3 + 8 = 11$; formula $(1 + 4) + 2(3) = 11$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT series summation pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-alg-040",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "progressions",
+      "quadrilaterals-polygons"
+    ],
+    "type": "mcq",
+    "stem": "The interior angles of a convex polygon are in arithmetic progression with the smallest angle $120°$ and common difference $5°$. The number of sides of the polygon is",
+    "options": [
+      "9",
+      "12",
+      "16",
+      "9 or 16"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** AP sum equals the polygon angle sum $(n-2)180°$, plus the convexity check.\n\n$\\dfrac n2\\big(2 \\cdot 120 + (n-1)5\\big) = 180(n - 2)$\n\n$n(235 + 5n) = 360n - 720 \\Rightarrow 5n^2 - 125n + 720 = 0 \\Rightarrow n^2 - 25n + 144 = 0 \\Rightarrow (n - 9)(n - 16) = 0$.\n\n$n = 16$ gives largest angle $120 + 15 \\times 5 = 195° > 180°$, impossible for a convex polygon. So $n = 9$.\n\n**Check:** $n = 9$: angles $120, 125, \\dots, 160$, sum $= 9 \\times 140 = 1260 = 7 \\times 180$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on classic CAT polygon-AP pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-alg-041",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "maxima-minima",
+      "quadratics"
+    ],
+    "type": "mcq",
+    "stem": "The minimum value of $x^2 - 6x + 13$ for real $x$ is",
+    "options": [
+      "3",
+      "4",
+      "9",
+      "13"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** completing the square.\n\n$x^2 - 6x + 13 = (x - 3)^2 + 4 \\ge 4$, with equality at $x = 3$.\n\n**Check:** vertex value $c - \\frac{b^2}{4a} = 13 - 9 = 4$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT quadratic minimum pattern"
+    },
+    "timeSec": 45
+  },
+  {
+    "id": "qa-alg-042",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "maxima-minima"
+    ],
+    "type": "tita",
+    "stem": "A farmer has 80 m of fencing to enclose a rectangular plot along a straight river; no fence is needed along the river. What is the maximum area (in m²) of the plot?",
+    "answer": "800",
+    "solution": "**Concept:** express area in one variable and maximise a quadratic (or use AM–GM).\n\nLet the side parallel to the river be $x$ and each perpendicular side be $y$: $x + 2y = 80$.\n\nArea $A = xy = (80 - 2y)y = 80y - 2y^2 = -2(y - 20)^2 + 800$.\n\nMaximum $800$ at $y = 20$, $x = 40$.\n\n**Check by AM–GM:** $x$ and $2y$ have fixed sum 80, so $x \\cdot 2y \\le 40^2 = 1600$, i.e. $xy \\le 800$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT fencing optimisation pattern"
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "qa-alg-043",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "maxima-minima"
+    ],
+    "type": "mcq",
+    "stem": "If $a$ and $b$ are positive real numbers with $a + b = 10$, the minimum value of $\\dfrac1a + \\dfrac1b$ is",
+    "options": [
+      "0.2",
+      "0.4",
+      "0.5",
+      "1"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** rewrite as a function of the product, then AM–GM.\n\n$\\dfrac1a + \\dfrac1b = \\dfrac{a + b}{ab} = \\dfrac{10}{ab}$.\n\nBy AM–GM, $ab \\le \\left(\\dfrac{10}{2}\\right)^2 = 25$, so $\\dfrac{10}{ab} \\ge \\dfrac{10}{25} = 0.4$, with equality at $a = b = 5$.\n\n**Check:** $a = 2, b = 8$: $0.5 + 0.125 = 0.625 > 0.4$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT AM-GM pattern"
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "qa-alg-044",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "maxima-minima",
+      "coordinate-geometry"
+    ],
+    "type": "mcq",
+    "stem": "If $x^2 + y^2 = 25$, the maximum value of $3x + 4y$ is",
+    "options": [
+      "7",
+      "12",
+      "25",
+      "35"
+    ],
+    "answer": 2,
+    "solution": "**Concept:** Cauchy-type bound $(ax + by)^2 \\le (a^2 + b^2)(x^2 + y^2)$.\n\n$(3x + 4y)^2 \\le (9 + 16)(25) = 625 \\Rightarrow 3x + 4y \\le 25$.\n\nEquality when $(x, y)$ is proportional to $(3, 4)$: $(x, y) = (3, 4)$, which lies on the circle.\n\n**Check:** $3(3) + 4(4) = 25$ and $9 + 16 = 25$ ✓. Geometrically, $3x + 4y = c$ is tangent to the circle when its distance $\\frac{c}{5}$ from the origin equals $5$, i.e. $c = 25$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT linear-on-circle maximum pattern"
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "qa-alg-045",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "maxima-minima"
+    ],
+    "type": "tita",
+    "stem": "The number of real roots of the equation $2\\cos\\big(x(x+1)\\big) = 2^x + 2^{-x}$ is",
+    "answer": "1",
+    "solution": "**Concept:** bound each side; equality forces conditions on both.\n\nRight side: by AM–GM, $2^x + 2^{-x} \\ge 2\\sqrt{2^x \\cdot 2^{-x}} = 2$, with equality only at $x = 0$.\n\nLeft side: $2\\cos(\\cdot) \\le 2$.\n\nSo the two sides can be equal only when both equal 2, which needs $x = 0$ (from the right side) and $\\cos(x(x+1)) = 1$. At $x = 0$: $\\cos 0 = 1$ ✓.\n\nExactly **1** real root.\n\n**Check:** at $x = 0$, LHS $= 2\\cos 0 = 2$, RHS $= 1 + 1 = 2$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT",
+      "year": 2019,
+      "slot": 1
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-alg-046",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "maxima-minima",
+      "polynomials-identities"
+    ],
+    "type": "mcq",
+    "stem": "The minimum value of $(x - 1)(x - 2)(x - 3)(x - 4)$ for real $x$ is",
+    "options": [
+      "-1",
+      "-9/16",
+      "0",
+      "-2"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** pair the factors so the pairs share a quadratic part, then substitute.\n\n$(x - 1)(x - 4) = x^2 - 5x + 4$ and $(x - 2)(x - 3) = x^2 - 5x + 6$.\n\nLet $t = x^2 - 5x + 5$: the product is $(t - 1)(t + 1) = t^2 - 1 \\ge -1$.\n\nEquality needs $t = 0$, i.e. $x^2 - 5x + 5 = 0$, which has real roots ($D = 25 - 20 = 5 > 0$). So the minimum is $-1$.\n\n**Check:** $x = \\frac{5 - \\sqrt5}{2} \\approx 1.382$: $(0.382)(-0.618)(-1.618)(-2.618) \\approx -1.0$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT product-of-linear-factors minimum pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-alg-047",
+    "section": "QA",
+    "topic": "algebra",
+    "concepts": [
+      "maxima-minima"
+    ],
+    "type": "tita",
+    "stem": "If $x$ and $y$ are positive real numbers with $xy^2 = 32$, find the minimum value of $x + y$.",
+    "answer": "6",
+    "solution": "**Concept:** weighted AM–GM; split $y$ into two halves so the product matches $xy^2$.\n\n$x + y = x + \\dfrac y2 + \\dfrac y2 \\ge 3\\sqrt[3]{x \\cdot \\dfrac y2 \\cdot \\dfrac y2} = 3\\sqrt[3]{\\dfrac{xy^2}{4}} = 3\\sqrt[3]{8} = 6$.\n\nEquality when $x = \\dfrac y2$, i.e. $y = 2x$: $x(2x)^2 = 4x^3 = 32 \\Rightarrow x = 2$, $y = 4$.\n\nMinimum $= 6$.\n\n**Check:** $x = 2, y = 4$: $xy^2 = 32$ ✓, $x + y = 6$. Try $x = 8, y = 2$: $32$ ✓ but $x + y = 10 > 6$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT weighted AM-GM pattern"
+    },
+    "timeSec": 150
+  }
+]

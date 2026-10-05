@@ -1,0 +1,334 @@
+[
+  {
+    "id": "dilr-sm-001",
+    "section": "DILR",
+    "topic": "dilr-foundations",
+    "concepts": [
+      "dilr-speed-math",
+      "percentages"
+    ],
+    "type": "tita",
+    "stem": "A company's revenue rose from ₹1,240 crore in one year to ₹1,488 crore the next. By what percentage did the revenue increase?",
+    "answer": "20",
+    "solution": "**Concept: percentage change = change ÷ original, read by eye.**\n\nChange $= 1488 - 1240 = 248$. Now $10\\%$ of $1240$ is $124$, and $248 = 2 \\times 124$, so the increase is exactly $20\\%$.\n\n*Check:* $1240 \\times 1.2 = 1488$. ✓",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on the quick-calculation demands of CAT 2022–2024 DI sets"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "dilr-sm-002",
+    "section": "DILR",
+    "topic": "dilr-foundations",
+    "concepts": [
+      "dilr-speed-math"
+    ],
+    "type": "mcq",
+    "stem": "Which of the following fractions is the largest?",
+    "options": [
+      "23/41",
+      "29/52",
+      "31/55",
+      "19/34"
+    ],
+    "answer": 2,
+    "solution": "**Concept: compare fractions by their distance from a convenient benchmark.**\n\nAll four are a little above $\\tfrac12$. Write each as $\\tfrac12 + $ (excess over half) ÷ denominator:\n\n- $23/41$: half of 41 is 20.5, excess $2.5$, so $\\tfrac12 + 2.5/41 \\approx 0.5 + 0.061$\n- $29/52$: half is 26, excess $3$, $3/52 \\approx 0.058$\n- $31/55$: half is 27.5, excess $3.5$, $3.5/55 \\approx 0.064$\n- $19/34$: half is 17, excess $2$, $2/34 \\approx 0.059$\n\nLargest excess is $31/55$.\n\n*Check:* $31/55 = 0.5636$, $23/41 = 0.5610$, $19/34 = 0.5588$, $29/52 = 0.5577$. ✓",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on ratio-comparison steps inside CAT DI sets"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "dilr-sm-003",
+    "section": "DILR",
+    "topic": "dilr-foundations",
+    "concepts": [
+      "dilr-speed-math",
+      "percentages"
+    ],
+    "type": "mcq",
+    "stem": "In a survey of 12,860 households, 3,479 owned a two-wheeler. Approximately what percentage of households owned a two-wheeler?",
+    "options": [
+      "24%",
+      "27%",
+      "30%",
+      "33%"
+    ],
+    "answer": 1,
+    "solution": "**Concept: approximate a percentage with 10% and 1% blocks.**\n\n$10\\%$ of $12\\,860 = 1286$; $20\\% = 2572$; $25\\% = 3215$. The remaining $3479 - 3215 = 264$ is about $2\\%$ ($1\\% \\approx 129$). So roughly $27\\%$.\n\n*Check:* $12\\,860 \\times 0.27 = 3472.2$, within 7 of 3479; the next option, $30\\%$, would be $3858$ — far off. ✓",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on approximation steps inside CAT DI sets"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "dilr-sm-004",
+    "section": "DILR",
+    "topic": "dilr-foundations",
+    "concepts": [
+      "dilr-speed-math",
+      "percentages"
+    ],
+    "type": "tita",
+    "stem": "The number of visitors to a museum fell from 850 in March to 714 in April. By what percentage did the number of visitors decrease?",
+    "answer": "16",
+    "solution": "**Concept: percentage decrease = fall ÷ original.**\n\nFall $= 850 - 714 = 136$. $10\\%$ of $850 = 85$; $136 - 85 = 51 = 6\\%$ of 850 ($1\\% = 8.5$, $6 \\times 8.5 = 51$). So the decrease is $16\\%$.\n\n*Check:* $850 \\times 0.84 = 714$. ✓",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on the quick-calculation demands of CAT 2022–2024 DI sets"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "dilr-sm-005",
+    "section": "DILR",
+    "topic": "dilr-foundations",
+    "concepts": [
+      "dilr-speed-math",
+      "ratio-proportion"
+    ],
+    "type": "mcq",
+    "stem": "The table gives the annual sales (₹ lakh) and the number of employees of four stores.\n\n| Store | Sales | Employees |\n|---|---|---|\n| P | 4,620 | 84 |\n| Q | 5,760 | 96 |\n| R | 6,440 | 112 |\n| S | 3,420 | 60 |\n\nWhich store has the highest sales per employee?",
+    "options": [
+      "P",
+      "Q",
+      "R",
+      "S"
+    ],
+    "answer": 1,
+    "solution": "**Concept: compare ratios by simplifying each against a round number, not by exact division.**\n\n- P: $4620/84$; $84 \\times 55 = 4620$, so exactly $55$.\n- Q: $5760/96$; $96 \\times 60 = 5760$, so exactly $60$.\n- R: $6440/112$; $112 \\times 57 = 6384$, remainder 56 = half of 112, so $57.5$.\n- S: $3420/60 = 57$.\n\nHighest: Q.\n\n*Check:* only Q exceeds 60 per employee; R at 57.5 is the runner-up. ✓",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on ratio-comparison steps inside CAT DI sets"
+    },
+    "timeSec": 75
+  },
+  {
+    "id": "dilr-sm-006",
+    "section": "DILR",
+    "topic": "dilr-foundations",
+    "concepts": [
+      "dilr-speed-math",
+      "percentages"
+    ],
+    "type": "tita",
+    "stem": "A quantity grows by 25% in the first year, 15% in the second year and 20% in the third year. What is the overall percentage growth over the three years?",
+    "answer": "72.5",
+    "tolerance": 0.01,
+    "solution": "**Concept: successive percentage changes multiply as factors.**\n\nOverall factor $= 1.25 \\times 1.15 \\times 1.20$. First $1.25 \\times 1.20 = 1.5$ (a quarter more of 1.2 is $0.3$). Then $1.5 \\times 1.15 = 1.725$. Growth $= 72.5\\%$.\n\n*Check:* start with 240: $240 \\to 300 \\to 345 \\to 414$, and $414/240 = 1.725$. ✓ (Adding the percentages, $25 + 15 + 20 = 60$, is the trap.)",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on growth-chain calculations in CAT DI sets"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "dilr-sm-007",
+    "section": "DILR",
+    "topic": "dilr-foundations",
+    "concepts": [
+      "dilr-speed-math",
+      "percentages"
+    ],
+    "type": "mcq",
+    "stem": "Region A contributed 32% of a company's total sales in 2023 and 28% in 2024. The company's total sales grew by 25% from 2023 to 2024. The percentage change in Region A's sales from 2023 to 2024 is closest to:",
+    "options": [
+      "+9.4%",
+      "+12.5%",
+      "−4.0%",
+      "−12.5%"
+    ],
+    "answer": 0,
+    "solution": "**Concept: a share of a growing total — multiply the factors, do not subtract percentages.**\n\nLet 2023 total $= 100$. Region A in 2023 $= 32$. 2024 total $= 125$, Region A $= 28\\% \\times 125 = 35$.\n\nChange $= 35/32 = 1.09375$, i.e. $+9.375\\%$, closest to $+9.4\\%$.\n\n*Check:* $32 \\times 1.09375 = 35$. ✓ The $-4\\%$ option (the drop in share) and $+12.5\\%$ (a wrong mix of the two figures) are the traps.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on share-of-total questions in CAT 2022–2024 DI"
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "dilr-sm-008",
+    "section": "DILR",
+    "topic": "dilr-foundations",
+    "concepts": [
+      "dilr-speed-math"
+    ],
+    "type": "mcq",
+    "stem": "Which of the following is closest to $7812 \\div 23.9$?",
+    "options": [
+      "310",
+      "327",
+      "342",
+      "355"
+    ],
+    "answer": 1,
+    "solution": "**Concept: round the divisor to a friendly number, then correct the direction.**\n\n$7812 \\div 24$: $24 \\times 325 = 7800$, so $7812/24 \\approx 325.5$. The true divisor $23.9$ is slightly smaller than 24, so the quotient is slightly larger — about $327$.\n\n*Check:* $23.9 \\times 327 = 7815.3$, within 4 of 7812; $23.9 \\times 342 = 8173.8$, far too big. ✓",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on approximation steps inside CAT DI sets"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "dilr-sel-001",
+    "section": "DILR",
+    "topic": "logical-reasoning",
+    "concepts": [
+      "lr-selection"
+    ],
+    "type": "mcq",
+    "stem": "A committee of exactly three members is to be chosen from P, Q, R, S, T and U, subject to these rules:\n\n1. If P is chosen, then Q is not chosen.\n2. R can be chosen only if S is also chosen.\n3. T and U cannot both be chosen.\n4. Exactly one of Q and S is chosen.\n\nWhich of the following is a valid committee?",
+    "options": [
+      "P, Q, T",
+      "R, T, U",
+      "P, R, S",
+      "Q, S, T"
+    ],
+    "answer": 2,
+    "solution": "**Concept: test each option against every rule; one broken rule kills the option.**\n\n- P, Q, T: P and Q together — breaks rule 1.\n- R, T, U: R without S breaks rule 2; T with U breaks rule 3.\n- P, R, S: P chosen and Q not (rule 1 ✓); R with S (rule 2 ✓); neither T nor U (rule 3 ✓); S chosen, Q not — exactly one (rule 4 ✓). **Valid.**\n- Q, S, T: both Q and S — breaks rule 4.\n\n*Check:* rule 4 alone eliminates any committee with both Q and S or neither; rule 1 then prevents P and Q together. ✓",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on selection-with-constraints LR in CAT"
+    },
+    "timeSec": 75
+  },
+  {
+    "id": "dilr-sel-002",
+    "section": "DILR",
+    "topic": "logical-reasoning",
+    "concepts": [
+      "lr-selection",
+      "permutations-combinations"
+    ],
+    "type": "tita",
+    "stem": "A committee of exactly three members is to be chosen from P, Q, R, S, T and U, subject to these rules:\n\n1. If P is chosen, then Q is not chosen.\n2. R can be chosen only if S is also chosen.\n3. T and U cannot both be chosen.\n4. Exactly one of Q and S is chosen.\n\nHow many different valid committees are possible?",
+    "answer": "5",
+    "solution": "**Concept: split on the most restrictive rule (an 'exactly one' rule) and count each branch.**\n\nRule 4 gives two cases.\n\n*Case 1: S in, Q out.* Pick two more from {P, R, T, U}. Rule 1 is satisfied automatically (Q is out); rule 2 is satisfied (S is in). Rule 3 forbids the pair {T, U}. Pairs from four people: $\\binom{4}{2} = 6$, minus {T, U} $= 5$: {P,R}, {P,T}, {P,U}, {R,T}, {R,U}.\n\n*Case 2: Q in, S out.* Rule 1 removes P; rule 2 removes R (no S). Only T and U remain, and rule 3 forbids taking both. So no committee of three is possible: 0.\n\nTotal $= 5$.\n\n*Check:* list them — PRS, PST, PSU, RST, RSU — each satisfies all four rules. ✓",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on selection-with-constraints LR in CAT"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "dilr-rn-001",
+    "section": "DILR",
+    "topic": "logical-reasoning",
+    "concepts": [
+      "lr-routes-networks"
+    ],
+    "type": "tita",
+    "stem": "A town has six junctions A, B, C, D, E and F connected by one-way roads. The roads are: A→B, A→C, B→C, B→D, B→E, C→D, C→E, D→E, D→F and E→F. A route may use each road at most once and must follow the arrows. How many different routes are there from A to F?",
+    "answer": "9",
+    "solution": "**Concept: count paths by adding up, junction by junction, the number of ways to reach each junction (dynamic counting).**\n\nWays to reach A: 1.\n\n- B: only from A → 1.\n- C: from A (1) or B (1) → 2.\n- D: from B (1) or C (2) → 3.\n- E: from B (1), C (2) or D (3) → 6.\n- F: from D (3) or E (6) → 9.\n\nAnswer: 9.\n\n*Check by listing:* A-B-D-F, A-B-D-E-F, A-B-E-F, A-B-C-D-F, A-B-C-D-E-F, A-B-C-E-F, A-C-D-F, A-C-D-E-F, A-C-E-F — nine routes. ✓ (All roads point 'forward', so no route can revisit a junction.)",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on route-counting LR in CAT"
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "dilr-rn-002",
+    "section": "DILR",
+    "topic": "logical-reasoning",
+    "concepts": [
+      "lr-routes-networks"
+    ],
+    "type": "mcq",
+    "stem": "Five villages A, B, C, D and E are joined by two-way roads whose lengths (in km) are: A–B 4, A–C 2, C–B 1, B–D 5, C–D 7, B–E 3, D–E 2. What is the length of the shortest route from A to E?",
+    "options": [
+      "6 km",
+      "7 km",
+      "8 km",
+      "10 km"
+    ],
+    "answer": 0,
+    "solution": "**Concept: shortest route — work outwards from the start, always settling the nearest unsettled village (Dijkstra by hand).**\n\nFrom A: B is 4, C is 2. Settle C (2). Via C: B $= 2 + 1 = 3$ (better than 4), D $= 2 + 7 = 9$. Settle B (3). Via B: D $= 3 + 5 = 8$ (better than 9), E $= 3 + 3 = 6$. Settle E (6) — the shortest route is A–C–B–E, length $2 + 1 + 3 = 6$ km.\n\n*Check:* the only other sensible routes are A–B–E ($4 + 3 = 7$) and anything through D, which costs at least $8 + 2 = 10$. So 6 is the minimum. ✓",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on shortest-route LR in CAT"
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "dilr-app-001",
+    "section": "DILR",
+    "topic": "dilr-foundations",
+    "concepts": [
+      "dilr-approach"
+    ],
+    "type": "mcq",
+    "stem": "On a DILR multiple-choice question (+3 for a correct answer, −1 for a wrong one) you have confidently eliminated two of the four options and have no preference between the remaining two. What is the expected score from guessing one of them?",
+    "options": [
+      "−0.5",
+      "0",
+      "+1",
+      "+1.5"
+    ],
+    "answer": 2,
+    "solution": "**Concept: expected value of a guess.**\n\nWith two equally likely options, the chance of being right is $\\tfrac12$. Expected score $= \\tfrac12(+3) + \\tfrac12(-1) = 1.5 - 0.5 = +1$.\n\n*Check:* over many such guesses you gain 3 half the time and lose 1 half the time, a net $+2$ per two guesses, i.e. $+1$ each. With three live options the expectation falls to $\\tfrac13(3) + \\tfrac23(-1) = +\\tfrac13$, and with four it is $\\tfrac14(3) + \\tfrac34(-1) = 0$. Guess only after real elimination.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "strategy question based on the CAT DILR marking scheme"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "dilr-app-002",
+    "section": "DILR",
+    "topic": "dilr-foundations",
+    "concepts": [
+      "dilr-approach"
+    ],
+    "type": "mcq",
+    "stem": "In the first five minutes of the DILR section you scan four sets:\n\n- **Set 1:** a card game played over four rounds with a scoring rule you have never seen; two questions ask \"how many different sequences of play are possible\".\n- **Set 2:** six people around a round table with five conditions; every question asks for a specific person (\"Who sits opposite X?\").\n- **Set 3:** a 6×5 sales table with eleven missing cells, three conditions on totals and ranks; three TITA and two MCQ questions.\n- **Set 4:** three-set Venn diagram data for 300 people; questions ask for maximum and minimum possible values.\n\nWhich set should you attempt first?",
+    "options": [
+      "Set 1",
+      "Set 2",
+      "Set 3",
+      "Set 4"
+    ],
+    "answer": 1,
+    "solution": "**Concept: rank sets by data density, question type and familiarity before solving anything.**\n\n- Set 2: familiar format, few conditions, and every question wants a specific name — a sign the arrangement resolves uniquely. Doable.\n- Set 4: Venn with max/min is formulaic once the two bookkeeping equations are known — doable or maybe, but max/min questions take longer than lookups.\n- Set 3: missing-data sets are usually solvable but long (eleven blanks); maybe.\n- Set 1: unfamiliar rules plus \"how many sequences\" questions mean case-carrying; avoid.\n\nStart with Set 2, then Set 4, then Set 3; attempt Set 1 only with time to spare.\n\n*Check:* the choice uses only what is visible without solving — the number of conditions, the familiarity of the format and the wording of the questions — which is exactly what a five-minute scan can see.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "strategy question modelled on CAT 2022–2024 DILR set mixes"
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "dilr-app-003",
+    "section": "DILR",
+    "topic": "dilr-foundations",
+    "concepts": [
+      "dilr-approach"
+    ],
+    "type": "tita",
+    "stem": "In the DILR section (+3 for a correct answer, −1 for a wrong MCQ, 0 for a wrong TITA) a candidate attempts 14 MCQs and gets 11 of them right, and attempts 3 TITA questions and gets 2 right. What is the candidate's net score in the section?",
+    "answer": "36",
+    "solution": "**Concept: net score = 3 × correct − 1 × wrong MCQs.**\n\nCorrect answers: $11 + 2 = 13$, worth $13 \\times 3 = 39$. Wrong MCQs: $14 - 11 = 3$, costing $3$. The wrong TITA costs nothing. Net $= 39 - 3 = 36$.\n\n*Check:* 13 correct out of 17 attempted, with 3 negatives; $36$ out of a maximum $60$ — in recent CATs a score in this region has been around the 97–99th percentile, which is why 2–3 fully solved sets is the target.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "strategy question based on the CAT DILR marking scheme"
+    },
+    "timeSec": 60
+  }
+]

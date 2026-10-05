@@ -1,0 +1,415 @@
+[
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-001",
+    "setId": "rc-01",
+    "concepts": [
+      "rc-main-idea",
+      "rc-active-reading"
+    ],
+    "difficulty": "medium",
+    "timeSec": 150,
+    "stem": "Which of the following best captures the central argument of the passage?",
+    "options": [
+      "Because no one can verify everything, people should trust experts rather than attempt to think for themselves.",
+      "The ideal of believing only what one has verified oneself is unattainable, so the rational question is whether the structures through which testimony reaches us are well built, not whether to rely on testimony at all.",
+      "Deference to authority has historically produced disasters such as pre-trial medicine, which shows that trust in testimony is a lapse of rationality.",
+      "The modern crisis of misinformation shows that today's citizens are more credulous than their predecessors."
+    ],
+    "answer": 1,
+    "solution": "**Concept: main idea (scope check against the paragraph map).**\n\nMap: P1 setup (the Lockean ideal of self-verification). P2 claim: the ideal is impossible because even our tools of verification are received on trust. P3 concession: deference goes wrong in characteristic ways. P4 rebuttal: those are failures of *structure*, not of trust as such; the rational believer judges structures. P5 implication: the ethics of belief belongs to institutions; \"think for yourself\" lets them off the hook.\n\n**Why (b) is right:** it covers P2 (unattainable ideal), P3–P4 (the question is *how*, judged by structure) and preserves the author's direction. It is the only option that spans every paragraph.\n\n**Why the others are wrong:**\n- (a) **Distortion / adds a recommendation.** The author never says \"trust experts\"; P3 explicitly warns that borrowed expertise is a characteristic failure, and the answer to \"how to rely\" is \"not indiscriminately\". The option also drops the structural point entirely.\n- (c) **Too narrow and opposite.** It takes the concession in P3 (medicine before the randomised trial) and makes it the thesis, then draws the conclusion the author rejects in P4 (\"not a lapse of rationality but the ordinary exercise of it\").\n- (d) **Opposite.** P5 says the misinformation anxiety is *misdescribed* as a crisis of credulity, because \"people have always believed what they were told\".\n\nCheck: the title-line \"argues that ___, against ___\" reads \"argues that trust is rational when the structure of trust is well built, against the ideal of solitary self-verification\"; only (b) matches.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT main-idea pattern for philosophy passages"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-002",
+    "setId": "rc-01",
+    "concepts": [
+      "rc-inference",
+      "rc-elimination"
+    ],
+    "difficulty": "medium",
+    "timeSec": 150,
+    "stem": "Which of the following can be inferred from the passage?",
+    "options": [
+      "The author believes that no belief acquired through testimony can ever turn out to be mistaken.",
+      "The author would regard a community with many independent, mutually checking sources as more rational than an individual who refuses all testimony.",
+      "The author thinks randomised trials have removed the need to trust medical testimony.",
+      "The author holds that institutions such as newsrooms and journals have ceased to function."
+    ],
+    "answer": 1,
+    "solution": "**Concept: inference (the negation test, one step from the text).**\n\n**Why (b) is right:** P2 ends \"A person who refused all testimony would not be a rigorous knower but a newborn\", and P4 says a community with \"many independent sources, that rewards those who check\" is one where believing others \"is not a lapse of rationality but the ordinary exercise of it\". Negate (b): \"such a community is *not* more rational than the total refuser\"; that contradicts both sentences. Forced, one step.\n\n**Why the others are wrong:**\n- (a) **Extreme.** The author concedes in P3 that deference \"goes wrong\"; testimony-based beliefs can plainly be mistaken. Negating (a) contradicts nothing in the passage.\n- (c) **Out of scope / distortion.** The randomised trial is mentioned only to date the era of fatal confident testimony. Nothing says trials remove the need for trust; P2 implies the need can never be removed.\n- (d) **Distortion of degree.** P5 *asks* \"whether the structures that once filtered testimony still function\"; a question is not an assertion that they have ceased.\n\nCheck: the correct inference is the modest one that restates the passage's own comparison (newborn vs well-built structure).",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT inference pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-003",
+    "setId": "rc-01",
+    "concepts": [
+      "rc-detail-vocab",
+      "rc-active-reading"
+    ],
+    "difficulty": "easy",
+    "timeSec": 120,
+    "stem": "The author mentions \"the history of medicine before the randomised trial\" in order to",
+    "options": [
+      "show that expertise is worthless unless it is personally verified.",
+      "concede that reliance on testimony can fail badly, before arguing that such failures are failures of structure.",
+      "present medical institutions as the best example of a well-built structure of trust.",
+      "illustrate the Lockean ideal of examining every belief for oneself."
+    ],
+    "answer": 1,
+    "solution": "**Concept: detail question about the function of an example (find the general sentence beside it).**\n\nLocate: the phrase is the last sentence of P3. P3 opens \"Here the autonomist has a point that should be conceded in full: deference goes wrong\", lists characteristic failures, and ends with the medical example. The next paragraph begins \"But notice what the failures have in common. They are failures in the structure of trust.\" So the example illustrates the concession, which the author then limits.\n\n**Why (b) is right:** it names both the role (concession) and what follows (structural failures).\n\n**Why the others are wrong:**\n- (a) **Extreme / opposite.** The author argues personal verification of everything is impossible (P2); she never calls expertise worthless.\n- (c) **Opposite.** The example is of testimony that \"killed its patients\", a badly built structure, not a well-built one.\n- (d) **Distortion.** The Lockean ideal is set up in P1 and rejected in P2; the medical example belongs to the concession about deference, not to the ideal.\n\nCheck: an example's purpose is the general claim next to it; here that claim is \"deference goes wrong\".",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT \"in order to\" detail pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-004",
+    "setId": "rc-01",
+    "concepts": [
+      "rc-application-critical",
+      "rc-inference"
+    ],
+    "difficulty": "hard",
+    "timeSec": 180,
+    "stem": "Which of the following would the author most likely cite as an example of a well-built structure of trust?",
+    "options": [
+      "A town in which everyone receives news from a single, highly respected broadcaster whose reports are rarely questioned.",
+      "A scientific field in which results are published by many independent laboratories, replication attempts are rewarded, and researchers caught falsifying data lose their positions.",
+      "A reader who refuses to accept any claim she has not personally tested in her own laboratory.",
+      "A committee whose members defer to its chair because he holds the most impressive credentials."
+    ],
+    "answer": 1,
+    "solution": "**Concept: application (extract the principle, then match structure, not subject).**\n\nPrinciple from P4: a well-built structure \"relies on many independent sources, rewards those who check and punishes those who are caught embellishing, keeps open the channels through which a dissenting witness can be heard\". A badly built one, from P3: a single trusted source; expertise borrowed invisibly.\n\n**Why (b) is right:** many independent sources (laboratories), reward for checking (replication rewarded), punishment for embellishing (falsifiers dismissed). Every clause maps onto the principle.\n\n**Why the others are wrong:**\n- (a) **Opposite.** A single source whose reports are \"rarely questioned\" is exactly P3's failure: the community \"loses the capacity to notice when that source fails\".\n- (c) **Opposite.** This is the Lockean refuser of P1–P2, whom the author calls \"a newborn\", not a structure of trust at all.\n- (d) **Opposite.** Deference to credentials is P3's \"expertise borrowed by people who have none\", with no checking channel.\n\nCheck: only one option contains the three features the passage lists; the other three each reproduce a named failure.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT application pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-005",
+    "setId": "rc-02",
+    "concepts": [
+      "rc-main-idea",
+      "rc-active-reading"
+    ],
+    "difficulty": "medium",
+    "timeSec": 150,
+    "stem": "The primary purpose of the passage is to",
+    "options": [
+      "describe the technological development of clocks from the pre-industrial to the industrial period.",
+      "argue that the measured labour-hour was a social creation of the wage relation rather than a natural quantity that the clock merely made visible.",
+      "celebrate the pre-industrial rhythm of task-oriented work as more humane than factory time-discipline.",
+      "advocate the adoption of a four-day working week."
+    ],
+    "answer": 1,
+    "solution": "**Concept: primary purpose (choose the verb, then check its object).**\n\nMap: P1 setup (the historians' \"simple story\": clock as neutral instrument). P2 claim: \"it has the causation backwards\"; the wage relation made the abstraction and then used the clock. P3 concession: pre-industrial time was no romance; workers also wanted the clock. P4 rebuttal: that strengthens the point; the hour was a shared social achievement; the eight-hour day was a political claim. P5 implication: humility about \"natural\".\n\nVerb: the passage opens with a view and says it is backwards, so it *argues*. Object: the hour as social creation.\n\n**Why (b) is right:** correct verb (argue), correct object (hour made by the wage relation, not revealed by the clock), covering P2–P5.\n\n**Why the others are wrong:**\n- (a) **Wrong verb and wrong object.** The passage does not describe clock technology; it says pre-industrial clocks were \"some of them very good\" and moves on.\n- (c) **Opposite.** P3 explicitly refuses \"a romance of task-oriented time\": the pre-industrial day was \"long, irregular and frequently hungry\".\n- (d) **Out of scope / adds.** P5 says such proposals \"cannot be dismissed on the ground that they violate a natural order\"; that is a refusal of one objection, not advocacy.\n\nCheck: the last sentence, \"what has been manufactured once can be manufactured again\", restates (b)'s \"manufactured\" claim.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT primary-purpose pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-006",
+    "setId": "rc-02",
+    "concepts": [
+      "rc-detail-vocab"
+    ],
+    "difficulty": "easy",
+    "timeSec": 120,
+    "stem": "According to the passage, workers demanded that time be measured accurately because",
+    "options": [
+      "accurate measurement guaranteed that they would be paid for every hour they worked.",
+      "only an hour that was measured could be limited.",
+      "pre-industrial time had been long, irregular and hungry.",
+      "employers had already imposed the clock and workers had no alternative."
+    ],
+    "answer": 1,
+    "solution": "**Concept: specific detail (locate the anchor, read the whole sentence, match meaning).**\n\nAnchor: \"demand that time be measured accurately\", P3. The sentence reads: \"the demand for a ten-hour day, and later an eight-hour one, was a demand that time be measured accurately, because only a measured hour could be a limited one.\"\n\n**Why (b) is right:** it is a near-verbatim restatement of the stated reason.\n\n**Why the others are wrong:**\n- (a) **Out of scope.** Payment per hour is never given as the workers' reason; the passage ties measurement to *limiting* hours, not to wages.\n- (c) **Distortion (true detail, wrong causal link).** The passage does say pre-industrial time was long and hungry, but as a rebuttal of romance, not as the workers' motive for wanting the clock.\n- (d) **Opposite.** The same paragraph says \"Nor was the factory's time-discipline simply imposed. Workers fought for the clock as often as against it.\"\n\nCheck: the \"because\" clause in the passage is the answer; detail questions reward reading to the full stop.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT \"according to the passage\" pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-007",
+    "setId": "rc-02",
+    "concepts": [
+      "rc-elimination",
+      "rc-inference"
+    ],
+    "difficulty": "medium",
+    "timeSec": 150,
+    "stem": "All of the following are consistent with the author's position EXCEPT:",
+    "options": [
+      "Pre-industrial communities possessed clocks but lacked the idea of interchangeable labour-hours.",
+      "The eight-hour day was originally justified by appeal to the needs of the human body.",
+      "A century of habit cannot be undone merely by recognising that the habit is historical.",
+      "Employers and workers came to want the measured hour for opposite reasons."
+    ],
+    "answer": 1,
+    "solution": "**Concept: elimination on an EXCEPT question (verify three, reject one; name the flaw).**\n\nWork through all four against the text.\n- (a) P2: \"Pre-industrial communities had clocks, some of them very good… What they did not have… was the idea that an hour of one person's labour was interchangeable with an hour of another's.\" Consistent.\n- (c) P5: \"a century of habit is not undone by noticing it.\" Consistent.\n- (d) P4: \"both employer and worker came to want the measured hour, for opposite reasons.\" Consistent.\n- (b) P4: the eight-hour day \"was argued for in the 1880s not from the body but from citizenship… The number was a political claim dressed as a schedule.\" The option states the **opposite** of the passage.\n\n**Answer (b).** Flaw: opposite. Note the trap: (b) is what most readers *assume* about the eight-hour day, and the passage says we \"now treat [it] as a kind of physiological baseline\"; the option reports the common belief the author is correcting.\n\nCheck: on EXCEPT questions, the answer is the one option whose negation the passage supports; \"the eight-hour day was not justified from the body\" is stated almost verbatim.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT EXCEPT / option-analysis pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-008",
+    "setId": "rc-02",
+    "concepts": [
+      "rc-application-critical"
+    ],
+    "difficulty": "hard",
+    "timeSec": 180,
+    "stem": "Which of the following, if true, would most weaken the author's central claim?",
+    "options": [
+      "Several pre-industrial societies with no wage labour routinely priced and exchanged work in standard units of clock time.",
+      "The first factory clocks were often inaccurate by as much as twenty minutes a day.",
+      "Some campaigners for shorter hours in the 1880s also argued from the health of workers.",
+      "Many pre-industrial communities used clocks to time religious services."
+    ],
+    "answer": 0,
+    "solution": "**Concept: weaken (find the assumption, then the fact that breaks it).**\n\nCentral claim (P2): the idea of interchangeable, priced labour-hours \"required a mode of production in which the worker's contribution had been… reduced to attendance\"; \"the clock did not create the abstraction; the wage relation did\". Assumption: the abstraction did not exist independently of wage labour.\n\n**Why (a) is right:** if societies without wage labour already priced work in standard clock units, the abstraction existed without the wage relation, and the author's causal story loses its support. This attacks the exact link between evidence (pre-industrial clocks used only for prayer, markets, almanacs) and conclusion.\n\n**Why the others are wrong:**\n- (b) **Out of scope.** Accuracy of early clocks has no bearing on whether the *idea* of interchangeable hours came from the wage relation.\n- (c) **Touches a supporting detail, not the central claim.** The eight-hour argument in P4 illustrates the hour as political; even if some also argued from health, the main claim about the origin of the measured hour stands. A modest weakener of a side point is not the best weakener.\n- (d) **Consistent with the passage.** P2 already says pre-industrial clocks were used \"for prayer\"; the option repeats the author's own evidence.\n\nCheck: the strongest weakener is the one the author's own evidence sentence (\"what they did not have… was the idea…\") would have to deny.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT strengthen/weaken pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-009",
+    "setId": "rc-03",
+    "concepts": [
+      "rc-tone-attitude",
+      "rc-elimination"
+    ],
+    "difficulty": "medium",
+    "timeSec": 120,
+    "stem": "The author's attitude toward the claim that science is \"self-correcting\" is best described as",
+    "options": [
+      "contemptuous dismissal of a claim she regards as meaningless.",
+      "scepticism toward the phrase as commonly used, combined with acceptance that correction does occur under the right institutional conditions.",
+      "unqualified endorsement of the claim as an accurate description of scientific practice.",
+      "resignation to the view that scientific errors will never be corrected."
+    ],
+    "answer": 1,
+    "solution": "**Concept: tone and attitude (read the evaluative words and the concession–rebuttal structure; place on the intensity scale).**\n\nEvidence: P1 says the reassurance is offered \"so often, and so automatically\", calls it literally false and \"only intermittently true\" of scientists, and relocates correction to institutions that \"correct only when they are built to\". P3 concedes \"the defenders have the better of one argument\". P4 says where conditions fail, self-correction \"is not a property of science but a slogan about it\". P5 proposes engineering levers.\n\n**Why (b) is right:** sceptical of the slogan, yet the author believes correction happens when institutions are built for it (P1 last sentence, P5). Moderate negative plus a real positive.\n\n**Why the others are wrong:**\n- (a) **Too strong (extreme).** \"Slogan\" is critical, but the author takes the phrase seriously enough to ask \"what the phrase could mean\" and to grant the defenders a point.\n- (c) **Opposite.** The author calls the literal claim false.\n- (d) **Opposite / extreme.** The whole final paragraph is a plan for producing correction \"more or less efficiently\"; that is the opposite of resignation.\n\nCheck: two options are opposites, one overshoots in intensity; the measured option that captures both the concession and the criticism is correct.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT tone/attitude pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-010",
+    "setId": "rc-03",
+    "concepts": [
+      "rc-detail-vocab",
+      "rc-active-reading"
+    ],
+    "difficulty": "easy",
+    "timeSec": 120,
+    "stem": "The author refers to rising reported crime in order to",
+    "options": [
+      "argue that scientific fraud is increasing.",
+      "illustrate that a rising rate of detected error may indicate better checking rather than worse science.",
+      "show that the critics are right to be alarmed by replication failures.",
+      "suggest that science should be policed by outsiders."
+    ],
+    "answer": 1,
+    "solution": "**Concept: detail / function of an analogy (find the general sentence it sits beside).**\n\nLocate: P3, \"a rising rate of detected error can be a sign of improvement rather than decay, in the way that rising reported crime can reflect better policing.\" The analogy is attached directly to the claim about detected error.\n\n**Why (b) is right:** it restates that claim; the crime analogy is its illustration.\n\n**Why the others are wrong:**\n- (a) **Distortion.** The analogy is about *detection* rising, not about fraud or error rising; the author's point is precisely that detection and underlying error are different things.\n- (c) **Opposite.** P3 is the paragraph in which the author sides with the defenders against the critics (\"the critics' demand for a science without retractions is a demand for a science without tests\").\n- (d) **Out of scope.** Outsiders are mentioned in P2 as part of the critics' complaint, not as a recommendation, and not in connection with the crime analogy.\n\nCheck: \"in the way that\" introduces an analogy for the clause before it; the purpose is that clause.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT \"in order to\" detail pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-011",
+    "setId": "rc-03",
+    "concepts": [
+      "rc-inference",
+      "rc-elimination"
+    ],
+    "difficulty": "medium",
+    "timeSec": 150,
+    "stem": "Which of the following can be inferred from the passage?",
+    "options": [
+      "The replication crisis would have been discovered sooner if more scientists had been honest.",
+      "The researchers who uncovered the replication crisis acted against the prevailing incentives of their field.",
+      "Journals now routinely publish negative results.",
+      "Pre-registration of hypotheses would eliminate error from science."
+    ],
+    "answer": 1,
+    "solution": "**Concept: inference (negation test; refuse second-step stories).**\n\n**Why (b) is right:** P4 ends: the crisis \"was uncovered by a small number of researchers who chose, at some cost to themselves, to do what the incentives discouraged.\" Negate (b): \"they did not act against the incentives\"; this contradicts the sentence directly. One step.\n\n**Why the others are wrong:**\n- (a) **Out of scope.** The passage locates the problem in incentives and institutional design, never in honesty; P1 even says the career-invested researcher is merely \"the last person motivated\" to overturn a result, a point about motivation, not integrity. Negating (a) contradicts nothing.\n- (c) **Opposite.** P4: journals publishing negative results is something \"they mostly do not\" do.\n- (d) **Extreme.** P5 presents pre-registration as one lever that lets correction be produced \"more or less efficiently\"; nothing says it eliminates error.\n\nCheck: the correct inference is a restatement of a stated fact about the uncovering of the crisis; the three wrong options each add a claim (honesty, routine publication, elimination) the passage does not make.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT inference pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-012",
+    "setId": "rc-03",
+    "concepts": [
+      "rc-application-critical",
+      "rc-detail-vocab"
+    ],
+    "difficulty": "hard",
+    "timeSec": 180,
+    "stem": "The author would most likely regard which of the following as an instance of the \"romance of the lone investigator\" that the passage criticises?",
+    "options": [
+      "A journal's policy of publishing every replication attempt regardless of its outcome.",
+      "A popular history that credits the overturning of a long-accepted theory entirely to one outsider's genius, while ignoring the data-sharing rules that allowed him to test it.",
+      "A university that awards tenure credit for demonstrating that a famous published result is false.",
+      "A researcher who registers her hypothesis publicly before collecting any data."
+    ],
+    "answer": 1,
+    "solution": "**Concept: application (turn the author's criticism into a principle and match it).**\n\nPrinciple from P5: the \"romance of the lone investigator\" is a *story* that \"locat[es] correction in a heroic individual rather than in the ordinary arrangements that make heroism unnecessary\". So an instance must (i) credit an individual and (ii) ignore or hide the institutional arrangements.\n\n**Why (b) is right:** it credits one outsider's genius \"entirely\" and ignores the data-sharing rules that made the correction possible: both features of the principle.\n\n**Why the others are wrong:**\n- (a), (c), (d) are each one of the author's own \"levers\" from P5 (publishing replications whatever the result; credit for finding a famous result false; pre-registration). They are the *ordinary arrangements* the author favours, the opposite of the romance. A reader who matched on subject (\"science, individuals\") rather than structure might be tempted by (d) because it names a single researcher; but she is using an institutional mechanism, not being mythologised for heroism.\n\nCheck: three options are the engineering the author recommends; only one is a narrative that hides the engineering.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT application pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-013",
+    "setId": "rc-04",
+    "concepts": [
+      "rc-main-idea",
+      "rc-active-reading"
+    ],
+    "difficulty": "medium",
+    "timeSec": 150,
+    "stem": "Which of the following best states the main idea of the passage?",
+    "options": [
+      "Since a source text has no fixed meaning, any translation of it is as good as any other.",
+      "Fidelity is a useful standard for judging translations because it allows mistranslations to be identified.",
+      "Because translation involves interpretive choices that \"fidelity\" cannot measure, translations should be judged as readings, by their strength and by what they make possible, rather than as copies.",
+      "Reviewers of translations lack readings of their own and should therefore refrain from judging translations at all."
+    ],
+    "answer": 2,
+    "solution": "**Concept: main idea (write the one-line summary first; classify wrong options as narrow, broad or distorted).**\n\nMap: P1 setup (the fidelity metaphor and its assumption of a fixed meaning). P2 claim: translation is already a reading; \"faithful\" means only that the critic would have chosen the same. P3 concession: real mistranslations exist and fidelity \"earns its keep\" there; but reviews argue about interpretive cases where fidelity measures nothing. P4 proposal: judge translations as readings, strong or weak, by what they make possible. P5 implication: reviewers should ask a harder question.\n\nOne line: \"Judge translations as readings, not as copies, because fidelity cannot measure the choices that matter.\"\n\n**Why (c) is right:** it carries the reason (P2–P3), the proposal (P4) and the correct direction.\n\n**Why the others are wrong:**\n- (a) **Extreme / distortion.** P3 opens \"This is not an argument that anything goes\", and P4 says a translation \"cannot say anything it likes\".\n- (b) **Too narrow.** It is the concession of P3 promoted to thesis; the author immediately adds that the cases reviews argue about \"are rarely of this kind\".\n- (d) **Distortion / adds.** P5 says the better question \"requires the reviewer to have a reading of her own\"; it does not say reviewers lack one or should stop judging.\n\nCheck: the passage's own question in P5, \"what reading… does this translation embody, and is that reading worth having?\", is (c) in interrogative form.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT main-idea pattern for literary-criticism passages"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-014",
+    "setId": "rc-04",
+    "concepts": [
+      "rc-detail-vocab"
+    ],
+    "difficulty": "easy",
+    "timeSec": 90,
+    "stem": "In the third paragraph, the phrase \"earns its keep\" most nearly means",
+    "options": [
+      "generates income for translators.",
+      "proves genuinely useful.",
+      "is retained out of habit.",
+      "becomes unnecessary."
+    ],
+    "answer": 1,
+    "solution": "**Concept: vocabulary in context (substitution; reject the dictionary meaning).**\n\nSentence: \"The fidelity metaphor earns its keep in such cases, and a theory of translation that could not distinguish a blunder from an interpretation would be useless.\" The second clause tells you what the first means: in cases of plain error, the metaphor does real work (distinguishes blunder from interpretation).\n\nSubstitute: \"The fidelity metaphor *proves genuinely useful* in such cases\" reads correctly and matches the following clause. Answer (b).\n\n**Why the others are wrong:**\n- (a) **Dictionary trap.** \"Earn\" and \"keep\" suggest money, but the subject is a metaphor, which earns nothing; the literal reading produces nonsense.\n- (c) **Opposite.** The author says the metaphor is kept here because it works, not out of habit; habit is what she accuses reviewers of elsewhere.\n- (d) **Opposite.** The sentence says the metaphor is needed in such cases.\n\nCheck: the idiom \"earn one's keep\" means to justify one's existence by being useful; the context confirms the figurative sense.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT vocabulary-in-context pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-015",
+    "setId": "rc-04",
+    "concepts": [
+      "rc-tone-attitude",
+      "rc-elimination"
+    ],
+    "difficulty": "medium",
+    "timeSec": 120,
+    "stem": "The author's attitude toward the vocabulary of fidelity is best described as",
+    "options": [
+      "wholly dismissive: the author regards the vocabulary as useless in every case.",
+      "critical but qualified: the author finds the vocabulary apt for plain errors and misleading for the interpretive disputes that reviews actually involve.",
+      "neutral: the author merely describes how reviewers use the vocabulary without evaluating it.",
+      "admiring: the author considers the metaphor of the translator as spouse an illuminating account of the translator's role."
+    ],
+    "answer": 1,
+    "solution": "**Concept: attitude toward a specific object (collect every sentence about that object; use the concession–rebuttal structure).**\n\nSentences about the fidelity vocabulary: P1 \"so entrenched that it is hard to see it as a metaphor\" (critical); P2 \"to call one of those choices faithful is to say only that the critic would have chosen it too\" (critical); P3 \"earns its keep in such cases\" (concession) but in the disputed cases \"functions as a compliment or an insult wearing the costume of a measurement\" (critical, mildly sardonic); P5 \"a question with no stable answer\".\n\n**Why (b) is right:** it reproduces both halves: apt for blunders, misleading for the interpretive cases.\n\n**Why the others are wrong:**\n- (a) **Extreme.** Contradicted by the P3 concession (\"earns its keep\").\n- (c) **Opposite of the evidence.** \"Costume of a measurement\" and \"no stable answer\" are evaluations, not descriptions.\n- (d) **Opposite.** The spousal metaphor is introduced in P1 only to be exposed as an unexamined assumption.\n\nCheck: when the author has conceded something, the option that ignores the concession (a) and the option that ignores the criticism (d) are both out; the balanced option survives.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT tone/attitude pattern"
+    }
+  },
+  {
+    "section": "VARC",
+    "topic": "reading-comprehension",
+    "type": "mcq",
+    "id": "varc-rc-016",
+    "setId": "rc-04",
+    "concepts": [
+      "rc-application-critical",
+      "rc-inference"
+    ],
+    "difficulty": "hard",
+    "timeSec": 180,
+    "stem": "A reviewer criticises a new translation of a nineteenth-century novel for \"flattening the narrator's ironic tone into plain statement\". Based on the passage, the author would most likely say that this criticism",
+    "options": [
+      "is illegitimate, because tone is a matter of interpretation on which no translation can be judged.",
+      "is a legitimate judgement about the strength of the translation's reading, provided it is framed as such and not as a finding of \"unfaithfulness\".",
+      "identifies a mistranslation in the plain sense, comparable to rendering a negative as a positive.",
+      "shows that the reviewer should have produced her own translation instead."
+    ],
+    "answer": 1,
+    "solution": "**Concept: application (\"how would the author respond\": run the principle on the new case).**\n\nPrinciple (P3–P5): disputes about \"tone, register, the decision to preserve a strangeness or to domesticate it\" are not fidelity questions; they are to be judged as readings, \"strong or weak, generous or mean, alive or inert\", and a translation \"is answerable to the original\" even so. Reviewers should ask \"what reading… does this translation embody, and is that reading worth having?\"\n\nApply: a complaint about flattened irony is a complaint about tone, which the passage names as an interpretive case. The author would accept the judgement (a reading that loses the irony is a weaker reading) but would reframe it away from the language of faithfulness.\n\n**Why (b) is right:** it matches both the acceptance (judge the reading) and the reframing (not \"unfaithful\").\n\n**Why the others are wrong:**\n- (a) **Distortion.** The author insists readings *can* be judged (strong vs weak); interpretation does not make criticism illegitimate.\n- (c) **Distortion.** P3 separates plain blunders (negative for positive, missed idiom) from tone and register; the complaint falls on the interpretive side.\n- (d) **Out of scope.** The passage asks reviewers to have \"a reading of her own\", not a translation of her own.\n\nCheck: the passage explicitly lists \"tone\" among the cases where fidelity fails as a measure; the correct option is the one that treats tone that way.",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT application pattern"
+    }
+  }
+]

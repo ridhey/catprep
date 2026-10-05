@@ -1,0 +1,911 @@
+[
+  {
+    "id": "qa-geo-001",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "lines-angles-triangles"
+    ],
+    "type": "mcq",
+    "stem": "In triangle $ABC$, $\\angle A = 50°$. The internal bisectors of angles $B$ and $C$ meet at $I$. Then $\\angle BIC$ equals",
+    "options": [
+      "100°",
+      "115°",
+      "130°",
+      "65°"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** angle between two internal bisectors is $90° + \\frac{A}{2}$.\n\n$\\angle B + \\angle C = 130°$, so $\\frac{\\angle B}{2} + \\frac{\\angle C}{2} = 65°$.\n\nIn triangle $BIC$: $\\angle BIC = 180° - 65° = 115°$.\n\n**Check:** formula $90° + \\frac{50°}{2} = 115°$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT angle-bisector pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-geo-002",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "lines-angles-triangles",
+      "circles"
+    ],
+    "type": "tita",
+    "stem": "A triangle has sides 7 cm, 24 cm and 25 cm. Find the radius (in cm) of the circle inscribed in it.",
+    "answer": "3",
+    "solution": "**Concept:** $7^2 + 24^2 = 625 = 25^2$, so the triangle is right-angled; inradius $r = \\frac{a + b - c}{2}$.\n\n$r = \\dfrac{7 + 24 - 25}{2} = 3$.\n\n**Check via area:** area $= \\frac12 \\times 7 \\times 24 = 84$, $s = 28$, $r = \\frac{84}{28} = 3$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT right-triangle inradius pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-geo-003",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "lines-angles-triangles"
+    ],
+    "type": "mcq",
+    "stem": "Two sides of a triangle have lengths 8 and 15. How many integer values can the length of the third side take?",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** triangle inequality: $|15 - 8| < x < 15 + 8$.\n\n$7 < x < 23$, so $x \\in \\{8, 9, \\dots, 22\\}$: $22 - 8 + 1 = 15$ values.\n\n**Check the ends:** $x = 7$ gives $7 + 8 = 15$, degenerate ✗; $x = 23$ gives $8 + 15 = 23$, degenerate ✗.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT triangle-inequality counting pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-geo-004",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "lines-angles-triangles"
+    ],
+    "type": "tita",
+    "stem": "A triangle has sides 13, 14 and 15. Find the length of the altitude drawn to the side of length 14.",
+    "answer": "12",
+    "solution": "**Concept:** Heron's formula, then area $= \\frac12 \\times$ base $\\times$ height.\n\n$s = \\dfrac{13 + 14 + 15}{2} = 21$. Area $= \\sqrt{21 \\times 8 \\times 7 \\times 6} = \\sqrt{7056} = 84$.\n\nAltitude to side 14: $h = \\dfrac{2 \\times 84}{14} = 12$.\n\n**Check:** the altitude splits the base into $5$ and $9$: $5^2 + 12^2 = 169 = 13^2$ ✓ and $9^2 + 12^2 = 225 = 15^2$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT 13-14-15 triangle pattern"
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "qa-geo-005",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "lines-angles-triangles"
+    ],
+    "type": "mcq",
+    "stem": "In triangle $ABC$, $\\angle A = 60°$, $AB = 5$ and $AC = 8$. The length of $BC$ is",
+    "options": [
+      "6",
+      "7",
+      "$\\sqrt{89}$",
+      "9"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** cosine rule with $60°$: $a^2 = b^2 + c^2 - bc$.\n\n$BC^2 = 5^2 + 8^2 - 5 \\times 8 = 25 + 64 - 40 = 49 \\Rightarrow BC = 7$.\n\n**Check without the cosine rule:** drop the perpendicular from $B$ to $AC$; it has length $5\\sin 60° = \\frac{5\\sqrt3}{2}$ and foot at distance $2.5$ from $A$, hence $5.5$ from $C$. $BC^2 = 5.5^2 + \\frac{75}{4} = 30.25 + 18.75 = 49$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT 60-degree triangle pattern"
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "qa-geo-006",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "lines-angles-triangles"
+    ],
+    "type": "tita",
+    "stem": "The sides of a triangle are three consecutive positive integers, and its largest angle is twice its smallest angle. Find the perimeter of the triangle.",
+    "answer": "15",
+    "solution": "**Concept:** cosine rule plus $\\cos 2\\theta = 2\\cos^2\\theta - 1$.\n\nLet the sides be $n - 1, n, n + 1$ with smallest angle $\\theta$ opposite $n - 1$ and largest angle $2\\theta$ opposite $n + 1$.\n\n$\\cos\\theta = \\dfrac{n^2 + (n+1)^2 - (n-1)^2}{2n(n+1)} = \\dfrac{n^2 + 4n}{2n(n+1)} = \\dfrac{n + 4}{2(n+1)}$.\n\n$\\cos 2\\theta = \\dfrac{(n-1)^2 + n^2 - (n+1)^2}{2n(n-1)} = \\dfrac{n^2 - 4n}{2n(n-1)} = \\dfrac{n - 4}{2(n-1)}$.\n\nSet $\\cos 2\\theta = 2\\cos^2\\theta - 1$:\n\n$\\dfrac{n - 4}{2(n-1)} = \\dfrac{(n+4)^2}{2(n+1)^2} - 1 = \\dfrac{(n+4)^2 - 2(n+1)^2}{2(n+1)^2} = \\dfrac{-n^2 + 4n + 14}{2(n+1)^2}$.\n\nCross-multiply: $(n - 4)(n + 1)^2 = (n - 1)(-n^2 + 4n + 14)$.\n\nLHS $= n^3 - 2n^2 - 7n - 4$. RHS $= -n^3 + 5n^2 + 10n - 14$.\n\n$2n^3 - 7n^2 - 17n + 10 = 0$. Try $n = 5$: $250 - 175 - 85 + 10 = 0$ ✓. So the sides are $4, 5, 6$ and the perimeter is $15$.\n\n**Check:** $\\cos\\theta = \\frac{25 + 36 - 16}{60} = \\frac34$; $\\cos(\\text{largest}) = \\frac{16 + 25 - 36}{40} = \\frac18$; and $2(\\frac34)^2 - 1 = \\frac18$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on classic CAT 4-5-6 triangle pattern"
+    },
+    "timeSec": 180
+  },
+  {
+    "id": "qa-geo-007",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "lines-angles-triangles"
+    ],
+    "type": "mcq",
+    "stem": "In triangle $ABC$, $AB = AC$. A point $D$ lies on side $AC$ such that $BC = BD = AD$. The measure of $\\angle BAC$ is",
+    "options": [
+      "30°",
+      "36°",
+      "45°",
+      "40°"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** isosceles triangles and the exterior angle, chained.\n\nLet $\\angle BAC = x$. In triangle $ABD$, $AD = BD$ so $\\angle ABD = \\angle BAD = x$.\n\nExterior angle at $D$ of triangle $ABD$: $\\angle BDC = 2x$.\n\nIn triangle $BDC$, $BD = BC$ so $\\angle BCD = \\angle BDC = 2x$, i.e. $\\angle C = 2x$.\n\n$AB = AC$ gives $\\angle B = \\angle C = 2x$.\n\nAngle sum: $x + 2x + 2x = 180° \\Rightarrow x = 36°$.\n\n**Check:** angles $36°, 72°, 72°$; $\\angle ABD = 36°$ and $\\angle DBC = 72° - 36° = 36°$, so triangle $BDC$ has angles $36°, 72°, 72°$ consistent with $BD = BC$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT golden-triangle angle chase pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-geo-008",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "similarity-congruence"
+    ],
+    "type": "mcq",
+    "stem": "In triangle $ABC$, points $D$ and $E$ lie on $AB$ and $AC$ respectively with $DE \\parallel BC$. If $AD = 3$, $DB = 5$ and $AE = 4.5$, then $EC$ equals",
+    "options": [
+      "6",
+      "7.5",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** basic proportionality theorem: $\\frac{AD}{DB} = \\frac{AE}{EC}$.\n\n$\\dfrac{3}{5} = \\dfrac{4.5}{EC} \\Rightarrow EC = \\dfrac{5 \\times 4.5}{3} = 7.5$.\n\n**Check:** $AE : AC = 4.5 : 12 = 3 : 8 = AD : AB$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT BPT pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-geo-009",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "similarity-congruence"
+    ],
+    "type": "tita",
+    "stem": "In a right-angled triangle, the altitude to the hypotenuse divides the hypotenuse into segments of lengths 4 and 9. Find the length of the altitude.",
+    "answer": "6",
+    "solution": "**Concept:** the altitude to the hypotenuse is the geometric mean of the two segments.\n\n$h^2 = 4 \\times 9 = 36 \\Rightarrow h = 6$.\n\n**Check:** legs are $\\sqrt{4 \\times 13} = \\sqrt{52}$ and $\\sqrt{9 \\times 13} = \\sqrt{117}$; area $= \\frac12\\sqrt{52 \\times 117} = \\frac12 \\times 78 = 39$, and $\\frac12 \\times 13 \\times 6 = 39$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT right-triangle altitude pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-geo-010",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "similarity-congruence"
+    ],
+    "type": "mcq",
+    "stem": "In triangle $ABC$, $D$ is on $AB$ and $E$ is on $AC$ with $DE \\parallel BC$ and $AD : DB = 2 : 3$. The ratio of the area of triangle $ADE$ to the area of trapezium $DBCE$ is",
+    "options": [
+      "4 : 25",
+      "4 : 21",
+      "2 : 5",
+      "4 : 9"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** similar triangles have areas in the ratio of the squares of corresponding sides.\n\n$AD : AB = 2 : 5$, so $[ADE] : [ABC] = 4 : 25$.\n\nTrapezium $DBCE = [ABC] - [ADE] = 25 - 4 = 21$ (in the same units).\n\nRatio $= 4 : 21$.\n\n**Check:** $4 + 21 = 25$, the whole triangle ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT area-ratio pattern"
+    },
+    "timeSec": 75
+  },
+  {
+    "id": "qa-geo-011",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "similarity-congruence"
+    ],
+    "type": "tita",
+    "stem": "Two vertical poles of heights 12 m and 18 m stand on level ground. A wire runs from the top of each pole to the foot of the other. At what height (in m) above the ground do the two wires cross?",
+    "answer": "7.2",
+    "tolerance": 0.01,
+    "solution": "**Concept:** crossed-wires result $h = \\frac{ab}{a+b}$ from two pairs of similar triangles.\n\nLet the poles be $d$ apart and the crossing point be at horizontal distance $t$ from the 12 m pole, at height $h$.\n\nWire from the top of the 18 m pole to the foot of the 12 m pole: $\\dfrac{h}{t} = \\dfrac{18}{d}$. Wire from the top of the 12 m pole to the foot of the 18 m pole: $\\dfrac{h}{d - t} = \\dfrac{12}{d}$.\n\nSo $t = \\dfrac{hd}{18}$ and $d - t = \\dfrac{hd}{12}$. Adding: $d = hd\\left(\\dfrac1{18} + \\dfrac1{12}\\right) \\Rightarrow \\dfrac1h = \\dfrac{1}{18} + \\dfrac1{12} = \\dfrac{5}{36} \\Rightarrow h = 7.2$.\n\n**Check:** $\\frac{12 \\times 18}{30} = \\frac{216}{30} = 7.2$ ✓; the distance $d$ cancels.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT crossed-wires pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-geo-012",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "similarity-congruence"
+    ],
+    "type": "mcq",
+    "stem": "Triangle $ABC$ is right-angled at $B$, and $BD$ is the altitude to the hypotenuse $AC$. If $AD = 8$ and $DC = 2$, then $AB$ equals",
+    "options": [
+      "$4\\sqrt5$",
+      "$2\\sqrt5$",
+      "8",
+      "10"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** in the three similar right triangles, $AB^2 = AD \\cdot AC$.\n\n$AC = 10$. $AB^2 = 8 \\times 10 = 80 \\Rightarrow AB = \\sqrt{80} = 4\\sqrt5$.\n\n**Check:** $BC^2 = DC \\cdot AC = 20$; $AB^2 + BC^2 = 100 = AC^2$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT altitude-to-hypotenuse pattern"
+    },
+    "timeSec": 75
+  },
+  {
+    "id": "qa-geo-013",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "similarity-congruence",
+      "quadrilaterals-polygons"
+    ],
+    "type": "tita",
+    "stem": "In trapezium $ABCD$, $AB \\parallel CD$, $AB = 12$ and $CD = 8$. The diagonals intersect at $O$. If the area of triangle $AOB$ is 36, find the area of the trapezium.",
+    "answer": "100",
+    "solution": "**Concept:** $\\triangle AOB \\sim \\triangle COD$ with ratio $AB : CD$; the two side triangles have equal area, the geometric mean of the other two.\n\nRatio $12 : 8 = 3 : 2$, so $[AOB] : [COD] = 9 : 4 \\Rightarrow [COD] = 16$.\n\nTriangles $AOB$ and $AOD$ share the vertex $A$ and have bases $OB, OD$ on one line, so $[AOD] : [AOB] = OD : OB = 2 : 3 \\Rightarrow [AOD] = 24$. Similarly $[BOC] = 24$.\n\nArea $= 36 + 16 + 24 + 24 = 100$.\n\n**Check by heights:** $[AOB] = \\frac12 \\times 12 \\times h_1 = 36 \\Rightarrow h_1 = 6$; $h_2 = \\frac23 h_1 = 4$; total height $10$; area $= \\frac12(12 + 8)(10) = 100$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT trapezium-diagonal area pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-geo-014",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "similarity-congruence"
+    ],
+    "type": "mcq",
+    "stem": "In triangle $ABC$, point $D$ lies on $BC$ with $BD : DC = 1 : 2$, and $E$ is the midpoint of $AD$. The line $BE$ extended meets $AC$ at $F$. Then $AF : FC$ equals",
+    "options": [
+      "1 : 2",
+      "1 : 3",
+      "2 : 3",
+      "1 : 4"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** Menelaus' theorem on triangle $ADC$ with the transversal $B$–$E$–$F$ (or mass points).\n\nMenelaus (unsigned lengths): $\\dfrac{AE}{ED} \\cdot \\dfrac{DB}{BC} \\cdot \\dfrac{CF}{FA} = 1$.\n\n$\\dfrac{AE}{ED} = 1$, $\\dfrac{DB}{BC} = \\dfrac{1}{3}$. So $\\dfrac{CF}{FA} = 3$, i.e. $AF : FC = 1 : 3$.\n\n**Check by mass points:** $BD : DC = 1 : 2$ gives masses $B = 2$, $C = 1$, so $D = 3$. $E$ is the midpoint of $AD$, so $A = 3$. On $AC$: $AF : FC = $ mass$(C)$ : mass$(A) = 1 : 3$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT cevian-ratio pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-geo-015",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "circles"
+    ],
+    "type": "mcq",
+    "stem": "A chord of length 16 cm is at a distance of 6 cm from the centre of a circle. The radius of the circle (in cm) is",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "14"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** the perpendicular from the centre bisects the chord; Pythagoras.\n\nHalf-chord $= 8$, distance $= 6$: $r = \\sqrt{8^2 + 6^2} = \\sqrt{100} = 10$.\n\n**Check:** a $6$–$8$–$10$ triangle ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT chord-distance pattern"
+    },
+    "timeSec": 45
+  },
+  {
+    "id": "qa-geo-016",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "circles"
+    ],
+    "type": "tita",
+    "stem": "Two chords $AB$ and $CD$ of a circle intersect at a point $P$ inside the circle. If $AP = 4$, $PB = 9$ and $CP = 6$, find $PD$.",
+    "answer": "6",
+    "solution": "**Concept:** intersecting chords (power of a point): $PA \\cdot PB = PC \\cdot PD$.\n\n$4 \\times 9 = 6 \\times PD \\Rightarrow PD = 6$.\n\n**Check:** both products equal $36$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT intersecting-chords pattern"
+    },
+    "timeSec": 45
+  },
+  {
+    "id": "qa-geo-017",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "circles"
+    ],
+    "type": "mcq",
+    "stem": "From an external point $P$, a tangent $PT$ is drawn to a circle, and a secant from $P$ meets the circle at $A$ and $B$ with $A$ nearer to $P$. If $PA = 4$ and $AB = 5$, the length of $PT$ is",
+    "options": [
+      "5",
+      "6",
+      "$\\sqrt{20}$",
+      "9"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** tangent–secant: $PT^2 = PA \\cdot PB$, where $PB$ is the full distance to the far point.\n\n$PB = PA + AB = 9$. $PT^2 = 4 \\times 9 = 36 \\Rightarrow PT = 6$.\n\n**Check:** the common error $PA \\cdot AB = 20$ gives $\\sqrt{20}$, which is an option precisely to catch that slip ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT tangent-secant pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-geo-018",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "circles"
+    ],
+    "type": "tita",
+    "stem": "A chord $AB$ of a circle subtends an angle of $40°$ at a point on the major arc. The tangents to the circle at $A$ and $B$ meet at $P$. Find $\\angle APB$ in degrees.",
+    "answer": "100",
+    "solution": "**Concept:** central angle is twice the inscribed angle; the tangent quadrilateral $OAPB$ has two right angles.\n\n$\\angle AOB = 2 \\times 40° = 80°$.\n\nIn quadrilateral $OAPB$, $\\angle OAP = \\angle OBP = 90°$ (radius $\\perp$ tangent), so $\\angle APB = 360° - 90° - 90° - 80° = 100°$.\n\n**Check:** $\\angle APB = 180° - \\angle AOB = 100°$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT tangent-angle pattern"
+    },
+    "timeSec": 75
+  },
+  {
+    "id": "qa-geo-019",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "circles"
+    ],
+    "type": "mcq",
+    "stem": "Two circles of radii 9 cm and 4 cm touch each other externally. The length of a direct common tangent (in cm) is",
+    "options": [
+      "10",
+      "12",
+      "13",
+      "6"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** direct common tangent length $= \\sqrt{d^2 - (r_1 - r_2)^2}$ with $d = r_1 + r_2$ for external touching.\n\n$d = 13$. Length $= \\sqrt{169 - 25} = \\sqrt{144} = 12$.\n\n**Check:** shortcut for externally touching circles, $2\\sqrt{r_1 r_2} = 2\\sqrt{36} = 12$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT common-tangent pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-geo-020",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "circles",
+      "mensuration"
+    ],
+    "type": "mcq",
+    "stem": "In a circle with centre $O$ and radius 1 cm, an arc $AB$ makes an angle of $60°$ at $O$. Let $R$ be the region bounded by the radii $OA$, $OB$ and the arc $AB$. If $C$ and $D$ are two points on $OA$ and $OB$ respectively such that $OC = OD$ and the area of triangle $OCD$ is half that of $R$, then the length of $OC$ (in cm) is",
+    "options": [
+      "$\\left(\\dfrac{\\pi}{3\\sqrt3}\\right)^{1/2}$",
+      "$\\left(\\dfrac{\\pi}{4\\sqrt3}\\right)^{1/2}$",
+      "$\\left(\\dfrac{\\pi}{6}\\right)^{1/2}$",
+      "$\\left(\\dfrac{\\pi}{2\\sqrt3}\\right)^{1/2}$"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** sector area vs area of a triangle with a $60°$ included angle.\n\nArea of sector $R = \\dfrac{60}{360}\\pi(1)^2 = \\dfrac{\\pi}{6}$.\n\nLet $OC = OD = x$. Triangle $OCD$ has two sides $x$ with included angle $60°$: area $= \\dfrac12 x^2 \\sin 60° = \\dfrac{\\sqrt3}{4}x^2$.\n\nSet this equal to half of $R$: $\\dfrac{\\sqrt3}{4}x^2 = \\dfrac{\\pi}{12} \\Rightarrow x^2 = \\dfrac{\\pi}{3\\sqrt3} \\Rightarrow x = \\left(\\dfrac{\\pi}{3\\sqrt3}\\right)^{1/2}$.\n\n**Check:** $x^2 \\approx \\frac{3.1416}{5.196} \\approx 0.605$, $x \\approx 0.78 < 1$, so $C, D$ do lie on the radii ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT",
+      "year": 2018,
+      "slot": 1
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-geo-021",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "circles",
+      "lines-angles-triangles"
+    ],
+    "type": "tita",
+    "stem": "A right-angled triangle has hypotenuse 29 cm and an inscribed circle of radius 6 cm. Find the area of the triangle in cm².",
+    "answer": "210",
+    "solution": "**Concept:** for a right triangle, $r = \\frac{a + b - c}{2}$; combine with Pythagoras.\n\n$a + b - 29 = 12 \\Rightarrow a + b = 41$. Also $a^2 + b^2 = 29^2 = 841$.\n\n$(a + b)^2 = a^2 + b^2 + 2ab \\Rightarrow 1681 = 841 + 2ab \\Rightarrow ab = 420$.\n\nArea $= \\dfrac{ab}{2} = 210$.\n\n**Check:** $a, b$ are roots of $t^2 - 41t + 420 = 0$, i.e. $20$ and $21$; $20^2 + 21^2 = 841$ ✓ and $r = \\frac{20 + 21 - 29}{2} = 6$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT inradius-hypotenuse pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-geo-022",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "quadrilaterals-polygons"
+    ],
+    "type": "mcq",
+    "stem": "Each interior angle of a regular polygon measures $156°$. The number of sides of the polygon is",
+    "options": [
+      "12",
+      "15",
+      "18",
+      "20"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** exterior angles of any polygon add to $360°$.\n\nExterior angle $= 180° - 156° = 24°$. Number of sides $= \\dfrac{360}{24} = 15$.\n\n**Check:** $\\frac{(15 - 2) \\times 180}{15} = \\frac{2340}{15} = 156$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT regular-polygon pattern"
+    },
+    "timeSec": 45
+  },
+  {
+    "id": "qa-geo-023",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "quadrilaterals-polygons"
+    ],
+    "type": "tita",
+    "stem": "The diagonals of a rhombus are 16 cm and 30 cm. Find its perimeter in cm.",
+    "answer": "68",
+    "solution": "**Concept:** diagonals of a rhombus bisect each other at right angles.\n\nHalf-diagonals $8$ and $15$ form a right triangle with the side as hypotenuse: side $= \\sqrt{64 + 225} = 17$.\n\nPerimeter $= 4 \\times 17 = 68$.\n\n**Check:** $8$–$15$–$17$ is a Pythagorean triple ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT rhombus pattern"
+    },
+    "timeSec": 45
+  },
+  {
+    "id": "qa-geo-024",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "quadrilaterals-polygons"
+    ],
+    "type": "mcq",
+    "stem": "A convex polygon has 54 diagonals. The sum of its interior angles is",
+    "options": [
+      "1440°",
+      "1620°",
+      "1800°",
+      "1980°"
+    ],
+    "answer": 2,
+    "solution": "**Concept:** diagonals $= \\frac{n(n-3)}{2}$; angle sum $= (n-2) \\times 180°$.\n\n$\\dfrac{n(n-3)}{2} = 54 \\Rightarrow n^2 - 3n - 108 = 0 \\Rightarrow (n - 12)(n + 9) = 0 \\Rightarrow n = 12$.\n\nAngle sum $= 10 \\times 180° = 1800°$.\n\n**Check:** $\\frac{12 \\times 9}{2} = 54$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT diagonals pattern"
+    },
+    "timeSec": 75
+  },
+  {
+    "id": "qa-geo-025",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "quadrilaterals-polygons"
+    ],
+    "type": "tita",
+    "stem": "A trapezium has parallel sides of lengths 30 cm and 16 cm, and non-parallel sides of lengths 13 cm and 15 cm. Find its area in cm².",
+    "answer": "276",
+    "solution": "**Concept:** drop perpendiculars from the ends of the shorter parallel side; the two end right triangles share the height.\n\nDifference of parallel sides $= 14$. Let the horizontal legs be $x$ and $14 - x$ with common height $h$:\n\n$13^2 - x^2 = 15^2 - (14 - x)^2 \\Rightarrow 169 - x^2 = 225 - 196 + 28x - x^2 \\Rightarrow 169 = 29 + 28x \\Rightarrow x = 5$.\n\n$h = \\sqrt{169 - 25} = 12$.\n\nArea $= \\dfrac12(30 + 16)(12) = 23 \\times 12 = 276$.\n\n**Check:** the other leg: $14 - 5 = 9$, and $9^2 + 12^2 = 225 = 15^2$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT trapezium-from-four-sides pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-geo-026",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "quadrilaterals-polygons"
+    ],
+    "type": "mcq",
+    "stem": "$ABCD$ is a parallelogram with area 150 cm². $E$ is the midpoint of side $CD$. The area of triangle $ABE$ (in cm²) is",
+    "options": [
+      "50",
+      "75",
+      "100",
+      "37.5"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** a triangle with one side of a parallelogram as base and its opposite vertex on the opposite side has half the parallelogram's area.\n\nTriangle $ABE$ has base $AB$ and height equal to the distance between the parallel lines $AB$ and $CD$ (since $E$ lies on $CD$).\n\n$[ABE] = \\dfrac12 \\times AB \\times h = \\dfrac12 [ABCD] = 75$.\n\n**Check:** the remaining triangles $ADE$ and $BCE$ each have base $\\frac{CD}{2}$ and height $h$, so together they have area $\\frac12 \\cdot CD \\cdot h = 75$; $75 + 75 = 150$ ✓. The midpoint condition is a distractor.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT parallelogram-area pattern"
+    },
+    "timeSec": 75
+  },
+  {
+    "id": "qa-geo-027",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "quadrilaterals-polygons",
+      "coordinate-geometry"
+    ],
+    "type": "tita",
+    "stem": "$ABCD$ is a square of side 12 cm with vertices in order. $E$ is the midpoint of $BC$. The segment $AE$ meets the diagonal $BD$ at $P$. Find the area of triangle $ABP$ in cm².",
+    "answer": "24",
+    "solution": "**Concept:** coordinates, or similar triangles on the diagonal.\n\nPlace $A(0,0)$, $B(12,0)$, $C(12,12)$, $D(0,12)$; then $E = (12, 6)$.\n\nLine $AE$: $y = \\dfrac{x}{2}$. Line $BD$: $y = 12 - x$.\n\nIntersection: $\\dfrac x2 = 12 - x \\Rightarrow x = 8$, $y = 4$. So $P = (8, 4)$.\n\n$[ABP] = \\dfrac12 \\times AB \\times (\\text{height of } P \\text{ above } AB) = \\dfrac12 \\times 12 \\times 4 = 24$.\n\n**Check by ratios:** $P$ divides $BD$ with $BP : PD = 4 : 8 = 1 : 2$ (from the $y$-coordinates $0, 4, 12$), so $[ABP] = \\frac13 [ABD] = \\frac13 \\times 72 = 24$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT square-with-midpoint pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-geo-028",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "quadrilaterals-polygons"
+    ],
+    "type": "mcq",
+    "stem": "$ABCDEF$ is a regular hexagon of side 8 cm, with vertices in order. The area of quadrilateral $ACDF$ (in cm²) is",
+    "options": [
+      "$48\\sqrt3$",
+      "$64\\sqrt3$",
+      "$96\\sqrt3$",
+      "$32\\sqrt3$"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** in a regular hexagon, the short diagonal is $s\\sqrt3$ and $ACDF$ is a rectangle.\n\n$AC$ and $FD$ are short diagonals, each of length $8\\sqrt3$ (they span two sides with a $120°$ angle between them: $AC^2 = 8^2 + 8^2 + 8 \\cdot 8 = 192$). $AF$ and $CD$ are sides of length 8.\n\n$AC \\parallel FD$ and $AF \\parallel CD$, and $\\angle FAC = 120° - 30° = 90°$, so $ACDF$ is a rectangle $8\\sqrt3 \\times 8$.\n\nArea $= 64\\sqrt3$.\n\n**Check:** the hexagon's area is $\\frac{3\\sqrt3}{2} \\times 64 = 96\\sqrt3$; the rectangle leaves two corner triangles $ABC$ and $DEF$, each $\\frac12 \\cdot 8 \\cdot 8 \\sin 120° = 16\\sqrt3$; $96\\sqrt3 - 32\\sqrt3 = 64\\sqrt3$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT regular-hexagon pattern"
+    },
+    "timeSec": 150
+  },
+  {
+    "id": "qa-geo-029",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "coordinate-geometry"
+    ],
+    "type": "mcq",
+    "stem": "The area of the triangle with vertices $(1, 1)$, $(4, 5)$ and $(7, 1)$ is",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "24"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** shoelace formula (or base and height).\n\nArea $= \\dfrac12\\left|1(5 - 1) + 4(1 - 1) + 7(1 - 5)\\right| = \\dfrac12|4 + 0 - 28| = 12$.\n\n**Check:** base from $(1,1)$ to $(7,1)$ is $6$, height is $5 - 1 = 4$; $\\frac12 \\times 6 \\times 4 = 12$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT area-of-triangle pattern"
+    },
+    "timeSec": 45
+  },
+  {
+    "id": "qa-geo-030",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "coordinate-geometry"
+    ],
+    "type": "tita",
+    "stem": "Find the area of the triangle formed by the line $3x + 4y = 24$ with the coordinate axes.",
+    "answer": "24",
+    "solution": "**Concept:** intercepts of a line.\n\n$x$-intercept: $y = 0 \\Rightarrow x = 8$. $y$-intercept: $x = 0 \\Rightarrow y = 6$.\n\nArea $= \\dfrac12 \\times 8 \\times 6 = 24$.\n\n**Check:** the line in intercept form is $\\frac{x}{8} + \\frac{y}{6} = 1$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT intercept pattern"
+    },
+    "timeSec": 45
+  },
+  {
+    "id": "qa-geo-031",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "coordinate-geometry"
+    ],
+    "type": "mcq",
+    "stem": "The perpendicular bisector of the segment joining $(1, 2)$ and $(5, 6)$ has equation",
+    "options": [
+      "$x + y = 7$",
+      "$x - y = -1$",
+      "$x + y = 5$",
+      "$y - x = 1$"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** passes through the midpoint, slope is the negative reciprocal.\n\nMidpoint $= (3, 4)$. Slope of the segment $= \\dfrac{6 - 2}{5 - 1} = 1$, so the bisector has slope $-1$.\n\n$y - 4 = -(x - 3) \\Rightarrow x + y = 7$.\n\n**Check:** $(3, 4)$ satisfies $x + y = 7$ ✓, and $(1,2)$, $(5,6)$ are both at distance $\\frac{|1 + 2 - 7|}{\\sqrt2} = \\frac{4}{\\sqrt2}$ and $\\frac{|5 + 6 - 7|}{\\sqrt2} = \\frac{4}{\\sqrt2}$ from it ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT perpendicular-bisector pattern"
+    },
+    "timeSec": 75
+  },
+  {
+    "id": "qa-geo-032",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "coordinate-geometry",
+      "circles"
+    ],
+    "type": "tita",
+    "stem": "Find the length of the chord that the circle $x^2 + y^2 - 6x + 4y - 12 = 0$ cuts on the $y$-axis.",
+    "answer": "8",
+    "solution": "**Concept:** substitute $x = 0$ and find the two intersection points.\n\n$x = 0$: $y^2 + 4y - 12 = 0 \\Rightarrow (y + 6)(y - 2) = 0 \\Rightarrow y = 2$ or $-6$.\n\nChord length $= 2 - (-6) = 8$.\n\n**Check:** centre $(3, -2)$, radius $\\sqrt{9 + 4 + 12} = 5$; distance from the centre to the $y$-axis is $3$; chord $= 2\\sqrt{25 - 9} = 8$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT circle-chord pattern"
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "qa-geo-033",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "coordinate-geometry"
+    ],
+    "type": "mcq",
+    "stem": "The point on the $x$-axis that is equidistant from $(2, -5)$ and $(-2, 9)$ is",
+    "options": [
+      "$(-7, 0)$",
+      "$(7, 0)$",
+      "$(-5, 0)$",
+      "$(5, 0)$"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** equate squared distances from $(x, 0)$.\n\n$(x - 2)^2 + 25 = (x + 2)^2 + 81 \\Rightarrow x^2 - 4x + 29 = x^2 + 4x + 85 \\Rightarrow -8x = 56 \\Rightarrow x = -7$.\n\nThe point is $(-7, 0)$.\n\n**Check:** distance² to $(2,-5)$: $81 + 25 = 106$; to $(-2, 9)$: $25 + 81 = 106$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT equidistant-point pattern"
+    },
+    "timeSec": 75
+  },
+  {
+    "id": "qa-geo-034",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "coordinate-geometry"
+    ],
+    "type": "tita",
+    "stem": "How many points with integer coordinates lie strictly inside the triangle with vertices $(0, 0)$, $(0, 10)$ and $(10, 0)$?",
+    "answer": "36",
+    "solution": "**Concept:** count lattice points satisfying the strict inequalities, and verify with Pick's theorem.\n\nInterior points satisfy $x \\ge 1$, $y \\ge 1$, $x + y \\le 9$.\n\nFor $x = 1$: $y = 1, \\dots, 8$ (8 points); $x = 2$: 7 points; …; $x = 8$: 1 point.\n\nTotal $= 8 + 7 + \\dots + 1 = 36$.\n\n**Check (Pick):** area $= 50$; boundary points $= 10 + 10 + 10 = 30$ (each side has 11 lattice points, with 3 corners shared). $I = A - \\frac{B}{2} + 1 = 50 - 15 + 1 = 36$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT 2021 lattice-point pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-geo-035",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "coordinate-geometry"
+    ],
+    "type": "mcq",
+    "stem": "A straight line passes through $(2, 3)$ and the sum of its intercepts on the two axes is 10. Which of the following could be the line?",
+    "options": [
+      "$3x + 2y = 12$",
+      "$2x + 3y = 12$",
+      "$x + y = 6$",
+      "$3x + 4y = 18$"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** intercept form $\\frac{x}{a} + \\frac{y}{b} = 1$.\n\n$\\dfrac2a + \\dfrac3b = 1$ and $a + b = 10$. Substitute $b = 10 - a$: $2(10 - a) + 3a = a(10 - a) \\Rightarrow 20 + a = 10a - a^2 \\Rightarrow a^2 - 9a + 20 = 0 \\Rightarrow a = 4$ or $5$.\n\n$a = 4, b = 6$: $\\dfrac x4 + \\dfrac y6 = 1 \\Rightarrow 3x + 2y = 12$. $a = 5, b = 5$: $x + y = 5$.\n\nAmong the options, $3x + 2y = 12$ is one of these.\n\n**Check the distractor:** $3x + 4y = 18$ does pass through $(2,3)$ but its intercepts are $6$ and $4.5$, sum $10.5$ ✗. $2x + 3y = 12$ does not pass through $(2,3)$ ✗.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT intercept-sum pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-geo-036",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "mensuration"
+    ],
+    "type": "mcq",
+    "stem": "A cylinder has radius 7 cm and height 10 cm. Its curved surface area (in cm², taking $\\pi = \\frac{22}{7}$) is",
+    "options": [
+      "440",
+      "220",
+      "154",
+      "308"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** curved surface of a cylinder $= 2\\pi r h$ (a rectangle $2\\pi r$ by $h$ unrolled).\n\n$2 \\times \\dfrac{22}{7} \\times 7 \\times 10 = 440$.\n\n**Check:** circumference $44$, times height $10$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT cylinder pattern"
+    },
+    "timeSec": 45
+  },
+  {
+    "id": "qa-geo-037",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "mensuration"
+    ],
+    "type": "tita",
+    "stem": "The total surface area of a cube is 150 cm². Find its volume in cm³.",
+    "answer": "125",
+    "solution": "**Concept:** cube surface $6a^2$, volume $a^3$.\n\n$6a^2 = 150 \\Rightarrow a^2 = 25 \\Rightarrow a = 5$. Volume $= 125$.\n\n**Check:** six faces of $25$ each is $150$ ✓.",
+    "difficulty": "easy",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT cube pattern"
+    },
+    "timeSec": 45
+  },
+  {
+    "id": "qa-geo-038",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "mensuration"
+    ],
+    "type": "mcq",
+    "stem": "A right circular cone has base radius 6 cm and height 8 cm. Its total surface area is",
+    "options": [
+      "$60\\pi$",
+      "$96\\pi$",
+      "$100\\pi$",
+      "$132\\pi$"
+    ],
+    "answer": 1,
+    "solution": "**Concept:** slant height first, then $\\pi r l + \\pi r^2$.\n\n$l = \\sqrt{36 + 64} = 10$. Curved surface $= \\pi \\times 6 \\times 10 = 60\\pi$. Base $= 36\\pi$.\n\nTotal $= 96\\pi$ cm².\n\n**Check:** $60\\pi$ alone is the curved surface (an option to catch forgetting the base) ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT cone surface pattern"
+    },
+    "timeSec": 60
+  },
+  {
+    "id": "qa-geo-039",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "mensuration"
+    ],
+    "type": "tita",
+    "stem": "A solid metal sphere of radius 6 cm is melted and recast into small solid cones, each of base radius 2 cm and height 3 cm. How many cones are made?",
+    "answer": "72",
+    "solution": "**Concept:** volume is conserved in melting.\n\nSphere: $\\dfrac43\\pi(6^3) = \\dfrac43\\pi(216) = 288\\pi$.\n\nEach cone: $\\dfrac13\\pi(2^2)(3) = 4\\pi$.\n\nNumber $= \\dfrac{288\\pi}{4\\pi} = 72$.\n\n**Check:** $72 \\times 4 = 288$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT melt-and-recast pattern"
+    },
+    "timeSec": 75
+  },
+  {
+    "id": "qa-geo-040",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "mensuration"
+    ],
+    "type": "mcq",
+    "stem": "A frustum of a cone has base radii 6 cm and 3 cm and height 4 cm. Its volume is",
+    "options": [
+      "$84\\pi$",
+      "$63\\pi$",
+      "$72\\pi$",
+      "$96\\pi$"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** frustum volume $\\frac13\\pi h(R^2 + Rr + r^2)$.\n\n$\\dfrac13\\pi(4)(36 + 18 + 9) = \\dfrac13\\pi(4)(63) = 84\\pi$ cm³.\n\n**Check by big minus small:** the full cone has height $H$ with $\\frac{3}{6} = \\frac{H - 4}{H} \\Rightarrow H = 8$. Big cone $\\frac13\\pi(36)(8) = 96\\pi$; small cone $\\frac13\\pi(9)(4) = 12\\pi$; difference $84\\pi$ ✓.",
+    "difficulty": "medium",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT frustum pattern"
+    },
+    "timeSec": 90
+  },
+  {
+    "id": "qa-geo-041",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "mensuration"
+    ],
+    "type": "tita",
+    "stem": "A solid cube has side 6 cm. A plane passes through the midpoints of the three edges that meet at one vertex, cutting off a corner piece. Find the volume of the corner piece in cm³.",
+    "answer": "4.5",
+    "solution": "**Concept:** the corner piece is a pyramid with a right-triangle base and perpendicular edges; volume $= \\frac16 abc$ for mutually perpendicular edges $a, b, c$.\n\nThe three edges from the vertex to the midpoints are mutually perpendicular, each of length $3$.\n\nVolume $= \\dfrac16 \\times 3 \\times 3 \\times 3 = 4.5$.\n\n**Check:** base triangle (two of the edges) has area $\\frac12 \\times 3 \\times 3 = 4.5$, height $3$; $\\frac13 \\times 4.5 \\times 3 = 4.5$ ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT cube-corner-cut pattern"
+    },
+    "timeSec": 120
+  },
+  {
+    "id": "qa-geo-042",
+    "section": "QA",
+    "topic": "geometry",
+    "concepts": [
+      "mensuration",
+      "circles"
+    ],
+    "type": "mcq",
+    "stem": "Three circles, each of radius 1 cm, touch each other pairwise. The area of the region enclosed between the three circles (in cm²) is",
+    "options": [
+      "$\\sqrt3 - \\dfrac{\\pi}{2}$",
+      "$\\sqrt3 - \\dfrac{\\pi}{3}$",
+      "$2 - \\dfrac{\\pi}{2}$",
+      "$4 - \\pi$"
+    ],
+    "answer": 0,
+    "solution": "**Concept:** equilateral triangle on the centres minus three $60°$ sectors.\n\nThe centres form an equilateral triangle of side $2$ (sum of two radii), with area $\\dfrac{\\sqrt3}{4} \\times 4 = \\sqrt3$.\n\nEach circle contributes a $60°$ sector inside the triangle: area $\\dfrac{60}{360}\\pi(1)^2 = \\dfrac{\\pi}{6}$; three sectors $= \\dfrac{\\pi}{2}$.\n\nEnclosed region $= \\sqrt3 - \\dfrac{\\pi}{2}$.\n\n**Check:** $1.732 - 1.571 = 0.161 > 0$, a small curved triangle, as expected ✓.",
+    "difficulty": "hard",
+    "source": {
+      "exam": "CAT-style",
+      "note": "modelled on CAT three-touching-circles pattern"
+    },
+    "timeSec": 120
+  }
+]
