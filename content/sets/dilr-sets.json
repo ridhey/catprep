@@ -1,0 +1,66 @@
+[
+  {
+    "id": "dilr-01",
+    "section": "DILR",
+    "topic": "data-interpretation",
+    "title": "DI: Revenue and margins of four firms",
+    "passage": "Four mid-sized firms — Arka, Brio, Celia and Dyna — reported the following revenues (in ₹ crore) for the years 2021 to 2024.\n\n| Firm | 2021 | 2022 | 2023 | 2024 |\n|---|---|---|---|---|\n| Arka | 240 | 300 | 345 | 414 |\n| Brio | 180 | 216 | 270 | 297 |\n| Celia | 400 | 380 | 418 | 460 |\n| Dyna | 150 | 195 | 234 | 260 |\n\nThe profit margin of each firm (profit as a percentage of revenue) in each year is given below.\n\n| Firm | 2021 | 2022 | 2023 | 2024 |\n|---|---|---|---|---|\n| Arka | 10% | 12% | 12% | 15% |\n| Brio | 15% | 15% | 20% | 18% |\n| Celia | 8% | 10% | 10% | 12% |\n| Dyna | 20% | 16% | 15% | 15% |\n\nProfit = Revenue × Profit margin. All figures are exact.",
+    "source": { "exam": "CAT-style", "note": "Original set modelled on CAT 2022–2024 table-based DI" }
+  },
+  {
+    "id": "dilr-02",
+    "section": "DILR",
+    "topic": "data-interpretation",
+    "title": "DI: The incomplete mark sheet",
+    "passage": "Five students — P, Q, R, S and T — wrote examinations in four subjects: Maths, Physics, Chemistry and English. Each paper was marked out of 100 and every mark is a whole number. A partially filled mark sheet is shown below; a dash (–) means the entry is missing.\n\n| Student | Maths | Physics | Chemistry | English | Total |\n|---|---|---|---|---|---|\n| P | 82 | – | 68 | 74 | 300 |\n| Q | – | 64 | – | 70 | 296 |\n| R | 70 | 80 | – | 67 | 302 |\n| S | 65 | 72 | 60 | – | 285 |\n| T | 88 | – | – | 60 | – |\n\nThe following facts are also known.\n\n1. The five Maths marks add up to 395.\n2. T's Physics mark is exactly equal to the average Physics mark of the five students.\n3. The five Chemistry marks are all different, and T's Chemistry mark is the median (the third highest) of the five.\n4. T's total is a multiple of 10.",
+    "source": { "exam": "CAT-style", "note": "Original set modelled on CAT 2022–2024 reasoning-based DI" }
+  },
+  {
+    "id": "dilr-03",
+    "section": "DILR",
+    "topic": "data-interpretation",
+    "title": "DI: Three streaming apps",
+    "passage": "A survey asked 200 people which of three streaming apps — Nova, Orbit and Pixel — they had used in the past month. Every person who used at least one app is counted in the figures below.\n\n| Item | Number of people |\n|---|---|\n| Used Nova | 95 |\n| Used Orbit | 80 |\n| Used Pixel | 70 |\n| Used none of the three | 30 |\n| Used exactly two of the three | 35 |\n| Used both Nova and Orbit (with or without Pixel) | 30 |\n\nNo other information about the survey is available.",
+    "source": { "exam": "CAT-style", "note": "Original set modelled on CAT 2022–2024 Venn-diagram DI" }
+  },
+  {
+    "id": "dilr-04",
+    "section": "DILR",
+    "topic": "data-interpretation",
+    "title": "DI: A five-team league",
+    "passage": "Five teams — A, B, C, D and E — played a league in which every team played every other team exactly once, so ten matches were played in all. A win earned 3 points, a draw 1 point to each team, and a loss 0 points. Teams were ranked by total points; there were no ties in points.\n\nThe final points of three teams are known.\n\n| Team | Points |\n|---|---|\n| A | 10 |\n| B | 7 |\n| C | ? |\n| D | ? |\n| E | 1 |\n\nIt is also known that:\n\n1. C finished above D in the final table.\n2. Exactly two of the ten matches were drawn.\n3. E's only point came from its match against B.\n4. D did not lose to A.",
+    "source": { "exam": "CAT-style", "note": "Original set modelled on CAT 2022–2024 games & tournaments DI" }
+  },
+  {
+    "id": "dilr-05",
+    "section": "DILR",
+    "topic": "logical-reasoning",
+    "title": "LR: Eight at a round table",
+    "passage": "Eight professionals — Anil, Bela, Chitra, Dev, Esha, Farhan, Gauri and Hari — sit at a round table with eight equally spaced seats, all facing the centre. Four of them are lawyers and four are architects, and no two lawyers sit next to each other. Anil is an architect.\n\nThe seating satisfies the following conditions. (\"Immediately clockwise of X\" means the seat you reach by moving one seat clockwise from X; two people are \"opposite\" when exactly three seats separate them on either side.)\n\n1. Anil sits opposite Farhan.\n2. Dev sits immediately clockwise of Anil.\n3. Exactly one person sits between Dev and Bela.\n4. Hari sits next to both Chitra and Esha.\n5. Chitra sits opposite Dev.",
+    "source": { "exam": "CAT-style", "note": "Original set modelled on CAT 2022–2024 circular arrangement LR" }
+  },
+  {
+    "id": "dilr-06",
+    "section": "DILR",
+    "topic": "logical-reasoning",
+    "title": "LR: Three rooms on a trip",
+    "passage": "Eight friends — Ira, Jai, Kabir, Lata, Mohan, Nitya, Om and Priya — stay in three rooms of a guest house: Room 201 and Room 202 have three beds each and Room 203 has two beds. Every bed is occupied and nobody sleeps outside these rooms. Four of the friends are from Delhi and four are from Pune.\n\nThe following is known.\n\n1. Ira and Jai are in the same room.\n2. Kabir and Lata are in different rooms, and neither of them is in Room 203.\n3. Mohan is in Room 203.\n4. Om, Priya, Ira and Lata are from Delhi; the other four are from Pune.\n5. Every room has at least one person from Delhi and at least one from Pune.\n6. Room 201 has exactly two people from Pune.\n7. Priya does not share her room with anyone else from Delhi.\n8. Om shares his room with exactly one person from Delhi and exactly one person from Pune.",
+    "source": { "exam": "CAT-style", "note": "Original set modelled on CAT 2022–2024 grouping/distribution LR" }
+  },
+  {
+    "id": "dilr-07",
+    "section": "DILR",
+    "topic": "logical-reasoning",
+    "title": "LR: Six talks in three days",
+    "passage": "A management conference has six talks — Ethics, Finance, Growth, Hiring, Innovation and Logistics — spread over Monday, Tuesday and Wednesday. Each day has exactly two talks: one in the morning slot and one in the afternoon slot. Each talk is held in one of two halls, Hall X or Hall Y, and the two talks on the same day are held in different halls.\n\n\"Before\" and \"after\" refer to the order in time: Monday morning is first and Wednesday afternoon is last.\n\n1. Finance is on the day immediately after the day of Innovation.\n2. Ethics and Hiring are on the same day.\n3. Logistics is after Ethics but before Innovation.\n4. Growth is an afternoon talk.\n5. Hiring is a morning talk.\n6. Hiring and Logistics are both in Hall X.\n7. Ethics and Finance are in the same hall.",
+    "source": { "exam": "CAT-style", "note": "Original set modelled on CAT 2022–2024 scheduling LR" }
+  },
+  {
+    "id": "dilr-08",
+    "section": "DILR",
+    "topic": "logical-reasoning",
+    "title": "LR: Three judges, four contestants",
+    "passage": "Four contestants — Kiran, Leela, Manav and Nisha — were each rated by three judges X, Y and Z. Every rating is a whole number from 1 to 9. The table below shows some of the ratings and each contestant's total (sum of the three ratings).\n\n| Contestant | Judge X | Judge Y | Judge Z | Total |\n|---|---|---|---|---|\n| Kiran | – | 6 | – | 23 |\n| Leela | 7 | – | – | 21 |\n| Manav | – | – | 8 | 22 |\n| Nisha | – | 4 | – | 20 |\n\nIt is also known that:\n\n1. The four ratings given by Judge X add up to 30.\n2. No judge gave the same rating to two different contestants.\n3. Kiran's rating from Judge Z was higher than Kiran's rating from Judge X.",
+    "source": { "exam": "CAT-style", "note": "Original set modelled on CAT 2022–2024 quant-based LR puzzles" }
+  }
+]
